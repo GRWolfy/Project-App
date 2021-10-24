@@ -1,0 +1,39 @@
+Customer
+ -Customer Order(Billing Transactions)---
+ -Need new form CustomerCheckout, and checkout db for reports
+
+Guest
+ -Traps
+ -Restrictions
+
+Supplier
+ -
+
+Billing Transaction
+ (CUSTOMER)
+ -Time of transaction
+ -UserId
+ -ProductId
+ -Quantity
+ -Total price
+
+ (SUPPLIER TO ADMIN)
+ -Time of transaction
+ -AdminId
+ -SupplierId
+ -ProductName
+ -Quantity
+ -Total price
+
+ (ADMIN: WAREHOUSE)
+ -Time of transaction
+ -AdminId
+ -ProductID
+ -Quantity
+
+Customer CheckoutDB
+ -Time of transaction
+ -UserId
+ -ProductId
+ -Quantity
+ -TotalPrice

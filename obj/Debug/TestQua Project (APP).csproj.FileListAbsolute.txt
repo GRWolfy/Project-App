@@ -1,0 +1,97 @@
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe.config
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).pdb
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AddProduct.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.ViewProduct.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.ViewProduct.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Homepage.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Login.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Register.resources
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).exe
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).pdb
+C:\Users\LENOVO\source\repos\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Splashscreen.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe.config
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\bin\Debug\TestQua Project (APP).pdb
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AddProduct.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AdminDashboard.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.ViewProduct.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerDashboard.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.ViewProduct.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Homepage.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Login.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Properties.Resources.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Register.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Splashscreen.resources
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).exe
+C:\Users\Administrator\Documents\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).pdb
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe.config
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\TestQua Project (APP).exe
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\TestQua Project (APP).pdb
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AddProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AdminHome.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AdminAccounts.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.ViewProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerProfile.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerHome.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.ViewProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Homepage.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Login.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Properties.Resources.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Register.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Splashscreen.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Supplier.SupplierHome.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Supplier.SupplierProfile.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.GenerateResource.cache
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.CoreCompileInputs.cache
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua Project (APP).exe
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua Project (APP).pdb
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.AssemblyReference.cache
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Guest.GuestHome.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerProductView.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerOrder.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AdminProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.AWT.WinForms.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Beans.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Charsets.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Cldrdata.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Corba.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Core.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Jdbc.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Localedata.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Management.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Media.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Misc.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Naming.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Nashorn.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Remoting.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Security.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.SwingAWT.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Text.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Tools.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.Util.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.API.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.Bind.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.Crypto.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.Parse.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.Transform.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.Runtime.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\bin\Debug\IKVM.Runtime.JNI.dll
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.ViewCart.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Admin.AdminReport.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Customer.CustomerCheckout.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Guest.GuestViewProduct.resources
+D:\Programming\TestQua Project (APP)\TestQua Project (APP)\obj\Debug\TestQua_Project__APP_.Supplier.SupplierTransactions.resources
+C:\Users\josep\Downloads\TestQua-Project-APP--master\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).csproj.AssemblyReference.cache
+C:\Users\josep\Downloads\TestQua-Project-APP--master\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).exe
+C:\Users\josep\Downloads\TestQua-Project-APP--master\TestQua-Project-APP--master\TestQua Project (APP)\obj\Debug\TestQua Project (APP).pdb
