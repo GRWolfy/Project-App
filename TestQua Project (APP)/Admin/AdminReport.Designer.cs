@@ -44,28 +44,28 @@ namespace TestQua_Project__APP_.Admin
          this.label1 = new System.Windows.Forms.Label();
          this.dataGridView1 = new System.Windows.Forms.DataGridView();
          this.tabPage2 = new System.Windows.Forms.TabPage();
-         this.tabPage3 = new System.Windows.Forms.TabPage();
          this.datagridViewDelivered = new System.Windows.Forms.DataGridView();
+         this.tabPage3 = new System.Windows.Forms.TabPage();
          this.datagridViewReturn = new System.Windows.Forms.DataGridView();
          this.panel1.SuspendLayout();
          this.tabControl1.SuspendLayout();
          this.tabPage1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
          this.tabPage2.SuspendLayout();
-         this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewDelivered)).BeginInit();
+         this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewReturn)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(11, 135);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 47;
@@ -110,13 +110,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(2, 307);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 43;
@@ -126,13 +126,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(2, 472);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 45;
@@ -142,13 +142,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnReports
          // 
-         this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnReports.BackColor = System.Drawing.Color.Plum;
          this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnReports.FlatAppearance.BorderSize = 0;
          this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnReports.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnReports.ForeColor = System.Drawing.Color.White;
-         this.btnReports.Location = new System.Drawing.Point(2, 391);
+         this.btnReports.ForeColor = System.Drawing.Color.Black;
+         this.btnReports.Location = new System.Drawing.Point(10, 403);
          this.btnReports.Name = "btnReports";
          this.btnReports.Size = new System.Drawing.Size(167, 64);
          this.btnReports.TabIndex = 44;
@@ -157,13 +157,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnAccounts
          // 
-         this.btnAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnAccounts.BackColor = System.Drawing.Color.Plum;
          this.btnAccounts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnAccounts.FlatAppearance.BorderSize = 0;
          this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAccounts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnAccounts.ForeColor = System.Drawing.Color.White;
-         this.btnAccounts.Location = new System.Drawing.Point(2, 219);
+         this.btnAccounts.ForeColor = System.Drawing.Color.Black;
+         this.btnAccounts.Location = new System.Drawing.Point(10, 229);
          this.btnAccounts.Name = "btnAccounts";
          this.btnAccounts.Size = new System.Drawing.Size(167, 64);
          this.btnAccounts.TabIndex = 42;
@@ -185,6 +185,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage1
          // 
+         this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage1.Controls.Add(this.lblTotalSales);
          this.tabPage1.Controls.Add(this.label1);
          this.tabPage1.Controls.Add(this.dataGridView1);
@@ -194,7 +195,6 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage1.Size = new System.Drawing.Size(813, 452);
          this.tabPage1.TabIndex = 0;
          this.tabPage1.Text = "View Sales";
-         this.tabPage1.UseVisualStyleBackColor = true;
          // 
          // lblTotalSales
          // 
@@ -218,6 +218,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.dataGridView1.Location = new System.Drawing.Point(7, 36);
          this.dataGridView1.Name = "dataGridView1";
@@ -226,6 +227,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage2
          // 
+         this.tabPage2.BackColor = System.Drawing.Color.Plum;
          this.tabPage2.Controls.Add(this.datagridViewDelivered);
          this.tabPage2.Location = new System.Drawing.Point(4, 33);
          this.tabPage2.Name = "tabPage2";
@@ -233,10 +235,21 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage2.Size = new System.Drawing.Size(813, 452);
          this.tabPage2.TabIndex = 1;
          this.tabPage2.Text = "View Delivered Products";
-         this.tabPage2.UseVisualStyleBackColor = true;
+         // 
+         // datagridViewDelivered
+         // 
+         this.datagridViewDelivered.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.datagridViewDelivered.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewDelivered.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.datagridViewDelivered.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.datagridViewDelivered.Location = new System.Drawing.Point(6, 39);
+         this.datagridViewDelivered.Name = "datagridViewDelivered";
+         this.datagridViewDelivered.Size = new System.Drawing.Size(800, 410);
+         this.datagridViewDelivered.TabIndex = 1;
          // 
          // tabPage3
          // 
+         this.tabPage3.BackColor = System.Drawing.Color.Plum;
          this.tabPage3.Controls.Add(this.datagridViewReturn);
          this.tabPage3.Location = new System.Drawing.Point(4, 33);
          this.tabPage3.Name = "tabPage3";
@@ -244,22 +257,12 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage3.Size = new System.Drawing.Size(813, 452);
          this.tabPage3.TabIndex = 2;
          this.tabPage3.Text = "Returned Products";
-         this.tabPage3.UseVisualStyleBackColor = true;
-         // 
-         // datagridViewDelivered
-         // 
-         this.datagridViewDelivered.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-         this.datagridViewDelivered.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-         this.datagridViewDelivered.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.datagridViewDelivered.Location = new System.Drawing.Point(6, 39);
-         this.datagridViewDelivered.Name = "datagridViewDelivered";
-         this.datagridViewDelivered.Size = new System.Drawing.Size(800, 410);
-         this.datagridViewDelivered.TabIndex = 1;
          // 
          // datagridViewReturn
          // 
          this.datagridViewReturn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.datagridViewReturn.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewReturn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewReturn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewReturn.Location = new System.Drawing.Point(6, 38);
          this.datagridViewReturn.Name = "datagridViewReturn";
@@ -270,7 +273,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.tabControl1);
          this.Controls.Add(this.btnHome);
@@ -291,8 +294,8 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage1.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
          this.tabPage2.ResumeLayout(false);
-         this.tabPage3.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewDelivered)).EndInit();
+         this.tabPage3.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewReturn)).EndInit();
          this.ResumeLayout(false);
 

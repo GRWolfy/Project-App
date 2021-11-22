@@ -65,7 +65,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.label4.AutoSize = true;
          this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label4.ForeColor = System.Drawing.Color.White;
+         this.label4.ForeColor = System.Drawing.Color.Black;
          this.label4.Location = new System.Drawing.Point(21, 317);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(116, 31);
@@ -76,7 +76,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.label3.AutoSize = true;
          this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label3.ForeColor = System.Drawing.Color.White;
+         this.label3.ForeColor = System.Drawing.Color.Black;
          this.label3.Location = new System.Drawing.Point(35, 271);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(84, 31);
@@ -87,7 +87,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.label2.AutoSize = true;
          this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label2.ForeColor = System.Drawing.Color.White;
+         this.label2.ForeColor = System.Drawing.Color.Black;
          this.label2.Location = new System.Drawing.Point(24, 116);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(159, 31);
@@ -98,7 +98,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.ForeColor = System.Drawing.Color.White;
+         this.label1.ForeColor = System.Drawing.Color.Black;
          this.label1.Location = new System.Drawing.Point(25, 20);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(195, 31);
@@ -109,7 +109,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.lblQuantity.AutoSize = true;
          this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-         this.lblQuantity.ForeColor = System.Drawing.Color.White;
+         this.lblQuantity.ForeColor = System.Drawing.Color.Black;
          this.lblQuantity.Location = new System.Drawing.Point(143, 320);
          this.lblQuantity.Name = "lblQuantity";
          this.lblQuantity.Size = new System.Drawing.Size(100, 29);
@@ -120,7 +120,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.lblDescription.AutoSize = true;
          this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-         this.lblDescription.ForeColor = System.Drawing.Color.White;
+         this.lblDescription.ForeColor = System.Drawing.Color.Black;
          this.lblDescription.Location = new System.Drawing.Point(25, 158);
          this.lblDescription.Name = "lblDescription";
          this.lblDescription.Size = new System.Drawing.Size(135, 29);
@@ -131,7 +131,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.lblPrice.AutoSize = true;
          this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-         this.lblPrice.ForeColor = System.Drawing.Color.White;
+         this.lblPrice.ForeColor = System.Drawing.Color.Black;
          this.lblPrice.Location = new System.Drawing.Point(114, 274);
          this.lblPrice.Name = "lblPrice";
          this.lblPrice.Size = new System.Drawing.Size(69, 29);
@@ -142,7 +142,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.lblName.AutoSize = true;
          this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-         this.lblName.ForeColor = System.Drawing.Color.White;
+         this.lblName.ForeColor = System.Drawing.Color.Black;
          this.lblName.Location = new System.Drawing.Point(26, 63);
          this.lblName.Name = "lblName";
          this.lblName.Size = new System.Drawing.Size(78, 29);
@@ -184,7 +184,7 @@ namespace TestQua_Project__APP_.Guest
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(986, 538);
          this.Controls.Add(this.panel2);
          this.Controls.Add(this.button2);

@@ -30,8 +30,8 @@ namespace TestQua_Project__APP_.Customer
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerOrder));
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
          this.btnLogout = new System.Windows.Forms.Button();
          this.btnOrder = new System.Windows.Forms.Button();
          this.btnAccounts = new System.Windows.Forms.Button();
@@ -48,13 +48,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(12, 479);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 50;
@@ -64,13 +64,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnOrder
          // 
-         this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnOrder.BackColor = System.Drawing.Color.Plum;
          this.btnOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnOrder.FlatAppearance.BorderSize = 0;
          this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnOrder.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnOrder.ForeColor = System.Drawing.Color.White;
-         this.btnOrder.Location = new System.Drawing.Point(12, 398);
+         this.btnOrder.ForeColor = System.Drawing.Color.Black;
+         this.btnOrder.Location = new System.Drawing.Point(10, 403);
          this.btnOrder.Name = "btnOrder";
          this.btnOrder.Size = new System.Drawing.Size(167, 64);
          this.btnOrder.TabIndex = 49;
@@ -79,13 +79,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnAccounts
          // 
-         this.btnAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnAccounts.BackColor = System.Drawing.Color.Plum;
          this.btnAccounts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnAccounts.FlatAppearance.BorderSize = 0;
          this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAccounts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnAccounts.ForeColor = System.Drawing.Color.White;
-         this.btnAccounts.Location = new System.Drawing.Point(12, 226);
+         this.btnAccounts.ForeColor = System.Drawing.Color.Black;
+         this.btnAccounts.Location = new System.Drawing.Point(10, 229);
          this.btnAccounts.Name = "btnAccounts";
          this.btnAccounts.Size = new System.Drawing.Size(167, 64);
          this.btnAccounts.TabIndex = 47;
@@ -95,13 +95,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(12, 314);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 48;
@@ -158,13 +158,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(12, 135);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 51;
@@ -177,23 +177,24 @@ namespace TestQua_Project__APP_.Customer
          this.dataGridView1.AllowUserToAddRows = false;
          this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-         dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-         dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-         dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-         this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+         this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+         dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+         dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+         this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
          this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-         dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-         dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-         dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-         dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-         this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+         dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+         dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+         dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+         this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
          this.dataGridView1.Location = new System.Drawing.Point(185, 133);
          this.dataGridView1.Name = "dataGridView1";
          this.dataGridView1.Size = new System.Drawing.Size(890, 217);
@@ -204,7 +205,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.dataGridView1);
          this.Controls.Add(this.btnLogout);

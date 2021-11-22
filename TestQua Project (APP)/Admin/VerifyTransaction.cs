@@ -33,7 +33,7 @@ namespace TestQua_Project__APP_.Admin
          try
          {
             Connection.DB();
-            Function.gen = "SELECT * FROM WarehouseDb WHERE ProductId = '" + AdminProduct.productid + "' ";
+            Function.gen = "SELECT * FROM Products WHERE ProductId = '" + AdminProduct.productid + "' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 

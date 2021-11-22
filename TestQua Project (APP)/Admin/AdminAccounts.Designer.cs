@@ -112,15 +112,14 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnAccounts
          // 
-         this.btnAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnAccounts.BackColor = System.Drawing.Color.Plum;
          this.btnAccounts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.btnAccounts.FlatAppearance.BorderSize = 0;
          this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAccounts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnAccounts.ForeColor = System.Drawing.Color.White;
-         this.btnAccounts.Location = new System.Drawing.Point(3, 217);
+         this.btnAccounts.ForeColor = System.Drawing.Color.Black;
+         this.btnAccounts.Location = new System.Drawing.Point(10, 229);
          this.btnAccounts.Name = "btnAccounts";
-         this.btnAccounts.Size = new System.Drawing.Size(167, 64);
+         this.btnAccounts.Size = new System.Drawing.Size(166, 64);
          this.btnAccounts.TabIndex = 10;
          this.btnAccounts.Text = "Accounts";
          this.btnAccounts.UseVisualStyleBackColor = false;
@@ -128,15 +127,14 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(3, 305);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
-         this.btnProducts.Size = new System.Drawing.Size(167, 64);
+         this.btnProducts.Size = new System.Drawing.Size(166, 64);
          this.btnProducts.TabIndex = 15;
          this.btnProducts.Text = "Products";
          this.btnProducts.UseVisualStyleBackColor = false;
@@ -144,15 +142,14 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnReports
          // 
-         this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnReports.BackColor = System.Drawing.Color.Plum;
          this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.btnReports.FlatAppearance.BorderSize = 0;
          this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnReports.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnReports.ForeColor = System.Drawing.Color.White;
-         this.btnReports.Location = new System.Drawing.Point(3, 389);
+         this.btnReports.ForeColor = System.Drawing.Color.Black;
+         this.btnReports.Location = new System.Drawing.Point(10, 403);
          this.btnReports.Name = "btnReports";
-         this.btnReports.Size = new System.Drawing.Size(167, 64);
+         this.btnReports.Size = new System.Drawing.Size(166, 64);
          this.btnReports.TabIndex = 16;
          this.btnReports.Text = "Reports";
          this.btnReports.UseVisualStyleBackColor = false;
@@ -160,15 +157,14 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(3, 470);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
-         this.btnLogout.Size = new System.Drawing.Size(167, 64);
+         this.btnLogout.Size = new System.Drawing.Size(166, 64);
          this.btnLogout.TabIndex = 17;
          this.btnLogout.Text = "Logout";
          this.btnLogout.UseVisualStyleBackColor = false;
@@ -179,7 +175,7 @@ namespace TestQua_Project__APP_.Admin
          this.tabcontrolAdminAccounts.Controls.Add(this.tabPage1);
          this.tabcontrolAdminAccounts.Controls.Add(this.tabPage2);
          this.tabcontrolAdminAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.tabcontrolAdminAccounts.Location = new System.Drawing.Point(176, 133);
+         this.tabcontrolAdminAccounts.Location = new System.Drawing.Point(184, 83);
          this.tabcontrolAdminAccounts.Name = "tabcontrolAdminAccounts";
          this.tabcontrolAdminAccounts.SelectedIndex = 0;
          this.tabcontrolAdminAccounts.Size = new System.Drawing.Size(899, 519);
@@ -187,7 +183,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage1
          // 
-         this.tabPage1.BackColor = System.Drawing.Color.LightGray;
+         this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.tabPage1.Controls.Add(this.txtRoleId);
          this.tabPage1.Controls.Add(this.btnDelete);
@@ -235,32 +231,35 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnDelete
          // 
+         this.btnDelete.BackColor = System.Drawing.Color.Plum;
          this.btnDelete.Location = new System.Drawing.Point(621, 356);
          this.btnDelete.Name = "btnDelete";
          this.btnDelete.Size = new System.Drawing.Size(89, 31);
          this.btnDelete.TabIndex = 62;
          this.btnDelete.Text = "Delete";
-         this.btnDelete.UseVisualStyleBackColor = true;
+         this.btnDelete.UseVisualStyleBackColor = false;
          this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
          // 
          // btnUpdate
          // 
+         this.btnUpdate.BackColor = System.Drawing.Color.Plum;
          this.btnUpdate.Location = new System.Drawing.Point(526, 355);
          this.btnUpdate.Name = "btnUpdate";
          this.btnUpdate.Size = new System.Drawing.Size(89, 31);
          this.btnUpdate.TabIndex = 61;
          this.btnUpdate.Text = "Update";
-         this.btnUpdate.UseVisualStyleBackColor = true;
+         this.btnUpdate.UseVisualStyleBackColor = false;
          this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
          // 
          // btnSave
          // 
+         this.btnSave.BackColor = System.Drawing.Color.Plum;
          this.btnSave.Location = new System.Drawing.Point(427, 355);
          this.btnSave.Name = "btnSave";
          this.btnSave.Size = new System.Drawing.Size(89, 31);
          this.btnSave.TabIndex = 60;
          this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = true;
+         this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // cmbRole
@@ -279,10 +278,10 @@ namespace TestQua_Project__APP_.Admin
          // Role
          // 
          this.Role.AutoSize = true;
-         this.Role.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.Role.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.Role.Location = new System.Drawing.Point(379, 166);
          this.Role.Name = "Role";
-         this.Role.Size = new System.Drawing.Size(49, 24);
+         this.Role.Size = new System.Drawing.Size(57, 26);
          this.Role.TabIndex = 58;
          this.Role.Text = "Role";
          // 
@@ -299,20 +298,20 @@ namespace TestQua_Project__APP_.Admin
          // label3
          // 
          this.label3.AutoSize = true;
-         this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label3.Location = new System.Drawing.Point(378, 81);
          this.label3.Name = "label3";
-         this.label3.Size = new System.Drawing.Size(97, 24);
+         this.label3.Size = new System.Drawing.Size(113, 26);
          this.label3.TabIndex = 52;
          this.label3.Text = "Username";
          // 
          // label11
          // 
          this.label11.AutoSize = true;
-         this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label11.Location = new System.Drawing.Point(378, 121);
          this.label11.Name = "label11";
-         this.label11.Size = new System.Drawing.Size(141, 24);
+         this.label11.Size = new System.Drawing.Size(163, 26);
          this.label11.TabIndex = 51;
          this.label11.Text = "Enter password";
          // 
@@ -350,60 +349,60 @@ namespace TestQua_Project__APP_.Admin
          // label10
          // 
          this.label10.AutoSize = true;
-         this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label10.Location = new System.Drawing.Point(57, 309);
          this.label10.Name = "label10";
-         this.label10.Size = new System.Drawing.Size(105, 24);
+         this.label10.Size = new System.Drawing.Size(123, 26);
          this.label10.TabIndex = 45;
          this.label10.Text = "Contact no.";
          // 
          // label9
          // 
          this.label9.AutoSize = true;
-         this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label9.Location = new System.Drawing.Point(57, 105);
          this.label9.Name = "label9";
-         this.label9.Size = new System.Drawing.Size(96, 24);
+         this.label9.Size = new System.Drawing.Size(114, 26);
          this.label9.TabIndex = 44;
          this.label9.Text = "Last name";
          // 
          // label8
          // 
          this.label8.AutoSize = true;
-         this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label8.Location = new System.Drawing.Point(57, 265);
          this.label8.Name = "label8";
-         this.label8.Size = new System.Drawing.Size(74, 24);
+         this.label8.Size = new System.Drawing.Size(84, 26);
          this.label8.TabIndex = 43;
          this.label8.Text = "Gender";
          // 
          // label7
          // 
          this.label7.AutoSize = true;
-         this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label7.Location = new System.Drawing.Point(57, 211);
          this.label7.Name = "label7";
-         this.label7.Size = new System.Drawing.Size(45, 24);
+         this.label7.Size = new System.Drawing.Size(51, 26);
          this.label7.TabIndex = 42;
          this.label7.Text = "Age";
          // 
          // label6
          // 
          this.label6.AutoSize = true;
-         this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label6.Location = new System.Drawing.Point(57, 160);
          this.label6.Name = "label6";
-         this.label6.Size = new System.Drawing.Size(80, 24);
+         this.label6.Size = new System.Drawing.Size(92, 26);
          this.label6.TabIndex = 41;
          this.label6.Text = "Address";
          // 
          // label5
          // 
          this.label5.AutoSize = true;
-         this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label5.Location = new System.Drawing.Point(57, 366);
          this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(57, 24);
+         this.label5.Size = new System.Drawing.Size(68, 26);
          this.label5.TabIndex = 40;
          this.label5.Text = "Email";
          // 
@@ -464,15 +463,16 @@ namespace TestQua_Project__APP_.Admin
          // label1
          // 
          this.label1.AutoSize = true;
-         this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
          this.label1.Location = new System.Drawing.Point(57, 62);
          this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(98, 24);
+         this.label1.Size = new System.Drawing.Size(115, 26);
          this.label1.TabIndex = 33;
          this.label1.Text = "First name";
          // 
          // tabPage2
          // 
+         this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage2.Controls.Add(this.txtSearch);
          this.tabPage2.Controls.Add(this.viewAccounts);
          this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,7 +482,6 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage2.Size = new System.Drawing.Size(891, 477);
          this.tabPage2.TabIndex = 1;
          this.tabPage2.Text = "View Accounts";
-         this.tabPage2.UseVisualStyleBackColor = true;
          // 
          // txtSearch
          // 
@@ -497,6 +496,7 @@ namespace TestQua_Project__APP_.Admin
          this.viewAccounts.AllowUserToAddRows = false;
          this.viewAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.viewAccounts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.viewAccounts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.viewAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.viewAccounts.Location = new System.Drawing.Point(-4, 47);
          this.viewAccounts.Name = "viewAccounts";
@@ -506,15 +506,15 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(12, 133);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
-         this.btnHome.Size = new System.Drawing.Size(167, 64);
+         this.btnHome.RightToLeft = System.Windows.Forms.RightToLeft.No;
+         this.btnHome.Size = new System.Drawing.Size(166, 64);
          this.btnHome.TabIndex = 40;
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
@@ -524,7 +524,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.btnHome);
          this.Controls.Add(this.tabcontrolAdminAccounts);

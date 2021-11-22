@@ -140,7 +140,7 @@ namespace TestQua_Project__APP_
          // 
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-         this.label1.ForeColor = System.Drawing.Color.White;
+         this.label1.ForeColor = System.Drawing.Color.Black;
          this.label1.Location = new System.Drawing.Point(12, 29);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(435, 29);
@@ -152,7 +152,7 @@ namespace TestQua_Project__APP_
          // 
          this.label2.AutoSize = true;
          this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-         this.label2.ForeColor = System.Drawing.Color.White;
+         this.label2.ForeColor = System.Drawing.Color.Black;
          this.label2.Location = new System.Drawing.Point(14, 58);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(339, 17);
@@ -177,7 +177,7 @@ namespace TestQua_Project__APP_
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(986, 538);
          this.Controls.Add(this.linklblGuest);
          this.Controls.Add(this.label2);

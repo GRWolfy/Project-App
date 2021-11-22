@@ -85,5 +85,12 @@ namespace TestQua_Project__APP_.Admin
       {
 
       }
+
+      private void btnReports_Click(object sender, EventArgs e)
+      {
+         var adminreports = new AdminReport();
+         adminreports.Show();
+         Close();
+      }
    }
 }

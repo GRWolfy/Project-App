@@ -50,12 +50,12 @@
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
          this.btnHome.Location = new System.Drawing.Point(12, 144);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
@@ -65,12 +65,12 @@
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
          this.btnLogout.Location = new System.Drawing.Point(12, 477);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
@@ -92,12 +92,12 @@
          // 
          // btnProfile
          // 
-         this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProfile.BackColor = System.Drawing.Color.Plum;
          this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProfile.FlatAppearance.BorderSize = 0;
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProfile.ForeColor = System.Drawing.Color.White;
+         this.btnProfile.ForeColor = System.Drawing.Color.Black;
          this.btnProfile.Location = new System.Drawing.Point(12, 224);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
@@ -116,12 +116,12 @@
          // 
          // btnTransactions
          // 
-         this.btnTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnTransactions.BackColor = System.Drawing.Color.Plum;
          this.btnTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnTransactions.FlatAppearance.BorderSize = 0;
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnTransactions.ForeColor = System.Drawing.Color.White;
+         this.btnTransactions.ForeColor = System.Drawing.Color.Black;
          this.btnTransactions.Location = new System.Drawing.Point(12, 393);
          this.btnTransactions.Name = "btnTransactions";
          this.btnTransactions.Size = new System.Drawing.Size(203, 64);
@@ -195,12 +195,12 @@
          // 
          // btnProduct
          // 
-         this.btnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProduct.BackColor = System.Drawing.Color.Plum;
          this.btnProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProduct.FlatAppearance.BorderSize = 0;
          this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProduct.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProduct.ForeColor = System.Drawing.Color.White;
+         this.btnProduct.ForeColor = System.Drawing.Color.Black;
          this.btnProduct.Location = new System.Drawing.Point(12, 304);
          this.btnProduct.Name = "btnProduct";
          this.btnProduct.Size = new System.Drawing.Size(203, 64);
@@ -213,7 +213,7 @@
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.btnProduct);
          this.Controls.Add(this.btnHome);

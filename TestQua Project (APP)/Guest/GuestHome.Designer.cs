@@ -43,6 +43,8 @@ namespace TestQua_Project__APP_.Guest
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.button1 = new System.Windows.Forms.Button();
+         this.button2 = new System.Windows.Forms.Button();
+         this.panel4.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,13 +53,13 @@ namespace TestQua_Project__APP_.Guest
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(12, 480);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 50;
@@ -79,6 +81,7 @@ namespace TestQua_Project__APP_.Guest
          // panel4
          // 
          this.panel4.BackColor = System.Drawing.Color.White;
+         this.panel4.Controls.Add(this.button2);
          this.panel4.Location = new System.Drawing.Point(221, 281);
          this.panel4.Name = "panel4";
          this.panel4.Size = new System.Drawing.Size(854, 310);
@@ -86,13 +89,13 @@ namespace TestQua_Project__APP_.Guest
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(12, 389);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 48;
@@ -114,13 +117,13 @@ namespace TestQua_Project__APP_.Guest
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(12, 211);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 51;
@@ -192,13 +195,13 @@ namespace TestQua_Project__APP_.Guest
          // 
          // button1
          // 
-         this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.button1.BackColor = System.Drawing.Color.Plum;
          this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.button1.FlatAppearance.BorderSize = 0;
          this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.button1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.button1.ForeColor = System.Drawing.Color.White;
-         this.button1.Location = new System.Drawing.Point(12, 302);
+         this.button1.ForeColor = System.Drawing.Color.Black;
+         this.button1.Location = new System.Drawing.Point(10, 229);
          this.button1.Name = "button1";
          this.button1.Size = new System.Drawing.Size(167, 64);
          this.button1.TabIndex = 52;
@@ -206,11 +209,26 @@ namespace TestQua_Project__APP_.Guest
          this.button1.UseVisualStyleBackColor = false;
          this.button1.Click += new System.EventHandler(this.button1_Click);
          // 
+         // button2
+         // 
+         this.button2.BackColor = System.Drawing.Color.Plum;
+         this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.button2.FlatAppearance.BorderSize = 0;
+         this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.button2.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.button2.ForeColor = System.Drawing.Color.Black;
+         this.button2.Location = new System.Drawing.Point(582, -70);
+         this.button2.Name = "button2";
+         this.button2.Size = new System.Drawing.Size(167, 64);
+         this.button2.TabIndex = 37;
+         this.button2.Text = "Reports";
+         this.button2.UseVisualStyleBackColor = false;
+         // 
          // GuestHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.button1);
          this.Controls.Add(this.btnLogout);
@@ -228,6 +246,7 @@ namespace TestQua_Project__APP_.Guest
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "GuestHome";
          this.Load += new System.EventHandler(this.GuestHome_Load);
+         this.panel4.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -253,5 +272,6 @@ namespace TestQua_Project__APP_.Guest
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Button btnHome;
       private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button button2;
    }
 }

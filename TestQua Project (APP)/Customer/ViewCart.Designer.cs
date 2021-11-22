@@ -102,7 +102,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.lblProductName.AutoSize = true;
          this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblProductName.ForeColor = System.Drawing.Color.White;
+         this.lblProductName.ForeColor = System.Drawing.Color.Black;
          this.lblProductName.Location = new System.Drawing.Point(784, 332);
          this.lblProductName.Name = "lblProductName";
          this.lblProductName.Size = new System.Drawing.Size(92, 36);
@@ -131,7 +131,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.asd.AutoSize = true;
          this.asd.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.asd.ForeColor = System.Drawing.Color.White;
+         this.asd.ForeColor = System.Drawing.Color.Black;
          this.asd.Location = new System.Drawing.Point(784, 560);
          this.asd.Name = "asd";
          this.asd.Size = new System.Drawing.Size(83, 36);
@@ -142,7 +142,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.label3.AutoSize = true;
          this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label3.ForeColor = System.Drawing.Color.White;
+         this.label3.ForeColor = System.Drawing.Color.Black;
          this.label3.Location = new System.Drawing.Point(784, 454);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(125, 36);
@@ -161,7 +161,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.label4.AutoSize = true;
          this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label4.ForeColor = System.Drawing.Color.White;
+         this.label4.ForeColor = System.Drawing.Color.Black;
          this.label4.Location = new System.Drawing.Point(432, 33);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(89, 36);
@@ -172,7 +172,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.lblTotal.AutoSize = true;
          this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTotal.ForeColor = System.Drawing.Color.White;
+         this.lblTotal.ForeColor = System.Drawing.Color.Black;
          this.lblTotal.Location = new System.Drawing.Point(516, 33);
          this.lblTotal.Name = "lblTotal";
          this.lblTotal.Size = new System.Drawing.Size(115, 36);
@@ -184,6 +184,7 @@ namespace TestQua_Project__APP_.Customer
          this.datagridViewCart.AllowUserToAddRows = false;
          this.datagridViewCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.datagridViewCart.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
          dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
          dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
@@ -244,7 +245,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.btnPlus);
          this.Controls.Add(this.btnMinus);

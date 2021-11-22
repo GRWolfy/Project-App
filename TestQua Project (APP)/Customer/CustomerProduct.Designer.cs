@@ -47,7 +47,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          // flowlayoutViewProducts
          // 
-         this.flowlayoutViewProducts.Location = new System.Drawing.Point(176, 133);
+         this.flowlayoutViewProducts.Location = new System.Drawing.Point(188, 133);
          this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
          this.flowlayoutViewProducts.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
          this.flowlayoutViewProducts.Size = new System.Drawing.Size(891, 493);
@@ -57,7 +57,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.lblCountCart.AutoSize = true;
          this.lblCountCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblCountCart.ForeColor = System.Drawing.Color.White;
+         this.lblCountCart.ForeColor = System.Drawing.Color.Black;
          this.lblCountCart.Location = new System.Drawing.Point(873, 93);
          this.lblCountCart.Name = "lblCountCart";
          this.lblCountCart.Size = new System.Drawing.Size(194, 31);
@@ -66,13 +66,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(12, 316);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 26;
@@ -82,13 +82,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnProfile
          // 
-         this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProfile.BackColor = System.Drawing.Color.Plum;
          this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProfile.FlatAppearance.BorderSize = 0;
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProfile.ForeColor = System.Drawing.Color.White;
-         this.btnProfile.Location = new System.Drawing.Point(9, 228);
+         this.btnProfile.ForeColor = System.Drawing.Color.Black;
+         this.btnProfile.Location = new System.Drawing.Point(10, 229);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
          this.btnProfile.TabIndex = 25;
@@ -98,13 +98,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnOrder
          // 
-         this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnOrder.BackColor = System.Drawing.Color.Plum;
          this.btnOrder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnOrder.FlatAppearance.BorderSize = 0;
          this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnOrder.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnOrder.ForeColor = System.Drawing.Color.White;
-         this.btnOrder.Location = new System.Drawing.Point(8, 400);
+         this.btnOrder.ForeColor = System.Drawing.Color.Black;
+         this.btnOrder.Location = new System.Drawing.Point(10, 403);
          this.btnOrder.Name = "btnOrder";
          this.btnOrder.Size = new System.Drawing.Size(167, 64);
          this.btnOrder.TabIndex = 27;
@@ -114,13 +114,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(7, 481);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 28;
@@ -130,13 +130,13 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(12, 137);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(158, 64);
          this.btnHome.TabIndex = 30;
@@ -201,7 +201,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.btnViewCart);
          this.Controls.Add(this.lblCountCart);

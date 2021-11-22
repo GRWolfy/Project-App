@@ -45,12 +45,12 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
          this.btnHome.Location = new System.Drawing.Point(11, 146);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
@@ -61,12 +61,12 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
          this.btnLogout.Location = new System.Drawing.Point(11, 479);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
@@ -88,12 +88,12 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnProfile
          // 
-         this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProfile.BackColor = System.Drawing.Color.Plum;
          this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProfile.FlatAppearance.BorderSize = 0;
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProfile.ForeColor = System.Drawing.Color.White;
+         this.btnProfile.ForeColor = System.Drawing.Color.Black;
          this.btnProfile.Location = new System.Drawing.Point(11, 226);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
@@ -104,12 +104,12 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnTransactions
          // 
-         this.btnTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnTransactions.BackColor = System.Drawing.Color.Plum;
          this.btnTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnTransactions.FlatAppearance.BorderSize = 0;
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnTransactions.ForeColor = System.Drawing.Color.White;
+         this.btnTransactions.ForeColor = System.Drawing.Color.Black;
          this.btnTransactions.Location = new System.Drawing.Point(11, 314);
          this.btnTransactions.Name = "btnTransactions";
          this.btnTransactions.Size = new System.Drawing.Size(203, 64);
@@ -154,6 +154,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // datagridViewTransactions
          // 
+         this.datagridViewTransactions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewTransactions.Location = new System.Drawing.Point(191, 158);
          this.datagridViewTransactions.Name = "datagridViewTransactions";
@@ -164,7 +165,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.datagridViewTransactions);
          this.Controls.Add(this.btnHome);

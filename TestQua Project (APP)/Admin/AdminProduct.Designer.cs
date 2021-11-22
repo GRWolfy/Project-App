@@ -74,13 +74,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnHome
          // 
-         this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnHome.ForeColor = System.Drawing.Color.White;
-         this.btnHome.Location = new System.Drawing.Point(11, 135);
+         this.btnHome.ForeColor = System.Drawing.Color.Black;
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 47;
@@ -90,13 +90,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnLogout
          // 
-         this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnLogout.ForeColor = System.Drawing.Color.White;
-         this.btnLogout.Location = new System.Drawing.Point(2, 472);
+         this.btnLogout.ForeColor = System.Drawing.Color.Black;
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 45;
@@ -106,13 +106,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnProducts
          // 
-         this.btnProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnProducts.ForeColor = System.Drawing.Color.White;
-         this.btnProducts.Location = new System.Drawing.Point(2, 307);
+         this.btnProducts.ForeColor = System.Drawing.Color.Black;
+         this.btnProducts.Location = new System.Drawing.Point(10, 318);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 43;
@@ -122,13 +122,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnReports
          // 
-         this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnReports.BackColor = System.Drawing.Color.Plum;
          this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnReports.FlatAppearance.BorderSize = 0;
          this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnReports.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnReports.ForeColor = System.Drawing.Color.White;
-         this.btnReports.Location = new System.Drawing.Point(2, 391);
+         this.btnReports.ForeColor = System.Drawing.Color.Black;
+         this.btnReports.Location = new System.Drawing.Point(10, 403);
          this.btnReports.Name = "btnReports";
          this.btnReports.Size = new System.Drawing.Size(167, 64);
          this.btnReports.TabIndex = 44;
@@ -138,13 +138,13 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnAccounts
          // 
-         this.btnAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnAccounts.BackColor = System.Drawing.Color.Plum;
          this.btnAccounts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnAccounts.FlatAppearance.BorderSize = 0;
          this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAccounts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.btnAccounts.ForeColor = System.Drawing.Color.White;
-         this.btnAccounts.Location = new System.Drawing.Point(2, 219);
+         this.btnAccounts.ForeColor = System.Drawing.Color.Black;
+         this.btnAccounts.Location = new System.Drawing.Point(10, 229);
          this.btnAccounts.Name = "btnAccounts";
          this.btnAccounts.Size = new System.Drawing.Size(167, 64);
          this.btnAccounts.TabIndex = 42;
@@ -221,7 +221,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage1
          // 
-         this.tabPage1.BackColor = System.Drawing.Color.LightGray;
+         this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.tabPage1.Controls.Add(this.label7);
          this.tabPage1.Controls.Add(this.txtProductId);
@@ -306,23 +306,27 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnBrowse
          // 
+         this.btnBrowse.BackColor = System.Drawing.Color.Plum;
+         this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnBrowse.Location = new System.Drawing.Point(150, 379);
          this.btnBrowse.Name = "btnBrowse";
          this.btnBrowse.Size = new System.Drawing.Size(89, 31);
          this.btnBrowse.TabIndex = 71;
          this.btnBrowse.Text = "Browse";
-         this.btnBrowse.UseVisualStyleBackColor = true;
+         this.btnBrowse.UseVisualStyleBackColor = false;
          this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
          // 
          // btnUpdatePic
          // 
+         this.btnUpdatePic.BackColor = System.Drawing.Color.Plum;
+         this.btnUpdatePic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnUpdatePic.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnUpdatePic.Location = new System.Drawing.Point(262, 379);
          this.btnUpdatePic.Name = "btnUpdatePic";
          this.btnUpdatePic.Size = new System.Drawing.Size(89, 31);
          this.btnUpdatePic.TabIndex = 70;
          this.btnUpdatePic.Text = "Update Pic";
-         this.btnUpdatePic.UseVisualStyleBackColor = true;
+         this.btnUpdatePic.UseVisualStyleBackColor = false;
          this.btnUpdatePic.Click += new System.EventHandler(this.btnUpdatePic_Click);
          // 
          // pictureboxProductPic
@@ -366,32 +370,38 @@ namespace TestQua_Project__APP_.Admin
          // 
          // btnDelete
          // 
+         this.btnDelete.BackColor = System.Drawing.Color.Plum;
+         this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnDelete.Location = new System.Drawing.Point(763, 420);
          this.btnDelete.Name = "btnDelete";
          this.btnDelete.Size = new System.Drawing.Size(89, 31);
          this.btnDelete.TabIndex = 62;
          this.btnDelete.Text = "Delete";
-         this.btnDelete.UseVisualStyleBackColor = true;
+         this.btnDelete.UseVisualStyleBackColor = false;
          this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
          // 
          // btnUpdate
          // 
+         this.btnUpdate.BackColor = System.Drawing.Color.Plum;
+         this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnUpdate.Location = new System.Drawing.Point(668, 419);
          this.btnUpdate.Name = "btnUpdate";
          this.btnUpdate.Size = new System.Drawing.Size(89, 31);
          this.btnUpdate.TabIndex = 61;
          this.btnUpdate.Text = "Update";
-         this.btnUpdate.UseVisualStyleBackColor = true;
+         this.btnUpdate.UseVisualStyleBackColor = false;
          this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
          // 
          // btnSave
          // 
+         this.btnSave.BackColor = System.Drawing.Color.Plum;
+         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnSave.Location = new System.Drawing.Point(569, 419);
          this.btnSave.Name = "btnSave";
          this.btnSave.Size = new System.Drawing.Size(89, 31);
          this.btnSave.TabIndex = 60;
          this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = true;
+         this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // label5
@@ -410,7 +420,7 @@ namespace TestQua_Project__APP_.Admin
          this.tabcontrolAdminProducts.Controls.Add(this.tabPage2);
          this.tabcontrolAdminProducts.Controls.Add(this.tabPage3);
          this.tabcontrolAdminProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.tabcontrolAdminProducts.Location = new System.Drawing.Point(175, 135);
+         this.tabcontrolAdminProducts.Location = new System.Drawing.Point(182, 135);
          this.tabcontrolAdminProducts.Name = "tabcontrolAdminProducts";
          this.tabcontrolAdminProducts.SelectedIndex = 0;
          this.tabcontrolAdminProducts.Size = new System.Drawing.Size(899, 519);
@@ -451,7 +461,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
          this.Controls.Add(this.btnHome);
          this.Controls.Add(this.panel1);
