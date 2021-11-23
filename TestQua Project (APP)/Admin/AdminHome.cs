@@ -66,7 +66,7 @@ namespace TestQua_Project__APP_.Admin
             {
                productid = Convert.ToInt32(Function.reader["ProductId"]);
 
-               if (Convert.ToInt32(Function.reader["quantity"]) <= 20 && Function.reader["STATUS"].ToString() != "NEED RESTOCK")
+               if (Convert.ToInt32(Function.reader["quantity"]) <= 20 && Function.reader["STATUS"].ToString() != "REQUESTING")
                {
                   Connection.DB();
                   Function.gen = "UPDATE Products SET Status = '" + "STOCK LOW" + "' WHERE ProductId = '" + productid + "' ";
@@ -74,7 +74,7 @@ namespace TestQua_Project__APP_.Admin
                   Function.command.ExecuteNonQuery();
                   Connection.con.Close();
                }
-               else 
+               else if(Function.reader["STATUS"].ToString() != "REQUESTING")
                {
                   Connection.DB();
                   Function.gen = "UPDATE Products SET Status = '" + "" + "' WHERE ProductId = '" + productid + "' ";

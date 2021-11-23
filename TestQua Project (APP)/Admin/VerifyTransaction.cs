@@ -62,7 +62,7 @@ namespace TestQua_Project__APP_.Admin
             Connection.con.Close();
 
             Connection.DB();
-            Function.gen = "SELECT * FROM Transactions WHERE ProductId = '" + AdminProduct.productid + "' ";
+            Function.gen = "SELECT * FROM Transactions WHERE ProductId = '" + AdminProduct.productid + "' AND userid = '"+ AdminProduct.userid +"' AND status = 'PENDING' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
@@ -101,7 +101,7 @@ namespace TestQua_Project__APP_.Admin
             if (gen == DialogResult.Yes)
             {
                Connection.DB();
-               Function.gen = "UPDATE Products SET Quantity = '" + (SupplyQuantity + Quantity) + "' WHERE productid = '" + AdminProduct.productid + "'; UPDATE Transactions SET Status = 'RECEIVED' WHERE orderid = '" + AdminProduct.orderid + "'; ";
+               Function.gen = "UPDATE Products SET Quantity = '" + (SupplyQuantity + Quantity) + "' WHERE productid = '" + AdminProduct.productid + "'; UPDATE Transactions SET Status = 'RECEIVED' WHERE orderid = '" + AdminProduct.orderid + "'; UPDATE Products SET status = '' WHERE productid = '" + AdminProduct.productid + "'; ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                MessageBox.Show("Product Restocked.", "Updated!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                Function.command.ExecuteNonQuery();
@@ -133,7 +133,7 @@ namespace TestQua_Project__APP_.Admin
             if (gen == DialogResult.Yes)
             {
                Connection.DB();
-               Function.gen = "UPDATE Transactions SET Status = 'RETURN' WHERE orderid = '" + AdminProduct.orderid + "'; ";
+               Function.gen = "UPDATE Transactions SET Status = 'RETURN' WHERE orderid = '" + AdminProduct.orderid + "'; UPDATE Products SET status = '' WHERE productid = '"+ AdminProduct.productid +"'; ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                MessageBox.Show("Supply returned.", "Returned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                Function.command.ExecuteNonQuery();

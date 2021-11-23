@@ -63,10 +63,11 @@ namespace TestQua_Project__APP_.Supplier
       {
          //productid, productname, productdescrip, productprice, productimage, quantity, status, timestored
          Connection.DB();
-         Function.gen = "SELECT productid, productname as [NAME], productdescrip as [DESCRIPTION], productprice as [PRICE], productimage, quantity as [QUANTITY], status as [STATUS], timestored as [TIME STORED] from Products WHERE Status = '"+ "NEED RESTOCK" +"' ";
+         Function.gen = "SELECT productid, productname as [NAME], productdescrip as [DESCRIPTION], productprice, 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], productimage, quantity as [QUANTITY], status as [STATUS], timestored as [TIME STORED] from Products WHERE Status = '" + "REQUESTING" +"' ";
          Function.fill(Function.gen, datagridViewProduct);
          datagridViewProduct.Columns["productimage"].Visible = false;
          datagridViewProduct.Columns["productid"].Visible = false;
+         datagridViewProduct.Columns["productprice"].Visible = false;
       }
 
       private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -79,7 +80,7 @@ namespace TestQua_Project__APP_.Supplier
          txtProductId.Text = datagridViewProduct.Rows[e.RowIndex].Cells["productid"].Value.ToString();
          txtProductName.Text = datagridViewProduct.Rows[e.RowIndex].Cells["NAME"].Value.ToString();
          txtProductDescription.Text = datagridViewProduct.Rows[e.RowIndex].Cells["DESCRIPTION"].Value.ToString();
-         txtPrice.Text = datagridViewProduct.Rows[e.RowIndex].Cells["PRICE"].Value.ToString();
+         txtPrice.Text = datagridViewProduct.Rows[e.RowIndex].Cells["productprice"].Value.ToString();
          txtQuantity.Text = datagridViewProduct.Rows[e.RowIndex].Cells["QUANTITY"].Value.ToString();
          byte[] img = (byte[])(datagridViewProduct.Rows[e.RowIndex].Cells["productimage"].Value);
 

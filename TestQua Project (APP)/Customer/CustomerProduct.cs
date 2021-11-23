@@ -153,7 +153,14 @@ namespace TestQua_Project__APP_.Customer
             if (Function.reader.HasRows)
             {
                Function.reader.Read();
-               lblCountCart.Text = (Function.reader["total"].ToString());
+               if (Convert.ToInt32(Function.reader["total"]) == 0)
+               {
+                  lblCountCart.Visible = false;
+               }
+               else
+               {
+                  lblCountCart.Text = (Function.reader["total"].ToString());
+               }
             }
          }
 
@@ -163,17 +170,17 @@ namespace TestQua_Project__APP_.Customer
          }
       }
 
-      private void btnViewCart_Click(object sender, EventArgs e)
-      {
-         var viewcart = new ViewCart();
-         viewcart.Show();
-         Close();
-      }
-
       private void btnOrder_Click(object sender, EventArgs e)
       {
          var customerorder = new CustomerOrder();
          customerorder.Show();
+         Close();
+      }
+
+      private void pbCart_Click(object sender, EventArgs e)
+      {
+         var viewcart = new ViewCart();
+         viewcart.Show();
          Close();
       }
    }

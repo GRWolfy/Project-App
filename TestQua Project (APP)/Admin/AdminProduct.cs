@@ -183,14 +183,14 @@ namespace TestQua_Project__APP_.Admin
             pictureboxProductPic.Image = Image.FromStream(ms);
          }
 
-         if (status == "STOCK LOW")
+         if (status == "STOCK LOW" && status != "REQUESTING")
          {
             var gen = MessageBox.Show("Do you want to request to restock this product?", "Stock low", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (gen == DialogResult.Yes)
             {
                Connection.DB();
-               Function.gen = "UPDATE Products SET status = '" + "NEED RESTOCK" + "' WHERE productid = '" + txtProductId.Text + "' ";
+               Function.gen = "UPDATE Products SET status = '" + "REQUESTING" + "' WHERE productid = '" + txtProductId.Text + "' ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                Function.command.ExecuteNonQuery();
                MessageBox.Show("Successfuly requested a restock");

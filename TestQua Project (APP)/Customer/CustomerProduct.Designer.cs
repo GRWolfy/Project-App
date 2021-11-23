@@ -38,16 +38,17 @@ namespace TestQua_Project__APP_.Customer
          this.btnLogout = new System.Windows.Forms.Button();
          this.btnHome = new System.Windows.Forms.Button();
          this.txtSearchProduct = new System.Windows.Forms.TextBox();
+         this.pbCart = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.btnViewCart = new System.Windows.Forms.Button();
+         ((System.ComponentModel.ISupportInitialize)(this.pbCart)).BeginInit();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
          // 
          // flowlayoutViewProducts
          // 
-         this.flowlayoutViewProducts.Location = new System.Drawing.Point(188, 133);
+         this.flowlayoutViewProducts.Location = new System.Drawing.Point(188, 158);
          this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
          this.flowlayoutViewProducts.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
          this.flowlayoutViewProducts.Size = new System.Drawing.Size(891, 493);
@@ -56,13 +57,14 @@ namespace TestQua_Project__APP_.Customer
          // lblCountCart
          // 
          this.lblCountCart.AutoSize = true;
+         this.lblCountCart.BackColor = System.Drawing.Color.Transparent;
          this.lblCountCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblCountCart.ForeColor = System.Drawing.Color.Black;
-         this.lblCountCart.Location = new System.Drawing.Point(873, 93);
+         this.lblCountCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(73)))), ((int)(((byte)(164)))));
+         this.lblCountCart.Location = new System.Drawing.Point(997, 112);
          this.lblCountCart.Name = "lblCountCart";
-         this.lblCountCart.Size = new System.Drawing.Size(194, 31);
+         this.lblCountCart.Size = new System.Drawing.Size(29, 31);
          this.lblCountCart.TabIndex = 34;
-         this.lblCountCart.Text = "COUNT CART";
+         this.lblCountCart.Text = "1";
          // 
          // btnProducts
          // 
@@ -146,11 +148,22 @@ namespace TestQua_Project__APP_.Customer
          // 
          // txtSearchProduct
          // 
-         this.txtSearchProduct.Location = new System.Drawing.Point(422, 93);
+         this.txtSearchProduct.Location = new System.Drawing.Point(419, 105);
          this.txtSearchProduct.Name = "txtSearchProduct";
          this.txtSearchProduct.Size = new System.Drawing.Size(100, 20);
          this.txtSearchProduct.TabIndex = 33;
          this.txtSearchProduct.TextChanged += new System.EventHandler(this.txtSearchProduct_TextChanged);
+         // 
+         // pbCart
+         // 
+         this.pbCart.Image = global::TestQua_Project__APP_.Properties.Resources.Cart_removebg_preview_removebg_preview;
+         this.pbCart.Location = new System.Drawing.Point(934, 79);
+         this.pbCart.Name = "pbCart";
+         this.pbCart.Size = new System.Drawing.Size(87, 59);
+         this.pbCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pbCart.TabIndex = 38;
+         this.pbCart.TabStop = false;
+         this.pbCart.Click += new System.EventHandler(this.pbCart_Click);
          // 
          // panel1
          // 
@@ -187,24 +200,14 @@ namespace TestQua_Project__APP_.Customer
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
-         // btnViewCart
-         // 
-         this.btnViewCart.Location = new System.Drawing.Point(873, 67);
-         this.btnViewCart.Name = "btnViewCart";
-         this.btnViewCart.Size = new System.Drawing.Size(132, 23);
-         this.btnViewCart.TabIndex = 36;
-         this.btnViewCart.Text = "Temporary View Cart";
-         this.btnViewCart.UseVisualStyleBackColor = true;
-         this.btnViewCart.Click += new System.EventHandler(this.btnViewCart_Click);
-         // 
          // CustomerProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
-         this.Controls.Add(this.btnViewCart);
          this.Controls.Add(this.lblCountCart);
+         this.Controls.Add(this.pbCart);
          this.Controls.Add(this.txtSearchProduct);
          this.Controls.Add(this.flowlayoutViewProducts);
          this.Controls.Add(this.btnHome);
@@ -218,6 +221,7 @@ namespace TestQua_Project__APP_.Customer
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "CustomerProduct";
          this.Load += new System.EventHandler(this.CustomerProduct_Load);
+         ((System.ComponentModel.ISupportInitialize)(this.pbCart)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.ResumeLayout(false);
@@ -237,6 +241,6 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.TextBox txtSearchProduct;
-      private System.Windows.Forms.Button btnViewCart;
+      private System.Windows.Forms.PictureBox pbCart;
    }
 }

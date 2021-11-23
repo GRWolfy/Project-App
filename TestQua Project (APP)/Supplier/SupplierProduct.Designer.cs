@@ -30,6 +30,7 @@ namespace TestQua_Project__APP_.Supplier
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupplierProduct));
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnLogout = new System.Windows.Forms.Button();
          this.label3 = new System.Windows.Forms.Label();
@@ -192,24 +193,35 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // tabPage2
          // 
+         this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage2.Controls.Add(this.datagridViewProduct);
          this.tabPage2.Controls.Add(this.txtSearch);
-         this.tabPage2.Location = new System.Drawing.Point(4, 22);
+         this.tabPage2.Location = new System.Drawing.Point(4, 38);
          this.tabPage2.Name = "tabPage2";
          this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-         this.tabPage2.Size = new System.Drawing.Size(891, 493);
+         this.tabPage2.Size = new System.Drawing.Size(891, 477);
          this.tabPage2.TabIndex = 1;
-         this.tabPage2.Text = "tabPage2";
-         this.tabPage2.UseVisualStyleBackColor = true;
+         this.tabPage2.Text = "Restock Request";
          // 
          // datagridViewProduct
          // 
+         this.datagridViewProduct.AllowUserToAddRows = false;
+         this.datagridViewProduct.AllowUserToDeleteRows = false;
          this.datagridViewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.datagridViewProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+         dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+         this.datagridViewProduct.DefaultCellStyle = dataGridViewCellStyle1;
          this.datagridViewProduct.Location = new System.Drawing.Point(0, 37);
          this.datagridViewProduct.Name = "datagridViewProduct";
-         this.datagridViewProduct.Size = new System.Drawing.Size(891, 453);
+         this.datagridViewProduct.Size = new System.Drawing.Size(891, 440);
          this.datagridViewProduct.TabIndex = 68;
          this.datagridViewProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewProduct_CellClick);
          // 
@@ -217,7 +229,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.txtSearch.Location = new System.Drawing.Point(223, 2);
          this.txtSearch.Name = "txtSearch";
-         this.txtSearch.Size = new System.Drawing.Size(100, 20);
+         this.txtSearch.Size = new System.Drawing.Size(100, 35);
          this.txtSearch.TabIndex = 67;
          this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
          // 
@@ -236,12 +248,12 @@ namespace TestQua_Project__APP_.Supplier
          this.tabPage1.Controls.Add(this.btnSave);
          this.tabPage1.Controls.Add(this.label8);
          this.tabPage1.Controls.Add(this.txtQuantity);
-         this.tabPage1.Location = new System.Drawing.Point(4, 22);
+         this.tabPage1.Location = new System.Drawing.Point(4, 38);
          this.tabPage1.Name = "tabPage1";
          this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-         this.tabPage1.Size = new System.Drawing.Size(891, 493);
+         this.tabPage1.Size = new System.Drawing.Size(891, 477);
          this.tabPage1.TabIndex = 0;
-         this.tabPage1.Text = "tabPage1";
+         this.tabPage1.Text = "Restock";
          // 
          // label7
          // 
@@ -367,6 +379,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.tabControl1.Controls.Add(this.tabPage1);
          this.tabControl1.Controls.Add(this.tabPage2);
+         this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
          this.tabControl1.Location = new System.Drawing.Point(186, 135);
          this.tabControl1.Name = "tabControl1";
          this.tabControl1.SelectedIndex = 0;

@@ -39,7 +39,6 @@ namespace TestQua_Project__APP_.Guest
          this.btnHome = new System.Windows.Forms.Button();
          this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
          this.txtSearchProduct = new System.Windows.Forms.TextBox();
-         this.button1 = new System.Windows.Forms.Button();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
          // 
@@ -51,11 +50,11 @@ namespace TestQua_Project__APP_.Guest
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
-         this.btnLogout.Location = new System.Drawing.Point(11, 479);
+         this.btnLogout.Location = new System.Drawing.Point(10, 364);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 60;
-         this.btnLogout.Text = "Logout";
+         this.btnLogout.Text = "Back";
          this.btnLogout.UseVisualStyleBackColor = false;
          this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
          // 
@@ -67,7 +66,7 @@ namespace TestQua_Project__APP_.Guest
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProducts.ForeColor = System.Drawing.Color.Black;
-         this.btnProducts.Location = new System.Drawing.Point(11, 388);
+         this.btnProducts.Location = new System.Drawing.Point(10, 276);
          this.btnProducts.Name = "btnProducts";
          this.btnProducts.Size = new System.Drawing.Size(167, 64);
          this.btnProducts.TabIndex = 59;
@@ -129,7 +128,7 @@ namespace TestQua_Project__APP_.Guest
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;
-         this.btnHome.Location = new System.Drawing.Point(3, 230);
+         this.btnHome.Location = new System.Drawing.Point(10, 190);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 61;
@@ -153,29 +152,12 @@ namespace TestQua_Project__APP_.Guest
          this.txtSearchProduct.TabIndex = 63;
          this.txtSearchProduct.TextChanged += new System.EventHandler(this.txtSearchProduct_TextChanged);
          // 
-         // button1
-         // 
-         this.button1.BackColor = System.Drawing.Color.Plum;
-         this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.button1.FlatAppearance.BorderSize = 0;
-         this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.button1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.button1.ForeColor = System.Drawing.Color.Black;
-         this.button1.Location = new System.Drawing.Point(11, 309);
-         this.button1.Name = "button1";
-         this.button1.Size = new System.Drawing.Size(167, 64);
-         this.button1.TabIndex = 64;
-         this.button1.Text = "Register";
-         this.button1.UseVisualStyleBackColor = false;
-         this.button1.Click += new System.EventHandler(this.button1_Click);
-         // 
          // GuestViewProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
-         this.Controls.Add(this.button1);
          this.Controls.Add(this.txtSearchProduct);
          this.Controls.Add(this.flowlayoutViewProducts);
          this.Controls.Add(this.btnLogout);
@@ -206,6 +188,5 @@ namespace TestQua_Project__APP_.Guest
       private System.Windows.Forms.Button btnHome;
       private System.Windows.Forms.FlowLayoutPanel flowlayoutViewProducts;
       private System.Windows.Forms.TextBox txtSearchProduct;
-      private System.Windows.Forms.Button button1;
    }
 }

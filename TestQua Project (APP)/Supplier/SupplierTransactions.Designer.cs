@@ -30,6 +30,8 @@ namespace TestQua_Project__APP_.Supplier
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupplierTransactions));
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnLogout = new System.Windows.Forms.Button();
          this.label3 = new System.Windows.Forms.Label();
@@ -155,8 +157,28 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // datagridViewTransactions
          // 
+         this.datagridViewTransactions.AllowUserToAddRows = false;
+         this.datagridViewTransactions.AllowUserToDeleteRows = false;
+         this.datagridViewTransactions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.datagridViewTransactions.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.datagridViewTransactions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+         dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+         this.datagridViewTransactions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
          this.datagridViewTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+         dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+         dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+         this.datagridViewTransactions.DefaultCellStyle = dataGridViewCellStyle2;
          this.datagridViewTransactions.Location = new System.Drawing.Point(191, 158);
          this.datagridViewTransactions.Name = "datagridViewTransactions";
          this.datagridViewTransactions.Size = new System.Drawing.Size(891, 453);
