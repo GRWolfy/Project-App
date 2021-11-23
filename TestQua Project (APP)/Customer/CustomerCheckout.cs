@@ -10,6 +10,7 @@ namespace TestQua_Project__APP_.Customer
    {
       private ArrayList ProductIDs = new ArrayList();
       private ArrayList QuantityBought = new ArrayList();
+      private ArrayList QuantityProduct = new ArrayList();
 
       public CustomerCheckout()
       {
@@ -64,6 +65,16 @@ namespace TestQua_Project__APP_.Customer
 
             for (int i = 0; i < ProductIDs.Count; i++)
             {
+               int ProductQuantity = Convert.ToInt32(QuantityProduct[i]);
+               int CartQuantity = Convert.ToInt32(QuantityBought[i]);
+               int newProductQuantity = ProductQuantity - CartQuantity;
+
+               Connection.DB();
+               Function.gen = "UPDATE Products SET quantity = '" + newProductQuantity + "' WHERE productid = '" + ProductIDs[i] + "' ";
+               Function.command = new SqlCommand(Function.gen, Connection.con);
+               Function.command.ExecuteNonQuery();
+               Connection.con.Close();
+
                if (i == ProductIDs.Count - 1)
                {
                   productID += ProductIDs[i].ToString();
@@ -79,6 +90,8 @@ namespace TestQua_Project__APP_.Customer
                productID += ProductIDs[i].ToString() + ",";
                quantity += QuantityBought[i].ToString() + ",";
             }
+
+
 
             clearCart();
             MessageBox.Show("Thank you for your order!");
@@ -117,7 +130,7 @@ namespace TestQua_Project__APP_.Customer
          try
          {
             Connection.DB();
-            Function.gen = "SELECT * FROM CartDB WHERE userid = '" + Login.userid + "' ";
+            Function.gen = "SELECT CartDb.Quantity AS [CartQuantity], CartDb.ProductId AS [ProductID], Products.Quantity AS [ProductQuantity] FROM CartDB INNER JOIN Products ON Products.ProductId = CartDB.ProductId WHERE userid = '" + Login.userid + "' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
@@ -125,7 +138,8 @@ namespace TestQua_Project__APP_.Customer
             {
                Function.reader.Read();
                ProductIDs.Add(Convert.ToInt32(Function.reader["ProductId"]));
-               QuantityBought.Add(Convert.ToInt32(Function.reader["Quantity"]));
+               QuantityBought.Add(Convert.ToInt32(Function.reader["CartQuantity"]));
+               QuantityProduct.Add(Convert.ToInt32(Function.reader["ProductQuantity"]));
             }
          }
 

@@ -14,6 +14,8 @@ namespace TestQua_Project__APP_.Admin
       private void AdminHome_Load(object sender, EventArgs e)
       {
          btnHome.FlatStyle = FlatStyle.Standard;
+         setTotalSales();
+         updateProductStatus();
       }
 
       private void btnAccounts_Click(object sender, EventArgs e)
@@ -62,12 +64,20 @@ namespace TestQua_Project__APP_.Admin
 
             while (Function.reader.Read())
             {
-               productid = Convert.ToInt32(Function.reader["ProductId"]);   
+               productid = Convert.ToInt32(Function.reader["ProductId"]);
 
-               if (Convert.ToInt32(Function.reader["quantity"]) <= 20  && Function.reader["STATUS"].ToString() != "NEED RESTOCK")
+               if (Convert.ToInt32(Function.reader["quantity"]) <= 20 && Function.reader["STATUS"].ToString() != "NEED RESTOCK")
                {
                   Connection.DB();
                   Function.gen = "UPDATE Products SET Status = '" + "STOCK LOW" + "' WHERE ProductId = '" + productid + "' ";
+                  Function.command = new SqlCommand(Function.gen, Connection.con);
+                  Function.command.ExecuteNonQuery();
+                  Connection.con.Close();
+               }
+               else 
+               {
+                  Connection.DB();
+                  Function.gen = "UPDATE Products SET Status = '" + "" + "' WHERE ProductId = '" + productid + "' ";
                   Function.command = new SqlCommand(Function.gen, Connection.con);
                   Function.command.ExecuteNonQuery();
                   Connection.con.Close();
@@ -76,8 +86,8 @@ namespace TestQua_Project__APP_.Admin
          }
 
          catch (Exception ex)
-         { 
-         
+         {
+
          }
       }
 
@@ -91,6 +101,29 @@ namespace TestQua_Project__APP_.Admin
          var adminreports = new AdminReport();
          adminreports.Show();
          Close();
+      }
+
+      private void setTotalSales()
+      {
+         try
+         {
+            Connection.DB();
+            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb WHERE Status = 'Order Received' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
+
+            if (Function.reader.HasRows)
+            {
+               Function.reader.Read();
+               lblTotalSales.Text = "₱" + Function.reader["TOTAL"].ToString();
+            }
+         }
+
+         catch (Exception ex)
+         {
+            Connection.con.Close();
+            lblTotalSales.Text = "₱0";
+         }
       }
    }
 }

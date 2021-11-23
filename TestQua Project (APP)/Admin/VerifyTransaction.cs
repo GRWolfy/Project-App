@@ -17,6 +17,7 @@ namespace TestQua_Project__APP_.Admin
       private string imageLocation = "";
       private int Quantity = 0;
       private int SupplyQuantity;
+      private string status;
 
       public VerifyTransaction()
       {
@@ -43,8 +44,7 @@ namespace TestQua_Project__APP_.Admin
                lblName.Text = Function.reader["productname"].ToString();
                lblDescription.Text = Function.reader["productdescrip"].ToString();
                lblPrice.Text = Function.reader["productprice"].ToString();
-               SupplyQuantity = Convert.ToInt32(Function.reader["quantity"]);
-               lblQuantity.Text = Function.reader["quantity"].ToString();
+               Quantity = Convert.ToInt32(Function.reader["quantity"]);
                byte[] img = (byte[])(Function.reader[4]);
 
                if (img == null)
@@ -60,20 +60,21 @@ namespace TestQua_Project__APP_.Admin
 
             pictureboxProductPic.BackgroundImageLayout = ImageLayout.Stretch;
             Connection.con.Close();
-         }
 
-         catch (Exception ex)
-         {
-            MessageBox.Show(ex.Message);
-         }
-      }
+            Connection.DB();
+            Function.gen = "SELECT * FROM Transactions WHERE ProductId = '" + AdminProduct.productid + "' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
 
-      private void btnAddtoCart_Click(object sender, EventArgs e)
-      {
-         try
-         {
-            //UPDATE the ProductDB (Transaction Quantity + Product Quantity)
-            //UPDATE Transaction status PENDING to DELIVERED or RETURN
+            if (Function.reader.HasRows)
+            {
+               Function.reader.Read();
+               //status = Function.reader["status"].ToString();
+               SupplyQuantity = Convert.ToInt32(Function.reader["quantity"]);
+               lblQuantity.Text = Function.reader["quantity"].ToString();
+            }
+
+            Connection.con.Close();
          }
 
          catch (Exception ex)
@@ -88,6 +89,70 @@ namespace TestQua_Project__APP_.Admin
          adminproduct.Show();
          adminproduct.tabcontrolAdminProducts.SelectedIndex = 2;
          Close();
+      }
+
+      private void btnReceived_Click(object sender, EventArgs e)
+      {
+         try
+         {
+            Connection.DB();
+            var gen = MessageBox.Show("Are you sure you want to receive this stock This actions is not reversible.?", "WARNING!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (gen == DialogResult.Yes)
+            {
+               Connection.DB();
+               Function.gen = "UPDATE Products SET Quantity = '" + (SupplyQuantity + Quantity) + "' WHERE productid = '" + AdminProduct.productid + "'; UPDATE Transactions SET Status = 'RECEIVED' WHERE orderid = '" + AdminProduct.orderid + "'; ";
+               Function.command = new SqlCommand(Function.gen, Connection.con);
+               MessageBox.Show("Product Restocked.", "Updated!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               Function.command.ExecuteNonQuery();
+
+               btnReceived.Enabled = false;
+               btnReturn.Enabled = false;
+
+               Close();
+
+               var adminprod = new AdminProduct();
+               adminprod.Show();
+               adminprod.tabcontrolAdminProducts.SelectedIndex = 2;
+            }
+         }
+
+         catch (Exception ex)
+         {
+            MessageBox.Show(ex.Message);
+         }
+      }
+
+      private void btnReturn_Click(object sender, EventArgs e)
+      {
+         try
+         {
+            Connection.DB();
+            var gen = MessageBox.Show("Are you sure you want to return this stock? This actions is not reversible.?", "WARNING!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (gen == DialogResult.Yes)
+            {
+               Connection.DB();
+               Function.gen = "UPDATE Transactions SET Status = 'RETURN' WHERE orderid = '" + AdminProduct.orderid + "'; ";
+               Function.command = new SqlCommand(Function.gen, Connection.con);
+               MessageBox.Show("Supply returned.", "Returned!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               Function.command.ExecuteNonQuery();
+
+               btnReceived.Enabled = false;
+               btnReturn.Enabled = false;
+
+               Close();
+
+               var adminprod = new AdminProduct();
+               adminprod.Show();
+               adminprod.tabcontrolAdminProducts.SelectedIndex = 2;
+            }
+         }
+
+         catch (Exception ex)
+         {
+            MessageBox.Show(ex.Message);
+         }
       }
    }
 }

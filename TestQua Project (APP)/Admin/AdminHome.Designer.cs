@@ -31,22 +31,19 @@ namespace TestQua_Project__APP_.Admin
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
          this.btnLogout = new System.Windows.Forms.Button();
-         this.pictureBox2 = new System.Windows.Forms.PictureBox();
          this.btnAccounts = new System.Windows.Forms.Button();
-         this.panel4 = new System.Windows.Forms.Panel();
          this.btnProducts = new System.Windows.Forms.Button();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+         this.panel2 = new System.Windows.Forms.Panel();
+         this.lblTotalSales = new System.Windows.Forms.Label();
+         this.label3 = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
+         this.panel2.SuspendLayout();
          this.SuspendLayout();
          // 
          // btnLogout
@@ -65,16 +62,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnLogout.UseVisualStyleBackColor = false;
          this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
          // 
-         // pictureBox2
-         // 
-         this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(9)))), ((int)(((byte)(21)))));
-         this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-         this.pictureBox2.Location = new System.Drawing.Point(323, 95);
-         this.pictureBox2.Name = "pictureBox2";
-         this.pictureBox2.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox2.TabIndex = 32;
-         this.pictureBox2.TabStop = false;
-         // 
          // btnAccounts
          // 
          this.btnAccounts.BackColor = System.Drawing.Color.Plum;
@@ -91,14 +78,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnAccounts.UseVisualStyleBackColor = false;
          this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
          // 
-         // panel4
-         // 
-         this.panel4.BackColor = System.Drawing.Color.White;
-         this.panel4.Location = new System.Drawing.Point(221, 278);
-         this.panel4.Name = "panel4";
-         this.panel4.Size = new System.Drawing.Size(854, 310);
-         this.panel4.TabIndex = 34;
-         // 
          // btnProducts
          // 
          this.btnProducts.BackColor = System.Drawing.Color.Plum;
@@ -114,24 +93,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnProducts.Text = "Products";
          this.btnProducts.UseVisualStyleBackColor = false;
          this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-         this.pictureBox1.Location = new System.Drawing.Point(637, 95);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(160, 156);
-         this.pictureBox1.TabIndex = 30;
-         this.pictureBox1.TabStop = false;
-         // 
-         // pictureBox3
-         // 
-         this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-         this.pictureBox3.Location = new System.Drawing.Point(480, 95);
-         this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox3.TabIndex = 33;
-         this.pictureBox3.TabStop = false;
          // 
          // panel1
          // 
@@ -212,32 +173,57 @@ namespace TestQua_Project__APP_.Admin
          this.btnReports.UseVisualStyleBackColor = false;
          this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
          // 
+         // panel2
+         // 
+         this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.panel2.Controls.Add(this.label3);
+         this.panel2.Controls.Add(this.lblTotalSales);
+         this.panel2.Location = new System.Drawing.Point(226, 139);
+         this.panel2.Name = "panel2";
+         this.panel2.Size = new System.Drawing.Size(803, 422);
+         this.panel2.TabIndex = 46;
+         // 
+         // lblTotalSales
+         // 
+         this.lblTotalSales.AutoSize = true;
+         this.lblTotalSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTotalSales.Location = new System.Drawing.Point(114, 67);
+         this.lblTotalSales.Name = "lblTotalSales";
+         this.lblTotalSales.Size = new System.Drawing.Size(98, 108);
+         this.lblTotalSales.TabIndex = 0;
+         this.lblTotalSales.Text = "0";
+         // 
+         // label3
+         // 
+         this.label3.AutoSize = true;
+         this.label3.Location = new System.Drawing.Point(119, 194);
+         this.label3.Name = "label3";
+         this.label3.Size = new System.Drawing.Size(58, 13);
+         this.label3.TabIndex = 1;
+         this.label3.Text = "Tota Sales";
+         // 
          // AdminHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.panel2);
          this.Controls.Add(this.btnReports);
          this.Controls.Add(this.btnHome);
          this.Controls.Add(this.btnLogout);
-         this.Controls.Add(this.pictureBox2);
          this.Controls.Add(this.btnAccounts);
-         this.Controls.Add(this.panel4);
          this.Controls.Add(this.btnProducts);
-         this.Controls.Add(this.pictureBox1);
-         this.Controls.Add(this.pictureBox3);
          this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "AdminHome";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "AdminHome";
          this.Load += new System.EventHandler(this.AdminHome_Load);
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         this.panel2.ResumeLayout(false);
+         this.panel2.PerformLayout();
          this.ResumeLayout(false);
 
       }
@@ -245,17 +231,16 @@ namespace TestQua_Project__APP_.Admin
       #endregion
 
       private System.Windows.Forms.Button btnLogout;
-      private System.Windows.Forms.PictureBox pictureBox2;
       private System.Windows.Forms.Button btnAccounts;
-      private System.Windows.Forms.Panel panel4;
       private System.Windows.Forms.Button btnProducts;
-      private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.PictureBox pictureBox3;
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Button btnHome;
       private System.Windows.Forms.Button btnReports;
+      private System.Windows.Forms.Panel panel2;
+      private System.Windows.Forms.Label lblTotalSales;
+      private System.Windows.Forms.Label label3;
    }
 }

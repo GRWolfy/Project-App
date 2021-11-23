@@ -25,14 +25,14 @@ namespace TestQua_Project__APP_.Admin
          try
          {
             Connection.DB();
-            Function.gen = "SELECT 'P' + convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb ";
+            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
             if (Function.reader.HasRows)
             {
                Function.reader.Read();
-               lblTotalSales.Text = Function.reader["TOTAL"].ToString();
+               lblTotalSales.Text = "₱" + Function.reader["TOTAL"].ToString();
             }
          }
 

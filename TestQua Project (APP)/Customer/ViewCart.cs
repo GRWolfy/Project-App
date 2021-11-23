@@ -135,35 +135,13 @@ namespace TestQua_Project__APP_.Customer
 
       private void btnUpdate_Click(object sender, EventArgs e)
       {
-         int ProductQuantity = 0;
-
          try
          {
+
             Connection.DB();
-            Function.gen = "SELECT * FROM Products WHERE productid = '" + productid + "' ";
+            Function.gen = "UPDATE CartDb SET Quantity = '" + newQuantity + "' WHERE productid = '" + productid + "' AND userid = '" + Login.userid + "' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
-            Function.reader = Function.command.ExecuteReader();
-
-            if (Function.reader.HasRows)
-            {
-               Function.reader.Read();
-               ProductQuantity = Convert.ToInt32(Function.reader["Quantity"]);
-
-               if (newQuantity < previousQuantity)
-               {
-                  Connection.DB();
-                  Function.gen = "UPDATE CartDb SET Quantity = '" + newQuantity + "' WHERE productid = '" + productid + "' AND userid = '" + Login.userid + "'; UPDATE Products SET Quantity = '" + (ProductQuantity + (previousQuantity - newQuantity)) + "' WHERE productid = '" + productid + "'; ";
-                  Function.command = new SqlCommand(Function.gen, Connection.con);
-                  Function.command.ExecuteNonQuery();
-               }
-               else if (newQuantity > previousQuantity)
-               {
-                  Connection.DB();
-                  Function.gen = "UPDATE CartDb SET Quantity = '" + newQuantity + "' WHERE productid = '" + productid + "' AND userid = '" + Login.userid + "'; UPDATE Products SET Quantity = '" + (ProductQuantity - (newQuantity - previousQuantity)) + "' WHERE productid = '" + productid + "'; ";
-                  Function.command = new SqlCommand(Function.gen, Connection.con);
-                  Function.command.ExecuteNonQuery();
-               }
-            }
+            Function.command.ExecuteNonQuery();
 
             MessageBox.Show("Cart Updated");
             Connection.con.Close();

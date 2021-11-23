@@ -39,8 +39,9 @@
          this.lblDescription = new System.Windows.Forms.Label();
          this.lblPrice = new System.Windows.Forms.Label();
          this.lblName = new System.Windows.Forms.Label();
-         this.btnSave = new System.Windows.Forms.Button();
          this.btnClose = new System.Windows.Forms.Button();
+         this.btnReturn = new System.Windows.Forms.Button();
+         this.btnReceived = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.panel2.SuspendLayout();
          this.SuspendLayout();
@@ -48,7 +49,7 @@
          // pictureboxProductPic
          // 
          this.pictureboxProductPic.Image = ((System.Drawing.Image)(resources.GetObject("pictureboxProductPic.Image")));
-         this.pictureboxProductPic.Location = new System.Drawing.Point(171, 107);
+         this.pictureboxProductPic.Location = new System.Drawing.Point(24, 93);
          this.pictureboxProductPic.Name = "pictureboxProductPic";
          this.pictureboxProductPic.Size = new System.Drawing.Size(264, 269);
          this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -65,7 +66,7 @@
          this.panel2.Controls.Add(this.lblDescription);
          this.panel2.Controls.Add(this.lblPrice);
          this.panel2.Controls.Add(this.lblName);
-         this.panel2.Location = new System.Drawing.Point(482, 73);
+         this.panel2.Location = new System.Drawing.Point(314, 38);
          this.panel2.Name = "panel2";
          this.panel2.Size = new System.Drawing.Size(344, 397);
          this.panel2.TabIndex = 89;
@@ -158,18 +159,6 @@
          this.lblName.TabIndex = 63;
          this.lblName.Text = "Name";
          // 
-         // btnSave
-         // 
-         this.btnSave.BackColor = System.Drawing.Color.Plum;
-         this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-         this.btnSave.Location = new System.Drawing.Point(513, 494);
-         this.btnSave.Name = "btnSave";
-         this.btnSave.Size = new System.Drawing.Size(170, 31);
-         this.btnSave.TabIndex = 88;
-         this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = false;
-         this.btnSave.Click += new System.EventHandler(this.btnAddtoCart_Click);
-         // 
          // btnClose
          // 
          this.btnClose.BackColor = System.Drawing.Color.Plum;
@@ -182,15 +171,42 @@
          this.btnClose.UseVisualStyleBackColor = false;
          this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
          // 
+         // btnReturn
+         // 
+         this.btnReturn.BackColor = System.Drawing.Color.Plum;
+         this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+         this.btnReturn.Location = new System.Drawing.Point(681, 314);
+         this.btnReturn.Name = "btnReturn";
+         this.btnReturn.Size = new System.Drawing.Size(170, 31);
+         this.btnReturn.TabIndex = 92;
+         this.btnReturn.Tag = "Return";
+         this.btnReturn.Text = "Return";
+         this.btnReturn.UseVisualStyleBackColor = false;
+         this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+         // 
+         // btnReceived
+         // 
+         this.btnReceived.BackColor = System.Drawing.Color.Plum;
+         this.btnReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+         this.btnReceived.Location = new System.Drawing.Point(681, 261);
+         this.btnReceived.Name = "btnReceived";
+         this.btnReceived.Size = new System.Drawing.Size(170, 31);
+         this.btnReceived.TabIndex = 93;
+         this.btnReceived.Tag = "Stock Received";
+         this.btnReceived.Text = "Stock Received";
+         this.btnReceived.UseVisualStyleBackColor = false;
+         this.btnReceived.Click += new System.EventHandler(this.btnReceived_Click);
+         // 
          // VerifyTransaction
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(986, 538);
+         this.Controls.Add(this.btnReceived);
+         this.Controls.Add(this.btnReturn);
          this.Controls.Add(this.pictureboxProductPic);
          this.Controls.Add(this.panel2);
-         this.Controls.Add(this.btnSave);
          this.Controls.Add(this.btnClose);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "VerifyTransaction";
@@ -216,7 +232,8 @@
       private System.Windows.Forms.Label lblDescription;
       private System.Windows.Forms.Label lblPrice;
       private System.Windows.Forms.Label lblName;
-      private System.Windows.Forms.Button btnSave;
       private System.Windows.Forms.Button btnClose;
+      private System.Windows.Forms.Button btnReturn;
+      private System.Windows.Forms.Button btnReceived;
    }
 }

@@ -80,7 +80,7 @@ namespace TestQua_Project__APP_.Customer
          if (newQuantity > 0)
          {
             try
-            {
+            { //DAPAT D SA MO MINUS SA PRODUCT INIG ADD TO CART! (OK RA MN KUNO)
                Connection.DB();
                Function.gen = "SELECT * FROM CartDb WHERE productid = '" + productid + "' AND userid = '" + userid + "' ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
@@ -102,19 +102,11 @@ namespace TestQua_Project__APP_.Customer
                {
                   Connection.con.Close();
                   Connection.DB();
-                  Function.gen = "INSERT INTO CartDb(userid, productid, quantity, checker) VALUES('" + userid + "', '" + productid + "', '" + newQuantity + "', '" + 1 + "' )";
+                  Function.gen = "INSERT INTO CartDb(userid, productid, quantity) VALUES('" + userid + "', '" + productid + "', '" + newQuantity + "' )";
                   Function.command = new SqlCommand(Function.gen, Connection.con);
                   Function.command.ExecuteNonQuery();
                   MessageBox.Show("Added to Cart");
                }
-
-               Connection.con.Close();
-               Connection.DB();
-               setQuantity = ProductQuantity - newQuantity;
-               Function.gen = "UPDATE Products SET Quantity = '" + setQuantity + "' WHERE productid = '" + productid + "' ";
-               Function.command = new SqlCommand(Function.gen, Connection.con);
-               Function.command.ExecuteNonQuery();
-               Connection.con.Close();
 
 
                var viewproduct = new ViewProduct();

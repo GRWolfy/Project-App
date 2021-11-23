@@ -193,9 +193,8 @@ namespace TestQua_Project__APP_.Admin
                Function.gen = "UPDATE Products SET status = '" + "NEED RESTOCK" + "' WHERE productid = '" + txtProductId.Text + "' ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                Function.command.ExecuteNonQuery();
-               MessageBox.Show("Update ");
+               MessageBox.Show("Successfuly requested a restock");
             }
-
          }
          else
          {
@@ -284,10 +283,14 @@ namespace TestQua_Project__APP_.Admin
          productid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["ProductId"].Value);
          userid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["userid"].Value);
          orderid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["orderid"].Value);
+         status = datagridViewTransactions.Rows[e.RowIndex].Cells["status"].Value.ToString();
 
-         var verifytransaction = new VerifyTransaction();
-         verifytransaction.Show();
-         Close();
+         if (status == "PENDING")
+         {
+            var verifytransaction = new VerifyTransaction();
+            verifytransaction.Show();
+            Close();
+         }
       }
    }
 }
