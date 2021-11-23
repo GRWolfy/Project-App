@@ -95,6 +95,42 @@ namespace TestQua_Project__APP_.Supplier
 
          tabControl1.SelectedIndex = 0;
       }
+
+      private void btnHome_Click(object sender, EventArgs e)
+      {
+         var home = new SupplierHome();
+         home.Show();
+         Close();
+
+      }
+
+      private void btnProfile_Click(object sender, EventArgs e)
+      {
+         var profile = new SupplierProfile();
+         profile.Show();
+         Close();
+      }
+
+      private void btnProduct_Click(object sender, EventArgs e)
+      {
+         var prod = new SupplierProduct();
+         prod.Show();
+         Close();
+      }
+
+      private void btnTransactions_Click(object sender, EventArgs e)
+      {
+         var transac = new SupplierTransactions();
+         transac.Show();
+         Close();
+      }
+
+      private void btnLogout_Click(object sender, EventArgs e)
+      {
+         var home = new Homepage();
+         home.Show();
+         Close();
+      }
    }
 }
 

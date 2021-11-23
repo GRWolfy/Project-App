@@ -64,6 +64,7 @@ namespace TestQua_Project__APP_.Supplier
          this.txtEmail = new System.Windows.Forms.TextBox();
          this.label14 = new System.Windows.Forms.Label();
          this.btnTransactions = new System.Windows.Forms.Button();
+         this.btnProduct = new System.Windows.Forms.Button();
          this.panel1.SuspendLayout();
          this.panelProfile.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pbProfilePicture)).BeginInit();
@@ -77,7 +78,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;
-         this.btnHome.Location = new System.Drawing.Point(12, 133);
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 39;
@@ -93,7 +94,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
-         this.btnLogout.Location = new System.Drawing.Point(12, 477);
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 38;
@@ -109,7 +110,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProfile.ForeColor = System.Drawing.Color.Black;
-         this.btnProfile.Location = new System.Drawing.Point(12, 224);
+         this.btnProfile.Location = new System.Drawing.Point(10, 229);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
          this.btnProfile.TabIndex = 35;
@@ -180,7 +181,7 @@ namespace TestQua_Project__APP_.Supplier
          this.panelProfile.Controls.Add(this.txtContacno);
          this.panelProfile.Controls.Add(this.txtEmail);
          this.panelProfile.Controls.Add(this.label14);
-         this.panelProfile.Location = new System.Drawing.Point(176, 133);
+         this.panelProfile.Location = new System.Drawing.Point(183, 133);
          this.panelProfile.Name = "panelProfile";
          this.panelProfile.Size = new System.Drawing.Size(899, 519);
          this.panelProfile.TabIndex = 40;
@@ -449,7 +450,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold);
          this.btnTransactions.ForeColor = System.Drawing.Color.Black;
-         this.btnTransactions.Location = new System.Drawing.Point(0, 303);
+         this.btnTransactions.Location = new System.Drawing.Point(10, 403);
          this.btnTransactions.Name = "btnTransactions";
          this.btnTransactions.Size = new System.Drawing.Size(170, 64);
          this.btnTransactions.TabIndex = 91;
@@ -457,12 +458,29 @@ namespace TestQua_Project__APP_.Supplier
          this.btnTransactions.UseVisualStyleBackColor = false;
          this.btnTransactions.Click += new System.EventHandler(this.btnTransactions_Click);
          // 
+         // btnProduct
+         // 
+         this.btnProduct.BackColor = System.Drawing.Color.Plum;
+         this.btnProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProduct.FlatAppearance.BorderSize = 0;
+         this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnProduct.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.btnProduct.ForeColor = System.Drawing.Color.Black;
+         this.btnProduct.Location = new System.Drawing.Point(10, 318);
+         this.btnProduct.Name = "btnProduct";
+         this.btnProduct.Size = new System.Drawing.Size(167, 64);
+         this.btnProduct.TabIndex = 92;
+         this.btnProduct.Text = "Product";
+         this.btnProduct.UseVisualStyleBackColor = false;
+         this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+         // 
          // SupplierProfile
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.btnProduct);
          this.Controls.Add(this.btnTransactions);
          this.Controls.Add(this.panelProfile);
          this.Controls.Add(this.btnHome);
@@ -519,5 +537,6 @@ namespace TestQua_Project__APP_.Supplier
       private System.Windows.Forms.TextBox txtEmail;
       private System.Windows.Forms.Label label14;
       private System.Windows.Forms.Button btnTransactions;
+      private System.Windows.Forms.Button btnProduct;
    }
 }

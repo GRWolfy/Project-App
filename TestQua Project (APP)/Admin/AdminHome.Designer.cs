@@ -34,7 +34,6 @@ namespace TestQua_Project__APP_.Admin
          this.pictureBox2 = new System.Windows.Forms.PictureBox();
          this.btnAccounts = new System.Windows.Forms.Button();
          this.panel4 = new System.Windows.Forms.Panel();
-         this.button2 = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -45,7 +44,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-         this.panel4.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          this.panel1.SuspendLayout();
@@ -96,21 +94,10 @@ namespace TestQua_Project__APP_.Admin
          // panel4
          // 
          this.panel4.BackColor = System.Drawing.Color.White;
-         this.panel4.Controls.Add(this.button2);
          this.panel4.Location = new System.Drawing.Point(221, 278);
          this.panel4.Name = "panel4";
          this.panel4.Size = new System.Drawing.Size(854, 310);
          this.panel4.TabIndex = 34;
-         // 
-         // button2
-         // 
-         this.button2.Location = new System.Drawing.Point(37, 197);
-         this.button2.Name = "button2";
-         this.button2.Size = new System.Drawing.Size(132, 66);
-         this.button2.TabIndex = 1;
-         this.button2.Text = "! COUNT transactions";
-         this.button2.UseVisualStyleBackColor = true;
-         this.button2.Click += new System.EventHandler(this.button2_Click);
          // 
          // btnProducts
          // 
@@ -247,7 +234,6 @@ namespace TestQua_Project__APP_.Admin
          this.Text = "AdminHome";
          this.Load += new System.EventHandler(this.AdminHome_Load);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-         this.panel4.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.panel1.ResumeLayout(false);
@@ -270,7 +256,6 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Button btnHome;
-      private System.Windows.Forms.Button button2;
       private System.Windows.Forms.Button btnReports;
    }
 }

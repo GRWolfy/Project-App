@@ -164,5 +164,12 @@ namespace TestQua_Project__APP_.Supplier
             MessageBox.Show(ex.Message);
          }
       }
+
+      private void btnProduct_Click(object sender, EventArgs e)
+      {
+         var prod = new SupplierProduct();
+         prod.Show();
+         Close();
+      }
    }
 }

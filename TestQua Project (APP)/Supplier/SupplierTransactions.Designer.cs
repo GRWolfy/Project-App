@@ -39,6 +39,7 @@ namespace TestQua_Project__APP_.Supplier
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.datagridViewTransactions = new System.Windows.Forms.DataGridView();
+         this.btnProduct = new System.Windows.Forms.Button();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).BeginInit();
          this.SuspendLayout();
@@ -51,7 +52,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;
-         this.btnHome.Location = new System.Drawing.Point(11, 146);
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 49;
@@ -67,7 +68,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
-         this.btnLogout.Location = new System.Drawing.Point(11, 479);
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 48;
@@ -94,7 +95,7 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProfile.ForeColor = System.Drawing.Color.Black;
-         this.btnProfile.Location = new System.Drawing.Point(11, 226);
+         this.btnProfile.Location = new System.Drawing.Point(10, 229);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
          this.btnProfile.TabIndex = 46;
@@ -108,11 +109,11 @@ namespace TestQua_Project__APP_.Supplier
          this.btnTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnTransactions.FlatAppearance.BorderSize = 0;
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Bold);
          this.btnTransactions.ForeColor = System.Drawing.Color.Black;
-         this.btnTransactions.Location = new System.Drawing.Point(11, 314);
+         this.btnTransactions.Location = new System.Drawing.Point(10, 403);
          this.btnTransactions.Name = "btnTransactions";
-         this.btnTransactions.Size = new System.Drawing.Size(203, 64);
+         this.btnTransactions.Size = new System.Drawing.Size(167, 64);
          this.btnTransactions.TabIndex = 47;
          this.btnTransactions.Text = "Transactions";
          this.btnTransactions.UseVisualStyleBackColor = false;
@@ -161,12 +162,29 @@ namespace TestQua_Project__APP_.Supplier
          this.datagridViewTransactions.Size = new System.Drawing.Size(891, 453);
          this.datagridViewTransactions.TabIndex = 50;
          // 
+         // btnProduct
+         // 
+         this.btnProduct.BackColor = System.Drawing.Color.Plum;
+         this.btnProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProduct.FlatAppearance.BorderSize = 0;
+         this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnProduct.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.btnProduct.ForeColor = System.Drawing.Color.Black;
+         this.btnProduct.Location = new System.Drawing.Point(10, 318);
+         this.btnProduct.Name = "btnProduct";
+         this.btnProduct.Size = new System.Drawing.Size(167, 64);
+         this.btnProduct.TabIndex = 52;
+         this.btnProduct.Text = "Product";
+         this.btnProduct.UseVisualStyleBackColor = false;
+         this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+         // 
          // SupplierTransactions
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.btnProduct);
          this.Controls.Add(this.datagridViewTransactions);
          this.Controls.Add(this.btnHome);
          this.Controls.Add(this.btnLogout);
@@ -198,5 +216,6 @@ namespace TestQua_Project__APP_.Supplier
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.DataGridView datagridViewTransactions;
+      private System.Windows.Forms.Button btnProduct;
    }
 }

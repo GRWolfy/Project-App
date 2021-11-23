@@ -72,12 +72,13 @@ namespace TestQua_Project__APP_.Supplier
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;
-         this.btnHome.Location = new System.Drawing.Point(11, 146);
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 50;
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
+         this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
          // 
          // btnLogout
          // 
@@ -87,12 +88,13 @@ namespace TestQua_Project__APP_.Supplier
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
-         this.btnLogout.Location = new System.Drawing.Point(11, 479);
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 49;
          this.btnLogout.Text = "Logout";
          this.btnLogout.UseVisualStyleBackColor = false;
+         this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
          // 
          // label3
          // 
@@ -113,12 +115,13 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProfile.ForeColor = System.Drawing.Color.Black;
-         this.btnProfile.Location = new System.Drawing.Point(11, 226);
+         this.btnProfile.Location = new System.Drawing.Point(10, 229);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
          this.btnProfile.TabIndex = 47;
          this.btnProfile.Text = "Profile";
          this.btnProfile.UseVisualStyleBackColor = false;
+         this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
          // 
          // btnTransactions
          // 
@@ -126,14 +129,15 @@ namespace TestQua_Project__APP_.Supplier
          this.btnTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnTransactions.FlatAppearance.BorderSize = 0;
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Bold);
          this.btnTransactions.ForeColor = System.Drawing.Color.Black;
-         this.btnTransactions.Location = new System.Drawing.Point(11, 395);
+         this.btnTransactions.Location = new System.Drawing.Point(10, 403);
          this.btnTransactions.Name = "btnTransactions";
-         this.btnTransactions.Size = new System.Drawing.Size(203, 64);
+         this.btnTransactions.Size = new System.Drawing.Size(167, 64);
          this.btnTransactions.TabIndex = 48;
          this.btnTransactions.Text = "Transactions";
          this.btnTransactions.UseVisualStyleBackColor = false;
+         this.btnTransactions.Click += new System.EventHandler(this.btnTransactions_Click);
          // 
          // panel1
          // 
@@ -178,12 +182,13 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProduct.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProduct.ForeColor = System.Drawing.Color.Black;
-         this.btnProduct.Location = new System.Drawing.Point(11, 306);
+         this.btnProduct.Location = new System.Drawing.Point(10, 318);
          this.btnProduct.Name = "btnProduct";
-         this.btnProduct.Size = new System.Drawing.Size(203, 64);
+         this.btnProduct.Size = new System.Drawing.Size(167, 64);
          this.btnProduct.TabIndex = 51;
          this.btnProduct.Text = "Product";
          this.btnProduct.UseVisualStyleBackColor = false;
+         this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
          // 
          // tabPage2
          // 

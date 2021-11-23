@@ -138,7 +138,7 @@ namespace TestQua_Project__APP_.Admin
 
             if (gen == DialogResult.Yes)
             {
-               Function.gen = "DELETE FROM Products WHERE UserId = '" + txtProductId.Text + "' ";
+               Function.gen = "DELETE FROM Products WHERE ProductId = '" + txtProductId.Text + "' ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                Function.command.ExecuteNonQuery();
                Connection.con.Close();
@@ -225,8 +225,8 @@ namespace TestQua_Project__APP_.Admin
          btnSave.Enabled = value ? false : true;
          btnDelete.Enabled = value;
          btnUpdate.Enabled = value;
-         btnBrowse.Enabled = value;
-         btnUpdatePic.Enabled = value;
+         btnBrowse.Enabled = value ? false : true;
+         btnUpdatePic.Enabled = value ? false : true;
          txtQuantity.Enabled = value ? false : true;
       }
 
@@ -271,7 +271,7 @@ namespace TestQua_Project__APP_.Admin
       public void ViewTransactions()
       {
          Connection.DB();
-         Function.gen = "SELECT transactions.orderid, transactions.userid, transactions.productid, transactions.totalprice, (UserInformation.FirstName + ' ' +  UserInformation.LastName) AS [SUPPLIER NAME], Products.ProductName AS [PRODUCT NAME], Transactions.Quantity AS [QUANTITY], 'P' + convert(varchar, cast(Transactions.TotalPrice AS MONEY), 1) as [TOTAL PRICE], Transactions.Status AS [STATUS] FROM Transactions INNER JOIN Products ON Products.ProductId = Transactions.OrderId INNER JOIN UserInformation ON UserInformation.UserId = Transactions.UserId";
+         Function.gen = "SELECT transactions.orderid, transactions.userid, transactions.productid, transactions.totalprice, (UserInformation.FirstName + ' ' +  UserInformation.LastName) AS [SUPPLIER NAME], Products.ProductName AS [PRODUCT NAME], Transactions.Quantity AS [QUANTITY], 'P' + convert(varchar, cast(Transactions.TotalPrice AS MONEY), 1) as [TOTAL PRICE], Transactions.Status AS [STATUS] FROM Transactions INNER JOIN Products ON Products.ProductId = Transactions.ProductId INNER JOIN UserInformation ON UserInformation.UserId = Transactions.UserId";
          Function.fill(Function.gen, datagridViewTransactions);
          datagridViewTransactions.Columns["OrderId"].Visible = false;
          datagridViewTransactions.Columns["UserId"].Visible = false;
@@ -281,7 +281,7 @@ namespace TestQua_Project__APP_.Admin
 
       private void datagridViewTransactions_CellClick(object sender, DataGridViewCellEventArgs e)
       {
-         productid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["productid"].Value);
+         productid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["ProductId"].Value);
          userid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["userid"].Value);
          orderid = Convert.ToInt32(datagridViewTransactions.Rows[e.RowIndex].Cells["orderid"].Value);
 

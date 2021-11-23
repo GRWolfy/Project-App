@@ -56,7 +56,7 @@
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;
-         this.btnHome.Location = new System.Drawing.Point(12, 144);
+         this.btnHome.Location = new System.Drawing.Point(10, 139);
          this.btnHome.Name = "btnHome";
          this.btnHome.Size = new System.Drawing.Size(167, 64);
          this.btnHome.TabIndex = 39;
@@ -71,7 +71,7 @@
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
-         this.btnLogout.Location = new System.Drawing.Point(12, 477);
+         this.btnLogout.Location = new System.Drawing.Point(10, 489);
          this.btnLogout.Name = "btnLogout";
          this.btnLogout.Size = new System.Drawing.Size(167, 64);
          this.btnLogout.TabIndex = 38;
@@ -98,7 +98,7 @@
          this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProfile.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProfile.ForeColor = System.Drawing.Color.Black;
-         this.btnProfile.Location = new System.Drawing.Point(12, 224);
+         this.btnProfile.Location = new System.Drawing.Point(10, 229);
          this.btnProfile.Name = "btnProfile";
          this.btnProfile.Size = new System.Drawing.Size(167, 64);
          this.btnProfile.TabIndex = 35;
@@ -120,11 +120,11 @@
          this.btnTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
          this.btnTransactions.FlatAppearance.BorderSize = 0;
          this.btnTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
+         this.btnTransactions.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Bold);
          this.btnTransactions.ForeColor = System.Drawing.Color.Black;
-         this.btnTransactions.Location = new System.Drawing.Point(12, 393);
+         this.btnTransactions.Location = new System.Drawing.Point(10, 403);
          this.btnTransactions.Name = "btnTransactions";
-         this.btnTransactions.Size = new System.Drawing.Size(203, 64);
+         this.btnTransactions.Size = new System.Drawing.Size(167, 64);
          this.btnTransactions.TabIndex = 36;
          this.btnTransactions.Text = "Transactions";
          this.btnTransactions.UseVisualStyleBackColor = false;
@@ -201,9 +201,9 @@
          this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProduct.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProduct.ForeColor = System.Drawing.Color.Black;
-         this.btnProduct.Location = new System.Drawing.Point(12, 304);
+         this.btnProduct.Location = new System.Drawing.Point(10, 318);
          this.btnProduct.Name = "btnProduct";
-         this.btnProduct.Size = new System.Drawing.Size(203, 64);
+         this.btnProduct.Size = new System.Drawing.Size(167, 64);
          this.btnProduct.TabIndex = 40;
          this.btnProduct.Text = "Product";
          this.btnProduct.UseVisualStyleBackColor = false;

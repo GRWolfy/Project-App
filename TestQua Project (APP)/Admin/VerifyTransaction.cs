@@ -89,10 +89,5 @@ namespace TestQua_Project__APP_.Admin
          adminproduct.tabcontrolAdminProducts.SelectedIndex = 2;
          Close();
       }
-
-      private void numericQuantity_ValueChanged(object sender, EventArgs e)
-      {
-
-      }
    }
 }
