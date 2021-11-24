@@ -75,6 +75,10 @@ namespace TestQua_Project__APP_
                   Close();
                }
             }
+            else
+            {
+               MessageBox.Show("Incorrect username or password", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
          }
 
          catch (Exception ex)

@@ -55,6 +55,11 @@ namespace TestQua_Project__APP_
          this.txtContacno = new System.Windows.Forms.TextBox();
          this.txtEmail = new System.Windows.Forms.TextBox();
          this.txtUsername = new System.Windows.Forms.TextBox();
+         this.lblUsername = new System.Windows.Forms.Label();
+         this.lblPassword = new System.Windows.Forms.Label();
+         this.lblEmail = new System.Windows.Forms.Label();
+         this.lblContactNo = new System.Windows.Forms.Label();
+         this.lblPasswordnum = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
@@ -103,6 +108,7 @@ namespace TestQua_Project__APP_
          this.cmbGender.Name = "cmbGender";
          this.cmbGender.Size = new System.Drawing.Size(121, 33);
          this.cmbGender.TabIndex = 81;
+         this.cmbGender.SelectedValueChanged += new System.EventHandler(this.cmbGender_SelectedValueChanged);
          // 
          // label10
          // 
@@ -134,6 +140,7 @@ namespace TestQua_Project__APP_
          this.txtAge.Name = "txtAge";
          this.txtAge.Size = new System.Drawing.Size(58, 30);
          this.txtAge.TabIndex = 71;
+         this.txtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAge_KeyPress);
          // 
          // txtFirstname
          // 
@@ -143,6 +150,7 @@ namespace TestQua_Project__APP_
          this.txtFirstname.Name = "txtFirstname";
          this.txtFirstname.Size = new System.Drawing.Size(232, 30);
          this.txtFirstname.TabIndex = 68;
+         this.txtFirstname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstname_KeyPress);
          // 
          // txtLastname
          // 
@@ -152,6 +160,7 @@ namespace TestQua_Project__APP_
          this.txtLastname.Name = "txtLastname";
          this.txtLastname.Size = new System.Drawing.Size(232, 30);
          this.txtLastname.TabIndex = 69;
+         this.txtLastname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastname_KeyPress);
          // 
          // txtAddress
          // 
@@ -161,26 +170,29 @@ namespace TestQua_Project__APP_
          this.txtAddress.Name = "txtAddress";
          this.txtAddress.Size = new System.Drawing.Size(232, 30);
          this.txtAddress.TabIndex = 70;
+         this.txtAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAddress_KeyPress);
          // 
          // txtPassword
          // 
          this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-         this.txtPassword.Location = new System.Drawing.Point(755, 252);
+         this.txtPassword.Location = new System.Drawing.Point(684, 209);
          this.txtPassword.Name = "txtPassword";
          this.txtPassword.Size = new System.Drawing.Size(125, 30);
          this.txtPassword.TabIndex = 63;
          this.txtPassword.UseSystemPasswordChar = true;
+         this.txtPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyUp);
          // 
          // txtConfirmPassword
          // 
          this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-         this.txtConfirmPassword.Location = new System.Drawing.Point(755, 321);
+         this.txtConfirmPassword.Location = new System.Drawing.Point(684, 278);
          this.txtConfirmPassword.Name = "txtConfirmPassword";
          this.txtConfirmPassword.Size = new System.Drawing.Size(125, 30);
          this.txtConfirmPassword.TabIndex = 67;
          this.txtConfirmPassword.UseSystemPasswordChar = true;
+         this.txtConfirmPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConfirmPassword_KeyUp);
          // 
          // btnBack
          // 
@@ -269,7 +281,7 @@ namespace TestQua_Project__APP_
          this.label4.AutoSize = true;
          this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
          this.label4.ForeColor = System.Drawing.Color.Black;
-         this.label4.Location = new System.Drawing.Point(605, 191);
+         this.label4.Location = new System.Drawing.Point(534, 148);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(124, 29);
          this.label4.TabIndex = 74;
@@ -280,7 +292,7 @@ namespace TestQua_Project__APP_
          this.label3.AutoSize = true;
          this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
          this.label3.ForeColor = System.Drawing.Color.Black;
-         this.label3.Location = new System.Drawing.Point(575, 254);
+         this.label3.Location = new System.Drawing.Point(504, 211);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(181, 29);
          this.label3.TabIndex = 73;
@@ -291,7 +303,7 @@ namespace TestQua_Project__APP_
          this.label2.AutoSize = true;
          this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
          this.label2.ForeColor = System.Drawing.Color.Black;
-         this.label2.Location = new System.Drawing.Point(539, 321);
+         this.label2.Location = new System.Drawing.Point(468, 278);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(208, 29);
          this.label2.TabIndex = 72;
@@ -305,6 +317,7 @@ namespace TestQua_Project__APP_
          this.txtContacno.Name = "txtContacno";
          this.txtContacno.Size = new System.Drawing.Size(232, 30);
          this.txtContacno.TabIndex = 66;
+         this.txtContacno.TextChanged += new System.EventHandler(this.txtContacno_TextChanged);
          // 
          // txtEmail
          // 
@@ -314,15 +327,67 @@ namespace TestQua_Project__APP_
          this.txtEmail.Name = "txtEmail";
          this.txtEmail.Size = new System.Drawing.Size(232, 30);
          this.txtEmail.TabIndex = 65;
+         this.txtEmail.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtEmail_KeyUp);
          // 
          // txtUsername
          // 
          this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-         this.txtUsername.Location = new System.Drawing.Point(755, 190);
+         this.txtUsername.Location = new System.Drawing.Point(684, 147);
          this.txtUsername.Name = "txtUsername";
          this.txtUsername.Size = new System.Drawing.Size(125, 30);
          this.txtUsername.TabIndex = 64;
+         this.txtUsername.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUsername_KeyUp);
+         // 
+         // lblUsername
+         // 
+         this.lblUsername.AutoSize = true;
+         this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblUsername.Location = new System.Drawing.Point(815, 159);
+         this.lblUsername.Name = "lblUsername";
+         this.lblUsername.Size = new System.Drawing.Size(20, 17);
+         this.lblUsername.TabIndex = 84;
+         this.lblUsername.Text = "...";
+         // 
+         // lblPassword
+         // 
+         this.lblPassword.AutoSize = true;
+         this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPassword.Location = new System.Drawing.Point(815, 220);
+         this.lblPassword.Name = "lblPassword";
+         this.lblPassword.Size = new System.Drawing.Size(20, 17);
+         this.lblPassword.TabIndex = 85;
+         this.lblPassword.Text = "...";
+         // 
+         // lblEmail
+         // 
+         this.lblEmail.AutoSize = true;
+         this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblEmail.Location = new System.Drawing.Point(451, 425);
+         this.lblEmail.Name = "lblEmail";
+         this.lblEmail.Size = new System.Drawing.Size(20, 17);
+         this.lblEmail.TabIndex = 86;
+         this.lblEmail.Text = "...";
+         // 
+         // lblContactNo
+         // 
+         this.lblContactNo.AutoSize = true;
+         this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblContactNo.Location = new System.Drawing.Point(451, 373);
+         this.lblContactNo.Name = "lblContactNo";
+         this.lblContactNo.Size = new System.Drawing.Size(20, 17);
+         this.lblContactNo.TabIndex = 87;
+         this.lblContactNo.Text = "...";
+         // 
+         // lblPasswordnum
+         // 
+         this.lblPasswordnum.AutoSize = true;
+         this.lblPasswordnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPasswordnum.ForeColor = System.Drawing.Color.Red;
+         this.lblPasswordnum.Location = new System.Drawing.Point(691, 242);
+         this.lblPasswordnum.Name = "lblPasswordnum";
+         this.lblPasswordnum.Size = new System.Drawing.Size(0, 17);
+         this.lblPasswordnum.TabIndex = 88;
          // 
          // Register
          // 
@@ -330,6 +395,11 @@ namespace TestQua_Project__APP_
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(986, 538);
+         this.Controls.Add(this.lblPasswordnum);
+         this.Controls.Add(this.lblContactNo);
+         this.Controls.Add(this.lblEmail);
+         this.Controls.Add(this.lblPassword);
+         this.Controls.Add(this.lblUsername);
          this.Controls.Add(this.cmbGender);
          this.Controls.Add(this.label10);
          this.Controls.Add(this.label1);
@@ -396,5 +466,10 @@ namespace TestQua_Project__APP_
         private System.Windows.Forms.TextBox txtContacno;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtUsername;
-    }
+      private System.Windows.Forms.Label lblUsername;
+      private System.Windows.Forms.Label lblPassword;
+      private System.Windows.Forms.Label lblEmail;
+      private System.Windows.Forms.Label lblContactNo;
+      private System.Windows.Forms.Label lblPasswordnum;
+   }
 }

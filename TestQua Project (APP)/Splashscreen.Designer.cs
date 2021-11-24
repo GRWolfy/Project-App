@@ -33,8 +33,8 @@ namespace TestQua_Project__APP_
          this.progressBar1 = new System.Windows.Forms.ProgressBar();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.label1 = new System.Windows.Forms.Label();
-         this.richTextBox1 = new System.Windows.Forms.RichTextBox();
          this.button1 = new System.Windows.Forms.Button();
+         this.label2 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
@@ -69,19 +69,6 @@ namespace TestQua_Project__APP_
          this.label1.Text = "Bloom and Puff Shop";
          this.label1.Click += new System.EventHandler(this.label1_Click);
          // 
-         // richTextBox1
-         // 
-         this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
-         this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-         this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-         this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-         this.richTextBox1.ForeColor = System.Drawing.Color.Black;
-         this.richTextBox1.Location = new System.Drawing.Point(49, 166);
-         this.richTextBox1.Name = "richTextBox1";
-         this.richTextBox1.Size = new System.Drawing.Size(427, 119);
-         this.richTextBox1.TabIndex = 87;
-         this.richTextBox1.Text = "Special Occasions, holidays or just a nice treat to your backyard";
-         // 
          // button1
          // 
          this.button1.BackColor = System.Drawing.Color.Plum;
@@ -95,13 +82,24 @@ namespace TestQua_Project__APP_
          this.button1.UseVisualStyleBackColor = false;
          this.button1.Click += new System.EventHandler(this.button1_Click);
          // 
+         // label2
+         // 
+         this.label2.AutoSize = true;
+         this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+         this.label2.Location = new System.Drawing.Point(49, 166);
+         this.label2.Name = "label2";
+         this.label2.Size = new System.Drawing.Size(434, 62);
+         this.label2.TabIndex = 89;
+         this.label2.Text = "Special Occasions, holidays or just\r\na nice treat to your backyard";
+         // 
          // Splashscreen
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(986, 538);
+         this.Controls.Add(this.label2);
          this.Controls.Add(this.button1);
-         this.Controls.Add(this.richTextBox1);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.progressBar1);
@@ -119,7 +117,7 @@ namespace TestQua_Project__APP_
       private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
-    }
+      private System.Windows.Forms.Label label2;
+   }
 }
