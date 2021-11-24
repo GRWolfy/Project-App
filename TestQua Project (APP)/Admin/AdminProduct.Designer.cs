@@ -47,6 +47,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity = new System.Windows.Forms.TextBox();
          this.btnBrowse = new System.Windows.Forms.Button();
          this.btnUpdatePic = new System.Windows.Forms.Button();
+         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.label6 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
@@ -61,15 +62,14 @@ namespace TestQua_Project__APP_.Admin
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.tabPage2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).BeginInit();
          this.tabPage1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.tabcontrolAdminProducts.SuspendLayout();
          this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).BeginInit();
          this.panel1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
@@ -173,6 +173,7 @@ namespace TestQua_Project__APP_.Admin
          this.datagridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewProduct.Location = new System.Drawing.Point(0, 42);
          this.datagridViewProduct.Name = "datagridViewProduct";
+         this.datagridViewProduct.RowHeadersVisible = false;
          this.datagridViewProduct.Size = new System.Drawing.Size(891, 453);
          this.datagridViewProduct.TabIndex = 66;
          this.datagridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewProduct_CellContentClick);
@@ -298,6 +299,16 @@ namespace TestQua_Project__APP_.Admin
          this.btnUpdatePic.UseVisualStyleBackColor = false;
          this.btnUpdatePic.Click += new System.EventHandler(this.btnUpdatePic_Click);
          // 
+         // pictureboxProductPic
+         // 
+         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
+         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
+         this.pictureboxProductPic.Name = "pictureboxProductPic";
+         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
+         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pictureboxProductPic.TabIndex = 69;
+         this.pictureboxProductPic.TabStop = false;
+         // 
          // label6
          // 
          this.label6.AutoSize = true;
@@ -406,6 +417,7 @@ namespace TestQua_Project__APP_.Admin
          this.datagridViewTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewTransactions.Location = new System.Drawing.Point(1, 47);
          this.datagridViewTransactions.Name = "datagridViewTransactions";
+         this.datagridViewTransactions.RowHeadersVisible = false;
          this.datagridViewTransactions.Size = new System.Drawing.Size(891, 434);
          this.datagridViewTransactions.TabIndex = 68;
          this.datagridViewTransactions.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewTransactions_CellClick);
@@ -452,16 +464,6 @@ namespace TestQua_Project__APP_.Admin
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
-         // pictureboxProductPic
-         // 
-         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
-         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
-         this.pictureboxProductPic.Name = "pictureboxProductPic";
-         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
-         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.pictureboxProductPic.TabIndex = 69;
-         this.pictureboxProductPic.TabStop = false;
-         // 
          // AdminProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,13 +487,13 @@ namespace TestQua_Project__APP_.Admin
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).EndInit();
          this.tabPage1.ResumeLayout(false);
          this.tabPage1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.tabcontrolAdminProducts.ResumeLayout(false);
          this.tabPage3.ResumeLayout(false);
          this.tabPage3.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.ResumeLayout(false);
 
       }

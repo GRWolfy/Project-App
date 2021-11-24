@@ -37,7 +37,6 @@ namespace TestQua_Project__APP_.Customer
          this.panelProfile = new System.Windows.Forms.Panel();
          this.btnBrowsePicture = new System.Windows.Forms.Button();
          this.label13 = new System.Windows.Forms.Label();
-         this.pbProfilePicture = new System.Windows.Forms.PictureBox();
          this.btnUpdate = new System.Windows.Forms.Button();
          this.btnSave = new System.Windows.Forms.Button();
          this.txtUserid = new System.Windows.Forms.TextBox();
@@ -62,6 +61,7 @@ namespace TestQua_Project__APP_.Customer
          this.txtEmail = new System.Windows.Forms.TextBox();
          this.label1 = new System.Windows.Forms.Label();
          this.btnHome = new System.Windows.Forms.Button();
+         this.pbProfilePicture = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
@@ -186,14 +186,6 @@ namespace TestQua_Project__APP_.Customer
          this.label13.Size = new System.Drawing.Size(124, 24);
          this.label13.TabIndex = 89;
          this.label13.Text = "Profile picture";
-         // 
-         // pbProfilePicture
-         // 
-         this.pbProfilePicture.Location = new System.Drawing.Point(225, 42);
-         this.pbProfilePicture.Name = "pbProfilePicture";
-         this.pbProfilePicture.Size = new System.Drawing.Size(178, 145);
-         this.pbProfilePicture.TabIndex = 88;
-         this.pbProfilePicture.TabStop = false;
          // 
          // btnUpdate
          // 
@@ -438,6 +430,16 @@ namespace TestQua_Project__APP_.Customer
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
          this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+         // 
+         // pbProfilePicture
+         // 
+         this.pbProfilePicture.Image = global::TestQua_Project__APP_.Properties.Resources.defpic_removebg_preview;
+         this.pbProfilePicture.Location = new System.Drawing.Point(225, 42);
+         this.pbProfilePicture.Name = "pbProfilePicture";
+         this.pbProfilePicture.Size = new System.Drawing.Size(178, 145);
+         this.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pbProfilePicture.TabIndex = 88;
+         this.pbProfilePicture.TabStop = false;
          // 
          // panel1
          // 

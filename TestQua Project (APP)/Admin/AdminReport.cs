@@ -100,6 +100,11 @@ namespace TestQua_Project__APP_.Admin
          logout.Show();
          Close();
       }
+
+      private void tabPage2_Click(object sender, EventArgs e)
+      {
+
+      }
    }
 }
 /*

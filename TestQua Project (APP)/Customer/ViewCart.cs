@@ -121,7 +121,7 @@ namespace TestQua_Project__APP_.Customer
                Function.reader.Read();
                lblTotal.Text = Function.reader["TOTAL"].ToString();
                TotalPrice = Convert.ToDouble(Function.reader["total"]);
-               stringTotalPrice =  Function.reader["TOTAL"].ToString();
+               stringTotalPrice = Function.reader["TOTAL"].ToString();
                stringWithShip = Function.reader["withShip"].ToString();
             }
          }

@@ -224,6 +224,10 @@ namespace TestQua_Project__APP_.Admin
                tabcontrolAdminProducts.SelectedIndex = 0;
             }
          }
+         else
+         {
+            tabcontrolAdminProducts.SelectedIndex = 0;
+         }
 
          setButtonVisibility(true);
          updateStatus();

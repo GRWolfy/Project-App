@@ -15,6 +15,7 @@ namespace TestQua_Project__APP_.Admin
       {
          btnHome.FlatStyle = FlatStyle.Standard;
          setTotalSales();
+         setTotalExpenses();
          updateProductStatus();
       }
 
@@ -74,7 +75,7 @@ namespace TestQua_Project__APP_.Admin
                   Function.command.ExecuteNonQuery();
                   Connection.con.Close();
                }
-               else if(Function.reader["STATUS"].ToString() != "REQUESTING")
+               else if (Function.reader["STATUS"].ToString() != "REQUESTING")
                {
                   Connection.DB();
                   Function.gen = "UPDATE Products SET Status = '" + "" + "' WHERE ProductId = '" + productid + "' ";
@@ -103,7 +104,7 @@ namespace TestQua_Project__APP_.Admin
          Close();
       }
 
-      private void setTotalSales()
+      private void setTotalExpenses()
       {
          try
          {
@@ -123,6 +124,29 @@ namespace TestQua_Project__APP_.Admin
          {
             Connection.con.Close();
             lblTotalSales.Text = "₱0";
+         }
+      }
+
+      private void setTotalSales()
+      {
+         try
+         {
+            Connection.DB();
+            Function.gen = "select convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) as TOTAL from Transactions where status = 'RECEIVED' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
+
+            if (Function.reader.HasRows)
+            {
+               Function.reader.Read();
+               lblTotalExpenses.Text = "₱" + Function.reader["TOTAL"].ToString();
+            }
+         }
+
+         catch (Exception ex)
+         {
+            Connection.con.Close();
+            lblTotalExpenses.Text = "₱0";
          }
       }
    }

@@ -103,6 +103,16 @@ namespace TestQua_Project__APP_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defpic_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("defpic-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flowers_background_pink_background_wood_pink_hd_wallpaper_preview__2_ {
             get {
                 object obj = ResourceManager.GetObject("flowers-background-pink-background-wood-pink-hd-wallpaper-preview (2)", resourceCulture);
@@ -137,6 +147,16 @@ namespace TestQua_Project__APP_.Properties {
         internal static System.Drawing.Bitmap LILACFLOWER {
             get {
                 object obj = ResourceManager.GetObject("LILACFLOWER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Male {
+            get {
+                object obj = ResourceManager.GetObject("Male", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

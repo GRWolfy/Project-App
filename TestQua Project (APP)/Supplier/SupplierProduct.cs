@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TestQua_Project__APP_.Supplier
@@ -36,7 +30,7 @@ namespace TestQua_Project__APP_.Supplier
             double totalprice = (Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtQuantity.Text)) + 80.00;
 
             Connection.DB();
-            Function.gen = "INSERT INTO Transactions(userid, productid, quantity, totalprice, status) VALUES('"+ Login.userid + "', '"+ txtProductId.Text +"', '"+ txtQuantity.Text +"', '"+ totalprice +"', '"+ "PENDING" +"') ";
+            Function.gen = "INSERT INTO Transactions(userid, productid, quantity, totalprice, status) VALUES('" + Login.userid + "', '" + txtProductId.Text + "', '" + txtQuantity.Text + "', '" + totalprice + "', '" + "PENDING" + "') ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.command.ExecuteNonQuery();
             MessageBox.Show("Success.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -63,7 +57,7 @@ namespace TestQua_Project__APP_.Supplier
       {
          //productid, productname, productdescrip, productprice, productimage, quantity, status, timestored
          Connection.DB();
-         Function.gen = "SELECT productid, productname as [NAME], productdescrip as [DESCRIPTION], productprice, 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], productimage, quantity as [QUANTITY], status as [STATUS], timestored as [TIME STORED] from Products WHERE Status = '" + "REQUESTING" +"' ";
+         Function.gen = "SELECT productid, productname as [NAME], productdescrip as [DESCRIPTION], productprice, 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], productimage, quantity as [QUANTITY], status as [STATUS], timestored as [TIME STORED] from Products WHERE Status = '" + "REQUESTING" + "' ";
          Function.fill(Function.gen, datagridViewProduct);
          datagridViewProduct.Columns["productimage"].Visible = false;
          datagridViewProduct.Columns["productid"].Visible = false;
@@ -142,10 +136,10 @@ namespace TestQua_Project__APP_.Supplier
  */
 
 
- /*
-   TransactionsDB
-      -Status: 
-         PENDING
-         DELIVERED
-         RETURN
-  */
+/*
+  TransactionsDB
+     -Status: 
+        PENDING
+        DELIVERED
+        RETURN
+ */

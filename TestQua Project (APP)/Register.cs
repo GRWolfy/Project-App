@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace TestQua_Project__APP_

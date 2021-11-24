@@ -19,7 +19,7 @@ namespace TestQua_Project__APP_.Supplier
       private void ViewTransactions()
       {
          Connection.DB();
-         Function.gen = "SELECT transactions.orderid AS [ORDER ID], products.productname AS [PRODUCT NAME], transactions.Quantity AS [QUANTITY], 'P' + convert(varchar, cast(Transactions.TotalPrice AS MONEY), 1) as [TOTAL PRICE], Transactions.Status AS [STATUS] FROM Transactions INNER JOIN Products ON Transactions.ProductId = Products.ProductId WHERE transactions.userid = '"+ Login.userid +"' ";
+         Function.gen = "SELECT transactions.orderid AS [ORDER ID], products.productname AS [PRODUCT NAME], transactions.Quantity AS [QUANTITY], 'P' + convert(varchar, cast(Transactions.TotalPrice AS MONEY), 1) as [TOTAL PRICE], Transactions.Status AS [STATUS] FROM Transactions INNER JOIN Products ON Transactions.ProductId = Products.ProductId WHERE transactions.userid = '" + Login.userid + "' ";
          Function.fill(Function.gen, datagridViewTransactions);
       }
 

@@ -71,6 +71,7 @@ namespace TestQua_Project__APP_.Customer
          this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
          this.dataGridView.Location = new System.Drawing.Point(74, 160);
          this.dataGridView.Name = "dataGridView";
+         this.dataGridView.RowHeadersVisible = false;
          this.dataGridView.RowHeadersWidth = 50;
          this.dataGridView.RowTemplate.Height = 30;
          this.dataGridView.Size = new System.Drawing.Size(431, 473);

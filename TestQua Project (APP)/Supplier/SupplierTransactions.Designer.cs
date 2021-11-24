@@ -181,6 +181,7 @@ namespace TestQua_Project__APP_.Supplier
          this.datagridViewTransactions.DefaultCellStyle = dataGridViewCellStyle2;
          this.datagridViewTransactions.Location = new System.Drawing.Point(191, 158);
          this.datagridViewTransactions.Name = "datagridViewTransactions";
+         this.datagridViewTransactions.RowHeadersVisible = false;
          this.datagridViewTransactions.Size = new System.Drawing.Size(891, 453);
          this.datagridViewTransactions.TabIndex = 50;
          // 

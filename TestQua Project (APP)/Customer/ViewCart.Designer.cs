@@ -204,6 +204,7 @@ namespace TestQua_Project__APP_.Customer
          this.datagridViewCart.DefaultCellStyle = dataGridViewCellStyle2;
          this.datagridViewCart.Location = new System.Drawing.Point(72, 85);
          this.datagridViewCart.Name = "datagridViewCart";
+         this.datagridViewCart.RowHeadersVisible = false;
          this.datagridViewCart.RowHeadersWidth = 50;
          this.datagridViewCart.RowTemplate.Height = 30;
          this.datagridViewCart.Size = new System.Drawing.Size(618, 325);

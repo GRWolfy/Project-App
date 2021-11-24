@@ -30,7 +30,6 @@ namespace TestQua_Project__APP_.Supplier
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupplierProduct));
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnLogout = new System.Windows.Forms.Button();
          this.label3 = new System.Windows.Forms.Label();
@@ -211,16 +210,9 @@ namespace TestQua_Project__APP_.Supplier
          this.datagridViewProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.datagridViewProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-         dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-         dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-         dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-         this.datagridViewProduct.DefaultCellStyle = dataGridViewCellStyle1;
          this.datagridViewProduct.Location = new System.Drawing.Point(0, 37);
          this.datagridViewProduct.Name = "datagridViewProduct";
+         this.datagridViewProduct.RowHeadersVisible = false;
          this.datagridViewProduct.Size = new System.Drawing.Size(891, 440);
          this.datagridViewProduct.TabIndex = 68;
          this.datagridViewProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewProduct_CellClick);

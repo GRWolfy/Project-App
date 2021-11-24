@@ -40,8 +40,10 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
          this.panel2 = new System.Windows.Forms.Panel();
-         this.lblTotalSales = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
+         this.lblTotalSales = new System.Windows.Forms.Label();
+         this.label5 = new System.Windows.Forms.Label();
+         this.lblTotalExpenses = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
          this.SuspendLayout();
@@ -176,12 +178,23 @@ namespace TestQua_Project__APP_.Admin
          // panel2
          // 
          this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.panel2.Controls.Add(this.label5);
+         this.panel2.Controls.Add(this.lblTotalExpenses);
          this.panel2.Controls.Add(this.label3);
          this.panel2.Controls.Add(this.lblTotalSales);
          this.panel2.Location = new System.Drawing.Point(226, 139);
          this.panel2.Name = "panel2";
          this.panel2.Size = new System.Drawing.Size(803, 422);
          this.panel2.TabIndex = 46;
+         // 
+         // label3
+         // 
+         this.label3.AutoSize = true;
+         this.label3.Location = new System.Drawing.Point(119, 194);
+         this.label3.Name = "label3";
+         this.label3.Size = new System.Drawing.Size(58, 13);
+         this.label3.TabIndex = 1;
+         this.label3.Text = "Tota Sales";
          // 
          // lblTotalSales
          // 
@@ -193,14 +206,24 @@ namespace TestQua_Project__APP_.Admin
          this.lblTotalSales.TabIndex = 0;
          this.lblTotalSales.Text = "0";
          // 
-         // label3
+         // label5
          // 
-         this.label3.AutoSize = true;
-         this.label3.Location = new System.Drawing.Point(119, 194);
-         this.label3.Name = "label3";
-         this.label3.Size = new System.Drawing.Size(58, 13);
-         this.label3.TabIndex = 1;
-         this.label3.Text = "Tota Sales";
+         this.label5.AutoSize = true;
+         this.label5.Location = new System.Drawing.Point(119, 376);
+         this.label5.Name = "label5";
+         this.label5.Size = new System.Drawing.Size(78, 13);
+         this.label5.TabIndex = 3;
+         this.label5.Text = "Tota Expenses";
+         // 
+         // lblTotalExpenses
+         // 
+         this.lblTotalExpenses.AutoSize = true;
+         this.lblTotalExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTotalExpenses.Location = new System.Drawing.Point(114, 249);
+         this.lblTotalExpenses.Name = "lblTotalExpenses";
+         this.lblTotalExpenses.Size = new System.Drawing.Size(98, 108);
+         this.lblTotalExpenses.TabIndex = 2;
+         this.lblTotalExpenses.Text = "0";
          // 
          // AdminHome
          // 
@@ -242,5 +265,7 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.Label lblTotalSales;
       private System.Windows.Forms.Label label3;
+      private System.Windows.Forms.Label label5;
+      private System.Windows.Forms.Label lblTotalExpenses;
    }
 }

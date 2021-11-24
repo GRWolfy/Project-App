@@ -48,6 +48,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          this.dataGridViewOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.dataGridViewOrder.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.dataGridViewOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
          dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
          dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
@@ -72,6 +73,7 @@ namespace TestQua_Project__APP_.Customer
          this.dataGridViewOrder.DefaultCellStyle = dataGridViewCellStyle2;
          this.dataGridViewOrder.Location = new System.Drawing.Point(41, 49);
          this.dataGridViewOrder.Name = "dataGridViewOrder";
+         this.dataGridViewOrder.RowHeadersVisible = false;
          this.dataGridViewOrder.RowHeadersWidth = 50;
          this.dataGridViewOrder.RowTemplate.Height = 30;
          this.dataGridViewOrder.Size = new System.Drawing.Size(552, 317);

@@ -39,6 +39,13 @@ namespace TestQua_Project__APP_.Admin
          this.btnLogout = new System.Windows.Forms.Button();
          this.tabcontrolAdminAccounts = new System.Windows.Forms.TabControl();
          this.tabPage1 = new System.Windows.Forms.TabPage();
+         this.lblContactNo = new System.Windows.Forms.Label();
+         this.lblEmail = new System.Windows.Forms.Label();
+         this.lblPassword = new System.Windows.Forms.Label();
+         this.lblUsername = new System.Windows.Forms.Label();
+         this.lblPasswordnum = new System.Windows.Forms.Label();
+         this.label12 = new System.Windows.Forms.Label();
+         this.txtConfirmPassword = new System.Windows.Forms.TextBox();
          this.txtRoleId = new System.Windows.Forms.TextBox();
          this.btnDelete = new System.Windows.Forms.Button();
          this.btnUpdate = new System.Windows.Forms.Button();
@@ -68,13 +75,6 @@ namespace TestQua_Project__APP_.Admin
          this.txtSearch = new System.Windows.Forms.TextBox();
          this.viewAccounts = new System.Windows.Forms.DataGridView();
          this.btnHome = new System.Windows.Forms.Button();
-         this.label12 = new System.Windows.Forms.Label();
-         this.txtConfirmPassword = new System.Windows.Forms.TextBox();
-         this.lblPasswordnum = new System.Windows.Forms.Label();
-         this.lblUsername = new System.Windows.Forms.Label();
-         this.lblPassword = new System.Windows.Forms.Label();
-         this.lblEmail = new System.Windows.Forms.Label();
-         this.lblContactNo = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          this.tabcontrolAdminAccounts.SuspendLayout();
          this.tabPage1.SuspendLayout();
@@ -231,6 +231,77 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage1.Size = new System.Drawing.Size(891, 477);
          this.tabPage1.TabIndex = 0;
          this.tabPage1.Text = "Manage Account";
+         // 
+         // lblContactNo
+         // 
+         this.lblContactNo.AutoSize = true;
+         this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblContactNo.Location = new System.Drawing.Point(312, 318);
+         this.lblContactNo.Name = "lblContactNo";
+         this.lblContactNo.Size = new System.Drawing.Size(20, 17);
+         this.lblContactNo.TabIndex = 93;
+         this.lblContactNo.Text = "...";
+         // 
+         // lblEmail
+         // 
+         this.lblEmail.AutoSize = true;
+         this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblEmail.Location = new System.Drawing.Point(312, 375);
+         this.lblEmail.Name = "lblEmail";
+         this.lblEmail.Size = new System.Drawing.Size(20, 17);
+         this.lblEmail.TabIndex = 92;
+         this.lblEmail.Text = "...";
+         // 
+         // lblPassword
+         // 
+         this.lblPassword.AutoSize = true;
+         this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPassword.Location = new System.Drawing.Point(720, 131);
+         this.lblPassword.Name = "lblPassword";
+         this.lblPassword.Size = new System.Drawing.Size(20, 17);
+         this.lblPassword.TabIndex = 91;
+         this.lblPassword.Text = "...";
+         // 
+         // lblUsername
+         // 
+         this.lblUsername.AutoSize = true;
+         this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblUsername.Location = new System.Drawing.Point(720, 90);
+         this.lblUsername.Name = "lblUsername";
+         this.lblUsername.Size = new System.Drawing.Size(20, 17);
+         this.lblUsername.TabIndex = 90;
+         this.lblUsername.Text = "...";
+         // 
+         // lblPasswordnum
+         // 
+         this.lblPasswordnum.AutoSize = true;
+         this.lblPasswordnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPasswordnum.ForeColor = System.Drawing.Color.Red;
+         this.lblPasswordnum.Location = new System.Drawing.Point(595, 154);
+         this.lblPasswordnum.Name = "lblPasswordnum";
+         this.lblPasswordnum.Size = new System.Drawing.Size(0, 17);
+         this.lblPasswordnum.TabIndex = 89;
+         // 
+         // label12
+         // 
+         this.label12.AutoSize = true;
+         this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+         this.label12.Location = new System.Drawing.Point(378, 184);
+         this.label12.Name = "label12";
+         this.label12.Size = new System.Drawing.Size(188, 26);
+         this.label12.TabIndex = 65;
+         this.label12.Text = "Confirm password";
+         // 
+         // txtConfirmPassword
+         // 
+         this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+         this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.txtConfirmPassword.Location = new System.Drawing.Point(589, 185);
+         this.txtConfirmPassword.Name = "txtConfirmPassword";
+         this.txtConfirmPassword.Size = new System.Drawing.Size(125, 26);
+         this.txtConfirmPassword.TabIndex = 64;
+         this.txtConfirmPassword.UseSystemPasswordChar = true;
+         this.txtConfirmPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConfirmPassword_KeyUp);
          // 
          // txtRoleId
          // 
@@ -525,6 +596,7 @@ namespace TestQua_Project__APP_.Admin
          this.viewAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.viewAccounts.Location = new System.Drawing.Point(-4, 47);
          this.viewAccounts.Name = "viewAccounts";
+         this.viewAccounts.RowHeadersVisible = false;
          this.viewAccounts.Size = new System.Drawing.Size(892, 427);
          this.viewAccounts.TabIndex = 0;
          this.viewAccounts.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.viewAccounts_CellMouseClick);
@@ -544,77 +616,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
          this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-         // 
-         // label12
-         // 
-         this.label12.AutoSize = true;
-         this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-         this.label12.Location = new System.Drawing.Point(378, 184);
-         this.label12.Name = "label12";
-         this.label12.Size = new System.Drawing.Size(188, 26);
-         this.label12.TabIndex = 65;
-         this.label12.Text = "Confirm password";
-         // 
-         // txtConfirmPassword
-         // 
-         this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-         this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtConfirmPassword.Location = new System.Drawing.Point(589, 185);
-         this.txtConfirmPassword.Name = "txtConfirmPassword";
-         this.txtConfirmPassword.Size = new System.Drawing.Size(125, 26);
-         this.txtConfirmPassword.TabIndex = 64;
-         this.txtConfirmPassword.UseSystemPasswordChar = true;
-         this.txtConfirmPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtConfirmPassword_KeyUp);
-         // 
-         // lblPasswordnum
-         // 
-         this.lblPasswordnum.AutoSize = true;
-         this.lblPasswordnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-         this.lblPasswordnum.ForeColor = System.Drawing.Color.Red;
-         this.lblPasswordnum.Location = new System.Drawing.Point(595, 154);
-         this.lblPasswordnum.Name = "lblPasswordnum";
-         this.lblPasswordnum.Size = new System.Drawing.Size(0, 17);
-         this.lblPasswordnum.TabIndex = 89;
-         // 
-         // lblUsername
-         // 
-         this.lblUsername.AutoSize = true;
-         this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-         this.lblUsername.Location = new System.Drawing.Point(720, 90);
-         this.lblUsername.Name = "lblUsername";
-         this.lblUsername.Size = new System.Drawing.Size(20, 17);
-         this.lblUsername.TabIndex = 90;
-         this.lblUsername.Text = "...";
-         // 
-         // lblPassword
-         // 
-         this.lblPassword.AutoSize = true;
-         this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-         this.lblPassword.Location = new System.Drawing.Point(720, 131);
-         this.lblPassword.Name = "lblPassword";
-         this.lblPassword.Size = new System.Drawing.Size(20, 17);
-         this.lblPassword.TabIndex = 91;
-         this.lblPassword.Text = "...";
-         // 
-         // lblEmail
-         // 
-         this.lblEmail.AutoSize = true;
-         this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-         this.lblEmail.Location = new System.Drawing.Point(312, 375);
-         this.lblEmail.Name = "lblEmail";
-         this.lblEmail.Size = new System.Drawing.Size(20, 17);
-         this.lblEmail.TabIndex = 92;
-         this.lblEmail.Text = "...";
-         // 
-         // lblContactNo
-         // 
-         this.lblContactNo.AutoSize = true;
-         this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-         this.lblContactNo.Location = new System.Drawing.Point(312, 318);
-         this.lblContactNo.Name = "lblContactNo";
-         this.lblContactNo.Size = new System.Drawing.Size(20, 17);
-         this.lblContactNo.TabIndex = 93;
-         this.lblContactNo.Text = "...";
          // 
          // AdminAccounts
          // 
