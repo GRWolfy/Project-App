@@ -8,11 +8,13 @@ namespace TestQua_Project__APP_.Admin
 {
    public partial class AdminProduct : Form
    {
+      private bool[] isValid = new bool[5];
       string imageLocation = "";
       public static int productid;
       public static int userid;
       public static int orderid;
       private string status;
+      private bool checker = false;
 
       public AdminProduct()
       {
@@ -30,6 +32,11 @@ namespace TestQua_Project__APP_.Admin
             {
                imageLocation = dlg.FileName.ToString();
                pictureboxProductPic.ImageLocation = imageLocation;
+               isValid[4] = true;
+            }
+            else
+            {
+               isValid[4] = false;
             }
          }
 
@@ -78,7 +85,7 @@ namespace TestQua_Project__APP_.Admin
       {
          ViewProducts();
          btnProducts.FlatStyle = FlatStyle.Standard;
-         setButtonVisibiity(false);
+         setButtonVisibility(false);
          ViewTransactions();
       }
 
@@ -86,19 +93,36 @@ namespace TestQua_Project__APP_.Admin
       {
          try
          {
-            byte[] img = null;
-            FileStream fs = new FileStream(imageLocation, FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(fs);
-            img = br.ReadBytes((int)fs.Length);
+            for (int i = 0; i < isValid.Length; i++)
+            {
+               if (isValid[i] == false)
+               {
+                  MessageBox.Show("Please review your inputs", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                  checker = false;
+                  break;
+               }
+               else if (isValid[i] == true && i == isValid.Length - 1)
+               {
+                  checker = true;
+               }
+            }
 
-            Connection.DB();
-            Function.gen = "INSERT INTO Products(ProductName, ProductDescrip, ProductPrice, ProductImage, Quantity, TImeStored) VALUES('" + txtProductName.Text + "', '" + txtProductDescription.Text + "', '" + txtPrice.Text + "', @img, '" + txtQuantity.Text + "', '" + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt") + "' )";
-            Function.command = new SqlCommand(Function.gen, Connection.con);
-            Function.command.Parameters.Add(new SqlParameter("@img", img));
-            Function.command.ExecuteNonQuery();
-            MessageBox.Show("Success.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Connection.con.Close();
-            updateStatus();
+            if (checker)
+            {
+               byte[] img = null;
+               FileStream fs = new FileStream(imageLocation, FileMode.Open, FileAccess.Read);
+               BinaryReader br = new BinaryReader(fs);
+               img = br.ReadBytes((int)fs.Length);
+
+               Connection.DB();
+               Function.gen = "INSERT INTO Products(ProductName, ProductDescrip, ProductPrice, ProductImage, Quantity, TImeStored) VALUES('" + txtProductName.Text + "', '" + txtProductDescription.Text + "', '" + txtPrice.Text + "', @img, '" + txtQuantity.Text + "', '" + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt") + "' )";
+               Function.command = new SqlCommand(Function.gen, Connection.con);
+               Function.command.Parameters.Add(new SqlParameter("@img", img));
+               Function.command.ExecuteNonQuery();
+               MessageBox.Show("Success.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               Connection.con.Close();
+               updateStatus();
+            }
          }
 
          catch (Exception ex)
@@ -119,7 +143,7 @@ namespace TestQua_Project__APP_.Admin
             Connection.con.Close();
             ViewProducts();
             clearFields();
-            setButtonVisibiity(false);
+            setButtonVisibility(false);
             updateStatus();
          }
 
@@ -143,7 +167,7 @@ namespace TestQua_Project__APP_.Admin
                Function.command.ExecuteNonQuery();
                Connection.con.Close();
                clearFields();
-               setButtonVisibiity(false);
+               setButtonVisibility(false);
             }
          }
 
@@ -195,13 +219,13 @@ namespace TestQua_Project__APP_.Admin
                Function.command.ExecuteNonQuery();
                MessageBox.Show("Successfuly requested a restock");
             }
-         }
-         else
-         {
-            tabcontrolAdminProducts.SelectedIndex = 0;
+            else
+            {
+               tabcontrolAdminProducts.SelectedIndex = 0;
+            }
          }
 
-         setButtonVisibiity(true);
+         setButtonVisibility(true);
          updateStatus();
       }
 
@@ -219,13 +243,13 @@ namespace TestQua_Project__APP_.Admin
          Close();
       }
 
-      private void setButtonVisibiity(bool value)
+      private void setButtonVisibility(bool value)
       {
-         btnSave.Enabled = value ? false : true;
-         btnDelete.Enabled = value;
-         btnUpdate.Enabled = value;
-         btnBrowse.Enabled = value ? false : true;
-         btnUpdatePic.Enabled = value ? false : true;
+         btnSave.Visible = value ? false : true;
+         btnDelete.Visible = value;
+         btnUpdate.Visible = value;
+         btnBrowse.Visible = value ? false : true;
+         btnUpdatePic.Visible = value;
          txtQuantity.Enabled = value ? false : true;
       }
 
@@ -290,6 +314,60 @@ namespace TestQua_Project__APP_.Admin
             var verifytransaction = new VerifyTransaction();
             verifytransaction.Show();
             Close();
+         }
+      }
+
+      private void txtProductName_KeyPress(object sender, KeyPressEventArgs e)
+      {
+         if (txtProductName.Text != null)
+         {
+            isValid[0] = true;
+         }
+         else
+         {
+            isValid[0] = false;
+         }
+      }
+
+      private void txtProductDescription_KeyPress(object sender, KeyPressEventArgs e)
+      {
+         if (txtProductDescription.Text != null)
+         {
+            isValid[1] = true;
+         }
+         else
+         {
+            isValid[1] = false;
+         }
+      }
+
+      private void txtQuantity_KeyPress(object sender, KeyPressEventArgs e)
+      {
+         char ch = e.KeyChar;
+
+         if ((!Char.IsDigit(ch) && ch != 8 && ch != 46) || txtQuantity.Text == null)
+         {
+            e.Handled = true;
+            isValid[3] = false;
+         }
+         else
+         {
+            isValid[3] = true;
+         }
+      }
+
+      private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+      {
+         char ch = e.KeyChar;
+
+         if ((!Char.IsDigit(ch) && ch != 8 && ch != 46) || txtQuantity.Text == null)
+         {
+            e.Handled = true;
+            isValid[2] = false;
+         }
+         else
+         {
+            isValid[2] = true;
          }
       }
    }

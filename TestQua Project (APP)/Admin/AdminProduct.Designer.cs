@@ -35,9 +35,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnProducts = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
          this.btnAccounts = new System.Windows.Forms.Button();
-         this.panel1 = new System.Windows.Forms.Panel();
-         this.label4 = new System.Windows.Forms.Label();
-         this.label2 = new System.Windows.Forms.Label();
          this.tabPage2 = new System.Windows.Forms.TabPage();
          this.datagridViewProduct = new System.Windows.Forms.DataGridView();
          this.txtSearch = new System.Windows.Forms.TextBox();
@@ -50,7 +47,6 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity = new System.Windows.Forms.TextBox();
          this.btnBrowse = new System.Windows.Forms.Button();
          this.btnUpdatePic = new System.Windows.Forms.Button();
-         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.label6 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
@@ -62,14 +58,18 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage3 = new System.Windows.Forms.TabPage();
          this.datagridViewTransactions = new System.Windows.Forms.DataGridView();
          this.textBox1 = new System.Windows.Forms.TextBox();
-         this.panel1.SuspendLayout();
+         this.panel1 = new System.Windows.Forms.Panel();
+         this.label4 = new System.Windows.Forms.Label();
+         this.label2 = new System.Windows.Forms.Label();
+         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.tabPage2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).BeginInit();
          this.tabPage1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.tabcontrolAdminProducts.SuspendLayout();
          this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).BeginInit();
+         this.panel1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
@@ -151,41 +151,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnAccounts.Text = "Accounts";
          this.btnAccounts.UseVisualStyleBackColor = false;
          this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
-         // 
-         // panel1
-         // 
-         this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-         this.panel1.Controls.Add(this.label4);
-         this.panel1.Controls.Add(this.label2);
-         this.panel1.Location = new System.Drawing.Point(-1, -1);
-         this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(1089, 73);
-         this.panel1.TabIndex = 41;
-         // 
-         // label4
-         // 
-         this.label4.AutoSize = true;
-         this.label4.BackColor = System.Drawing.Color.Transparent;
-         this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(224)))));
-         this.label4.Location = new System.Drawing.Point(56, 47);
-         this.label4.Name = "label4";
-         this.label4.Size = new System.Drawing.Size(212, 18);
-         this.label4.TabIndex = 9;
-         this.label4.Text = "A Group of TEAM POWER";
-         // 
-         // label2
-         // 
-         this.label2.AutoSize = true;
-         this.label2.BackColor = System.Drawing.Color.Transparent;
-         this.label2.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(224)))));
-         this.label2.Location = new System.Drawing.Point(50, 9);
-         this.label2.Name = "label2";
-         this.label2.Size = new System.Drawing.Size(251, 51);
-         this.label2.TabIndex = 0;
-         this.label2.Text = "Bloom and Puff";
          // 
          // tabPage2
          // 
@@ -276,6 +241,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtPrice.Name = "txtPrice";
          this.txtPrice.Size = new System.Drawing.Size(125, 26);
          this.txtPrice.TabIndex = 67;
+         this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
          // 
          // txtProductDescription
          // 
@@ -285,6 +251,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtProductDescription.Name = "txtProductDescription";
          this.txtProductDescription.Size = new System.Drawing.Size(125, 26);
          this.txtProductDescription.TabIndex = 65;
+         this.txtProductDescription.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductDescription_KeyPress);
          // 
          // txtProductName
          // 
@@ -294,6 +261,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtProductName.Name = "txtProductName";
          this.txtProductName.Size = new System.Drawing.Size(125, 26);
          this.txtProductName.TabIndex = 63;
+         this.txtProductName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductName_KeyPress);
          // 
          // txtQuantity
          // 
@@ -303,12 +271,13 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity.Name = "txtQuantity";
          this.txtQuantity.Size = new System.Drawing.Size(125, 26);
          this.txtQuantity.TabIndex = 34;
+         this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
          // 
          // btnBrowse
          // 
          this.btnBrowse.BackColor = System.Drawing.Color.Plum;
          this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnBrowse.Location = new System.Drawing.Point(150, 379);
+         this.btnBrowse.Location = new System.Drawing.Point(262, 379);
          this.btnBrowse.Name = "btnBrowse";
          this.btnBrowse.Size = new System.Drawing.Size(89, 31);
          this.btnBrowse.TabIndex = 71;
@@ -328,15 +297,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnUpdatePic.Text = "Update Pic";
          this.btnUpdatePic.UseVisualStyleBackColor = false;
          this.btnUpdatePic.Click += new System.EventHandler(this.btnUpdatePic_Click);
-         // 
-         // pictureboxProductPic
-         // 
-         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
-         this.pictureboxProductPic.Name = "pictureboxProductPic";
-         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
-         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.pictureboxProductPic.TabIndex = 69;
-         this.pictureboxProductPic.TabStop = false;
          // 
          // label6
          // 
@@ -372,7 +332,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnDelete.BackColor = System.Drawing.Color.Plum;
          this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnDelete.Location = new System.Drawing.Point(763, 420);
+         this.btnDelete.Location = new System.Drawing.Point(606, 379);
          this.btnDelete.Name = "btnDelete";
          this.btnDelete.Size = new System.Drawing.Size(89, 31);
          this.btnDelete.TabIndex = 62;
@@ -384,7 +344,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnUpdate.BackColor = System.Drawing.Color.Plum;
          this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnUpdate.Location = new System.Drawing.Point(668, 419);
+         this.btnUpdate.Location = new System.Drawing.Point(511, 379);
          this.btnUpdate.Name = "btnUpdate";
          this.btnUpdate.Size = new System.Drawing.Size(89, 31);
          this.btnUpdate.TabIndex = 61;
@@ -396,7 +356,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnSave.BackColor = System.Drawing.Color.Plum;
          this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnSave.Location = new System.Drawing.Point(569, 419);
+         this.btnSave.Location = new System.Drawing.Point(533, 379);
          this.btnSave.Name = "btnSave";
          this.btnSave.Size = new System.Drawing.Size(89, 31);
          this.btnSave.TabIndex = 60;
@@ -457,6 +417,51 @@ namespace TestQua_Project__APP_.Admin
          this.textBox1.Size = new System.Drawing.Size(100, 35);
          this.textBox1.TabIndex = 67;
          // 
+         // panel1
+         // 
+         this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+         this.panel1.Controls.Add(this.label4);
+         this.panel1.Controls.Add(this.label2);
+         this.panel1.Location = new System.Drawing.Point(-1, -1);
+         this.panel1.Name = "panel1";
+         this.panel1.Size = new System.Drawing.Size(1089, 73);
+         this.panel1.TabIndex = 41;
+         // 
+         // label4
+         // 
+         this.label4.AutoSize = true;
+         this.label4.BackColor = System.Drawing.Color.Transparent;
+         this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(224)))));
+         this.label4.Location = new System.Drawing.Point(56, 47);
+         this.label4.Name = "label4";
+         this.label4.Size = new System.Drawing.Size(212, 18);
+         this.label4.TabIndex = 9;
+         this.label4.Text = "A Group of TEAM POWER";
+         // 
+         // label2
+         // 
+         this.label2.AutoSize = true;
+         this.label2.BackColor = System.Drawing.Color.Transparent;
+         this.label2.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(224)))));
+         this.label2.Location = new System.Drawing.Point(50, 9);
+         this.label2.Name = "label2";
+         this.label2.Size = new System.Drawing.Size(251, 51);
+         this.label2.TabIndex = 0;
+         this.label2.Text = "Bloom and Puff";
+         // 
+         // pictureboxProductPic
+         // 
+         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
+         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
+         this.pictureboxProductPic.Name = "pictureboxProductPic";
+         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
+         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pictureboxProductPic.TabIndex = 69;
+         this.pictureboxProductPic.TabStop = false;
+         // 
          // AdminProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,18 +480,18 @@ namespace TestQua_Project__APP_.Admin
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "AdminProduct";
          this.Load += new System.EventHandler(this.AdminProduct_Load);
-         this.panel1.ResumeLayout(false);
-         this.panel1.PerformLayout();
          this.tabPage2.ResumeLayout(false);
          this.tabPage2.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).EndInit();
          this.tabPage1.ResumeLayout(false);
          this.tabPage1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.tabcontrolAdminProducts.ResumeLayout(false);
          this.tabPage3.ResumeLayout(false);
          this.tabPage3.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).EndInit();
+         this.panel1.ResumeLayout(false);
+         this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.ResumeLayout(false);
 
       }

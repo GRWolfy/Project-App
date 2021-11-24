@@ -60,6 +60,7 @@ namespace TestQua_Project__APP_
          this.lblEmail = new System.Windows.Forms.Label();
          this.lblContactNo = new System.Windows.Forms.Label();
          this.lblPasswordnum = new System.Windows.Forms.Label();
+         this.label11 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
@@ -389,12 +390,23 @@ namespace TestQua_Project__APP_
          this.lblPasswordnum.Size = new System.Drawing.Size(0, 17);
          this.lblPasswordnum.TabIndex = 88;
          // 
+         // label11
+         // 
+         this.label11.AutoSize = true;
+         this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.label11.Location = new System.Drawing.Point(483, 261);
+         this.label11.Name = "label11";
+         this.label11.Size = new System.Drawing.Size(20, 17);
+         this.label11.TabIndex = 89;
+         this.label11.Text = "...";
+         // 
          // Register
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(986, 538);
+         this.Controls.Add(this.label11);
          this.Controls.Add(this.lblPasswordnum);
          this.Controls.Add(this.lblContactNo);
          this.Controls.Add(this.lblEmail);
@@ -471,5 +483,6 @@ namespace TestQua_Project__APP_
       private System.Windows.Forms.Label lblEmail;
       private System.Windows.Forms.Label lblContactNo;
       private System.Windows.Forms.Label lblPasswordnum;
+      private System.Windows.Forms.Label label11;
    }
 }

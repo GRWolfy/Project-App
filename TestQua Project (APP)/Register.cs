@@ -33,7 +33,7 @@ namespace TestQua_Project__APP_
             {
                if (isValid[i] == false)
                {
-                  MessageBox.Show("Please review your inputs" + i.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                  MessageBox.Show("Please review your inputs", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                   checker = false;
                   break;
                }

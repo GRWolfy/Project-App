@@ -405,7 +405,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pictures\" />
+    <None Include="Pictures\noimagefound-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8-83080_64-images-about-flower-png-on-we-heart.png" />
@@ -436,6 +436,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cart-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\noimagefound.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

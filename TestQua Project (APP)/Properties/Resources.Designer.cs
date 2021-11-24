@@ -144,6 +144,26 @@ namespace TestQua_Project__APP_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noimagefound {
+            get {
+                object obj = ResourceManager.GetObject("noimagefound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noimagefound_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("noimagefound-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_purple_tropical_plants_neon_background_picture_image_1172749 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-purple-tropical-plants-neon-background-picture-image_1172749", resourceCulture);
