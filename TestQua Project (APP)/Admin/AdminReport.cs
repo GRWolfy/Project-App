@@ -56,7 +56,7 @@ namespace TestQua_Project__APP_.Admin
       private void viewReturn()
       {
          Connection.DB();
-         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB WHERE Status = '" + "Return" + "' ";
+         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB WHERE Status = '" + "RETURN" + "' ";
          Function.fill(Function.gen, datagridViewReturn);
          datagridViewReturn.Columns["userid"].Visible = false;
          datagridViewReturn.Columns["productid"].Visible = false;
@@ -66,7 +66,7 @@ namespace TestQua_Project__APP_.Admin
       private void viewDelivered()
       {
          Connection.DB();
-         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB WHERE Status = '" + "Order Received" + "' ";
+         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB WHERE Status = '" + "RECEIVED" + "' ";
          Function.fill(Function.gen, datagridViewDelivered);
          datagridViewDelivered.Columns["userid"].Visible = false;
          datagridViewDelivered.Columns["productid"].Visible = false;

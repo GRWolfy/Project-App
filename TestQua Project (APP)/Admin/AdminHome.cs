@@ -6,6 +6,9 @@ namespace TestQua_Project__APP_.Admin
 {
    public partial class AdminHome : Form
    {
+      private double totalsales;
+      private double totalexpenses;
+
       public AdminHome()
       {
          InitializeComponent();
@@ -16,6 +19,7 @@ namespace TestQua_Project__APP_.Admin
          btnHome.FlatStyle = FlatStyle.Standard;
          setTotalSales();
          setTotalExpenses();
+         setTotalProfit();
          updateProductStatus();
       }
 
@@ -109,7 +113,7 @@ namespace TestQua_Project__APP_.Admin
          try
          {
             Connection.DB();
-            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb WHERE Status = 'Order Received' ";
+            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb WHERE Status = 'RECEIVED' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
@@ -117,6 +121,7 @@ namespace TestQua_Project__APP_.Admin
             {
                Function.reader.Read();
                lblTotalSales.Text = "₱" + Function.reader["TOTAL"].ToString();
+               totalexpenses = Convert.ToDouble(Function.reader["TOTAL"]);
             }
          }
 
@@ -140,6 +145,7 @@ namespace TestQua_Project__APP_.Admin
             {
                Function.reader.Read();
                lblTotalExpenses.Text = "₱" + Function.reader["TOTAL"].ToString();
+               totalsales = Convert.ToDouble(Function.reader["TOTAL"]);
             }
          }
 
@@ -148,6 +154,18 @@ namespace TestQua_Project__APP_.Admin
             Connection.con.Close();
             lblTotalExpenses.Text = "₱0";
          }
+      }
+
+      private void setTotalProfit()
+      {
+         decimal totalprofit = Convert.ToDecimal(totalsales - totalexpenses);
+         string money = String.Format("{0:N}", totalprofit);
+         lblTotalProfit.Text = "₱" + money;
+      }
+
+      private void label6_Click(object sender, EventArgs e)
+      {
+
       }
    }
 }

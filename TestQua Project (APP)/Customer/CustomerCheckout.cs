@@ -81,7 +81,7 @@ namespace TestQua_Project__APP_.Customer
                   quantity += QuantityBought[i].ToString();
 
                   Connection.DB();
-                  Function.gen = "INSERT INTO OrdersDb(Userid, ProductId, QuantityBought, TotalPrice, TimeofTransaction, Status) VALUES('" + Login.userid + "', '" + productID + "', '" + quantity + "', '" + (ViewCart.TotalPrice + 80) + "', '" + DateTime.Now.ToString() + "', '" + "Shipped Out" + "')";
+                  Function.gen = "INSERT INTO OrdersDb(Userid, ProductId, QuantityBought, TotalPrice, TimeofTransaction, Status) VALUES('" + Login.userid + "', '" + productID + "', '" + quantity + "', '" + (ViewCart.TotalPrice + 80) + "', '" + DateTime.Now.ToString() + "', '" + "SHIPPED OUT" + "')";
                   Function.command = new SqlCommand(Function.gen, Connection.con);
                   Function.command.ExecuteNonQuery();
                   Connection.con.Close();

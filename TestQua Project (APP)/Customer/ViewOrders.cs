@@ -21,7 +21,7 @@ namespace TestQua_Project__APP_.Customer
 
       private void setButtonVisibility()
       {
-         if (CustomerOrder.Status == "Shipped Out")
+         if (CustomerOrder.Status == "SHIPPED OUT")
          {
             btnOrderReceived.Visible = true;
             btnReturn.Visible = true;
@@ -72,12 +72,12 @@ namespace TestQua_Project__APP_.Customer
 
       private void btnOrderReceived_Click(object sender, EventArgs e)
       {
-         updateStatus("Order Received");
+         updateStatus("RECEIVED");
       }
 
       private void btnReturn_Click(object sender, EventArgs e)
       {
-         updateStatus("Return");
+         updateStatus("RETURN");
       }
 
       private void updateStatus(string status)

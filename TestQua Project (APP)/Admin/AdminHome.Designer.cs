@@ -30,6 +30,9 @@ namespace TestQua_Project__APP_.Admin
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
+         System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+         System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+         System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
          this.btnLogout = new System.Windows.Forms.Button();
          this.btnAccounts = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
@@ -40,12 +43,16 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
          this.panel2 = new System.Windows.Forms.Panel();
-         this.label3 = new System.Windows.Forms.Label();
-         this.lblTotalSales = new System.Windows.Forms.Label();
+         this.label6 = new System.Windows.Forms.Label();
+         this.lblTotalProfit = new System.Windows.Forms.Label();
          this.label5 = new System.Windows.Forms.Label();
          this.lblTotalExpenses = new System.Windows.Forms.Label();
+         this.label3 = new System.Windows.Forms.Label();
+         this.lblTotalSales = new System.Windows.Forms.Label();
+         this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
          this.SuspendLayout();
          // 
          // btnLogout
@@ -178,52 +185,94 @@ namespace TestQua_Project__APP_.Admin
          // panel2
          // 
          this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.panel2.Controls.Add(this.chart1);
+         this.panel2.Controls.Add(this.label6);
+         this.panel2.Controls.Add(this.lblTotalProfit);
          this.panel2.Controls.Add(this.label5);
          this.panel2.Controls.Add(this.lblTotalExpenses);
          this.panel2.Controls.Add(this.label3);
          this.panel2.Controls.Add(this.lblTotalSales);
          this.panel2.Location = new System.Drawing.Point(226, 139);
          this.panel2.Name = "panel2";
-         this.panel2.Size = new System.Drawing.Size(803, 422);
+         this.panel2.Size = new System.Drawing.Size(803, 490);
          this.panel2.TabIndex = 46;
          // 
-         // label3
+         // label6
          // 
-         this.label3.AutoSize = true;
-         this.label3.Location = new System.Drawing.Point(119, 194);
-         this.label3.Name = "label3";
-         this.label3.Size = new System.Drawing.Size(58, 13);
-         this.label3.TabIndex = 1;
-         this.label3.Text = "Tota Sales";
+         this.label6.AutoSize = true;
+         this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
+         this.label6.Location = new System.Drawing.Point(577, 32);
+         this.label6.Name = "label6";
+         this.label6.Size = new System.Drawing.Size(205, 44);
+         this.label6.TabIndex = 5;
+         this.label6.Text = "Total Profit";
+         this.label6.Click += new System.EventHandler(this.label6_Click);
          // 
-         // lblTotalSales
+         // lblTotalProfit
          // 
-         this.lblTotalSales.AutoSize = true;
-         this.lblTotalSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTotalSales.Location = new System.Drawing.Point(114, 67);
-         this.lblTotalSales.Name = "lblTotalSales";
-         this.lblTotalSales.Size = new System.Drawing.Size(98, 108);
-         this.lblTotalSales.TabIndex = 0;
-         this.lblTotalSales.Text = "0";
+         this.lblTotalProfit.AutoSize = true;
+         this.lblTotalProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+         this.lblTotalProfit.Location = new System.Drawing.Point(593, 90);
+         this.lblTotalProfit.Name = "lblTotalProfit";
+         this.lblTotalProfit.Size = new System.Drawing.Size(42, 46);
+         this.lblTotalProfit.TabIndex = 4;
+         this.lblTotalProfit.Text = "0";
          // 
          // label5
          // 
          this.label5.AutoSize = true;
-         this.label5.Location = new System.Drawing.Point(119, 376);
+         this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
+         this.label5.Location = new System.Drawing.Point(270, 32);
          this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(78, 13);
+         this.label5.Size = new System.Drawing.Size(281, 44);
          this.label5.TabIndex = 3;
-         this.label5.Text = "Tota Expenses";
+         this.label5.Text = "Total Expenses";
          // 
          // lblTotalExpenses
          // 
          this.lblTotalExpenses.AutoSize = true;
-         this.lblTotalExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTotalExpenses.Location = new System.Drawing.Point(114, 249);
+         this.lblTotalExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+         this.lblTotalExpenses.Location = new System.Drawing.Point(284, 90);
          this.lblTotalExpenses.Name = "lblTotalExpenses";
-         this.lblTotalExpenses.Size = new System.Drawing.Size(98, 108);
+         this.lblTotalExpenses.Size = new System.Drawing.Size(42, 46);
          this.lblTotalExpenses.TabIndex = 2;
          this.lblTotalExpenses.Text = "0";
+         // 
+         // label3
+         // 
+         this.label3.AutoSize = true;
+         this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
+         this.label3.Location = new System.Drawing.Point(19, 32);
+         this.label3.Name = "label3";
+         this.label3.Size = new System.Drawing.Size(210, 44);
+         this.label3.TabIndex = 1;
+         this.label3.Text = "Total Sales";
+         // 
+         // lblTotalSales
+         // 
+         this.lblTotalSales.AutoSize = true;
+         this.lblTotalSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+         this.lblTotalSales.Location = new System.Drawing.Point(33, 90);
+         this.lblTotalSales.Name = "lblTotalSales";
+         this.lblTotalSales.Size = new System.Drawing.Size(42, 46);
+         this.lblTotalSales.TabIndex = 0;
+         this.lblTotalSales.Text = "0";
+         // 
+         // chart1
+         // 
+         chartArea1.Name = "ChartArea1";
+         this.chart1.ChartAreas.Add(chartArea1);
+         legend1.Name = "Legend1";
+         this.chart1.Legends.Add(legend1);
+         this.chart1.Location = new System.Drawing.Point(99, 166);
+         this.chart1.Name = "chart1";
+         series1.ChartArea = "ChartArea1";
+         series1.Legend = "Legend1";
+         series1.Name = "Series1";
+         this.chart1.Series.Add(series1);
+         this.chart1.Size = new System.Drawing.Size(581, 305);
+         this.chart1.TabIndex = 6;
+         this.chart1.Text = "chart1";
          // 
          // AdminHome
          // 
@@ -247,6 +296,7 @@ namespace TestQua_Project__APP_.Admin
          this.panel1.PerformLayout();
          this.panel2.ResumeLayout(false);
          this.panel2.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -267,5 +317,8 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.Label lblTotalExpenses;
+      private System.Windows.Forms.Label label6;
+      private System.Windows.Forms.Label lblTotalProfit;
+      private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
    }
 }
