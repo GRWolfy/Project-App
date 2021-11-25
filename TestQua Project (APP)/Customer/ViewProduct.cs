@@ -47,7 +47,7 @@ namespace TestQua_Project__APP_.Customer
             {
                Function.reader.Read();
                lblName.Text = Function.reader["productname"].ToString();
-               lblDescription.Text = Function.reader["productdescrip"].ToString();
+               txtDescription.Text = Function.reader["productdescrip"].ToString();
                lblPrice.Text = Function.reader["productprice"].ToString();
                lblQuantity.Text = Function.reader["quantity"].ToString();
                setMax = Convert.ToInt32(Function.reader["quantity"]);

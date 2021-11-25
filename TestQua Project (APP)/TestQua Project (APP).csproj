@@ -447,5 +447,8 @@
   <ItemGroup>
     <None Include="Pictures\defpic-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\searchicon-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

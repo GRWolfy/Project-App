@@ -49,10 +49,10 @@ namespace TestQua_Project__APP_.Admin
          this.lblTotalExpenses = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.lblTotalSales = new System.Windows.Forms.Label();
-         this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+         this.chartTopSeller = new System.Windows.Forms.DataVisualization.Charting.Chart();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.chartTopSeller)).BeginInit();
          this.SuspendLayout();
          // 
          // btnLogout
@@ -185,7 +185,7 @@ namespace TestQua_Project__APP_.Admin
          // panel2
          // 
          this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-         this.panel2.Controls.Add(this.chart1);
+         this.panel2.Controls.Add(this.chartTopSeller);
          this.panel2.Controls.Add(this.label6);
          this.panel2.Controls.Add(this.lblTotalProfit);
          this.panel2.Controls.Add(this.label5);
@@ -258,21 +258,22 @@ namespace TestQua_Project__APP_.Admin
          this.lblTotalSales.TabIndex = 0;
          this.lblTotalSales.Text = "0";
          // 
-         // chart1
+         // chartTopSeller
          // 
          chartArea1.Name = "ChartArea1";
-         this.chart1.ChartAreas.Add(chartArea1);
+         this.chartTopSeller.ChartAreas.Add(chartArea1);
          legend1.Name = "Legend1";
-         this.chart1.Legends.Add(legend1);
-         this.chart1.Location = new System.Drawing.Point(99, 166);
-         this.chart1.Name = "chart1";
+         this.chartTopSeller.Legends.Add(legend1);
+         this.chartTopSeller.Location = new System.Drawing.Point(27, 154);
+         this.chartTopSeller.Name = "chartTopSeller";
          series1.ChartArea = "ChartArea1";
+         series1.IsVisibleInLegend = false;
          series1.Legend = "Legend1";
          series1.Name = "Series1";
-         this.chart1.Series.Add(series1);
-         this.chart1.Size = new System.Drawing.Size(581, 305);
-         this.chart1.TabIndex = 6;
-         this.chart1.Text = "chart1";
+         this.chartTopSeller.Series.Add(series1);
+         this.chartTopSeller.Size = new System.Drawing.Size(716, 315);
+         this.chartTopSeller.TabIndex = 6;
+         this.chartTopSeller.Text = "chart1";
          // 
          // AdminHome
          // 
@@ -296,7 +297,7 @@ namespace TestQua_Project__APP_.Admin
          this.panel1.PerformLayout();
          this.panel2.ResumeLayout(false);
          this.panel2.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.chartTopSeller)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -319,6 +320,6 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.Label lblTotalExpenses;
       private System.Windows.Forms.Label label6;
       private System.Windows.Forms.Label lblTotalProfit;
-      private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+      private System.Windows.Forms.DataVisualization.Charting.Chart chartTopSeller;
    }
 }

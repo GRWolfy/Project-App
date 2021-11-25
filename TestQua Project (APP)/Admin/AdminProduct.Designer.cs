@@ -47,7 +47,6 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity = new System.Windows.Forms.TextBox();
          this.btnBrowse = new System.Windows.Forms.Button();
          this.btnUpdatePic = new System.Windows.Forms.Button();
-         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.label6 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
@@ -62,14 +61,18 @@ namespace TestQua_Project__APP_.Admin
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
+         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
+         this.label8 = new System.Windows.Forms.Label();
          this.tabPage2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).BeginInit();
          this.tabPage1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.tabcontrolAdminProducts.SuspendLayout();
          this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).BeginInit();
          this.panel1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
@@ -154,6 +157,9 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage2
          // 
+         this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.tabPage2.Controls.Add(this.label8);
+         this.tabPage2.Controls.Add(this.pictureBox1);
          this.tabPage2.Controls.Add(this.datagridViewProduct);
          this.tabPage2.Controls.Add(this.txtSearch);
          this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,26 +169,26 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage2.Size = new System.Drawing.Size(891, 477);
          this.tabPage2.TabIndex = 1;
          this.tabPage2.Text = "View Products";
-         this.tabPage2.UseVisualStyleBackColor = true;
          // 
          // datagridViewProduct
          // 
          this.datagridViewProduct.AllowUserToAddRows = false;
          this.datagridViewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.datagridViewProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewProduct.Location = new System.Drawing.Point(0, 42);
          this.datagridViewProduct.Name = "datagridViewProduct";
          this.datagridViewProduct.RowHeadersVisible = false;
-         this.datagridViewProduct.Size = new System.Drawing.Size(891, 453);
+         this.datagridViewProduct.Size = new System.Drawing.Size(891, 439);
          this.datagridViewProduct.TabIndex = 66;
          this.datagridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewProduct_CellContentClick);
          // 
          // txtSearch
          // 
-         this.txtSearch.Location = new System.Drawing.Point(223, 7);
+         this.txtSearch.Location = new System.Drawing.Point(168, 7);
          this.txtSearch.Name = "txtSearch";
-         this.txtSearch.Size = new System.Drawing.Size(100, 29);
+         this.txtSearch.Size = new System.Drawing.Size(155, 29);
          this.txtSearch.TabIndex = 65;
          // 
          // tabPage1
@@ -230,7 +236,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtProductId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtProductId.Location = new System.Drawing.Point(606, 70);
          this.txtProductId.Name = "txtProductId";
-         this.txtProductId.Size = new System.Drawing.Size(125, 26);
+         this.txtProductId.Size = new System.Drawing.Size(201, 26);
          this.txtProductId.TabIndex = 72;
          this.txtProductId.Visible = false;
          // 
@@ -240,7 +246,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtPrice.Location = new System.Drawing.Point(606, 228);
          this.txtPrice.Name = "txtPrice";
-         this.txtPrice.Size = new System.Drawing.Size(125, 26);
+         this.txtPrice.Size = new System.Drawing.Size(201, 26);
          this.txtPrice.TabIndex = 67;
          this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
          // 
@@ -250,7 +256,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtProductDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtProductDescription.Location = new System.Drawing.Point(606, 174);
          this.txtProductDescription.Name = "txtProductDescription";
-         this.txtProductDescription.Size = new System.Drawing.Size(125, 26);
+         this.txtProductDescription.Size = new System.Drawing.Size(201, 26);
          this.txtProductDescription.TabIndex = 65;
          this.txtProductDescription.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductDescription_KeyPress);
          // 
@@ -260,7 +266,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtProductName.Location = new System.Drawing.Point(606, 118);
          this.txtProductName.Name = "txtProductName";
-         this.txtProductName.Size = new System.Drawing.Size(125, 26);
+         this.txtProductName.Size = new System.Drawing.Size(201, 26);
          this.txtProductName.TabIndex = 63;
          this.txtProductName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductName_KeyPress);
          // 
@@ -270,7 +276,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtQuantity.Location = new System.Drawing.Point(606, 280);
          this.txtQuantity.Name = "txtQuantity";
-         this.txtQuantity.Size = new System.Drawing.Size(125, 26);
+         this.txtQuantity.Size = new System.Drawing.Size(201, 26);
          this.txtQuantity.TabIndex = 34;
          this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
          // 
@@ -298,16 +304,6 @@ namespace TestQua_Project__APP_.Admin
          this.btnUpdatePic.Text = "Update Pic";
          this.btnUpdatePic.UseVisualStyleBackColor = false;
          this.btnUpdatePic.Click += new System.EventHandler(this.btnUpdatePic_Click);
-         // 
-         // pictureboxProductPic
-         // 
-         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
-         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
-         this.pictureboxProductPic.Name = "pictureboxProductPic";
-         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
-         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.pictureboxProductPic.TabIndex = 69;
-         this.pictureboxProductPic.TabStop = false;
          // 
          // label6
          // 
@@ -464,6 +460,36 @@ namespace TestQua_Project__APP_.Admin
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
+         // pictureboxProductPic
+         // 
+         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
+         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
+         this.pictureboxProductPic.Name = "pictureboxProductPic";
+         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
+         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pictureboxProductPic.TabIndex = 69;
+         this.pictureboxProductPic.TabStop = false;
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.searchicon_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(329, 7);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(50, 30);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 67;
+         this.pictureBox1.TabStop = false;
+         // 
+         // label8
+         // 
+         this.label8.AutoSize = true;
+         this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label8.Location = new System.Drawing.Point(92, 10);
+         this.label8.Name = "label8";
+         this.label8.Size = new System.Drawing.Size(70, 24);
+         this.label8.TabIndex = 74;
+         this.label8.Text = "Search";
+         // 
          // AdminProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,13 +513,14 @@ namespace TestQua_Project__APP_.Admin
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).EndInit();
          this.tabPage1.ResumeLayout(false);
          this.tabPage1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.tabcontrolAdminProducts.ResumeLayout(false);
          this.tabPage3.ResumeLayout(false);
          this.tabPage3.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -531,5 +558,7 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.TabPage tabPage3;
       private System.Windows.Forms.DataGridView datagridViewTransactions;
       private System.Windows.Forms.TextBox textBox1;
+      private System.Windows.Forms.PictureBox pictureBox1;
+      private System.Windows.Forms.Label label8;
    }
 }

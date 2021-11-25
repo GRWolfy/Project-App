@@ -115,7 +115,7 @@ namespace TestQua_Project__APP_.Admin
                img = br.ReadBytes((int)fs.Length);
 
                Connection.DB();
-               Function.gen = "INSERT INTO Products(ProductName, ProductDescrip, ProductPrice, ProductImage, Quantity, TImeStored) VALUES('" + txtProductName.Text + "', '" + txtProductDescription.Text + "', '" + txtPrice.Text + "', @img, '" + txtQuantity.Text + "', '" + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt") + "' )";
+               Function.gen = "INSERT INTO Products(ProductName, ProductDescrip, ProductPrice, ProductImage, Quantity, Sold, TImeStored) VALUES('" + txtProductName.Text + "', '" + txtProductDescription.Text + "', '" + txtPrice.Text + "', @img, '" + txtQuantity.Text + "', '"+ 0 +"', '" + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt") + "' )";
                Function.command = new SqlCommand(Function.gen, Connection.con);
                Function.command.Parameters.Add(new SqlParameter("@img", img));
                Function.command.ExecuteNonQuery();
@@ -123,6 +123,10 @@ namespace TestQua_Project__APP_.Admin
                Connection.con.Close();
                updateStatus();
             }
+
+            var adminprod = new AdminProduct();
+            adminprod.Show();
+            adminprod.tabcontrolAdminProducts.SelectedIndex = 0;
          }
 
          catch (Exception ex)
@@ -180,7 +184,7 @@ namespace TestQua_Project__APP_.Admin
       private void ViewProducts()
       {
          Connection.DB();
-         Function.gen = "SELECT productname as [NAME], productdescrip as [DESCRIPTION], 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], quantity as [QUANTITY], Status as [STATUS],  productid, productimage, productprice from Products";
+         Function.gen = "SELECT productname as [NAME], productdescrip as [DESCRIPTION], 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], quantity as [QUANTITY], sold as [SOLD], Status as [STATUS],  productid, productimage, productprice from Products";
          Function.fill(Function.gen, datagridViewProduct);
          datagridViewProduct.Columns["productid"].Visible = false;
          datagridViewProduct.Columns["productimage"].Visible = false;

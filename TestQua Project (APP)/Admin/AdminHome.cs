@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace TestQua_Project__APP_.Admin
 {
@@ -21,6 +22,7 @@ namespace TestQua_Project__APP_.Admin
          setTotalExpenses();
          setTotalProfit();
          updateProductStatus();
+         ViewChartTopSales();
       }
 
       private void btnAccounts_Click(object sender, EventArgs e)
@@ -166,6 +168,21 @@ namespace TestQua_Project__APP_.Admin
       private void label6_Click(object sender, EventArgs e)
       {
 
+      }
+
+      private void ViewChartTopSales()
+      {
+         Connection.DB();
+         Function.gen = "SELECT * FROM Products";
+         Function.command = new SqlCommand(Function.gen, Connection.con);
+         Function.reader = Function.command.ExecuteReader();
+
+         while (Function.reader.Read())
+         {
+            chartTopSeller.Series.Add(Function.reader["ProductName"].ToString());
+            chartTopSeller.Series[Function.reader["ProductName"].ToString()].Points.AddXY(Function.reader["ProductName"].ToString(), Function.reader["Sold"]);
+            
+         }
       }
    }
 }
