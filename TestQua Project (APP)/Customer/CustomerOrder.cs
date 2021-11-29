@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace TestQua_Project__APP_.Customer
@@ -8,6 +9,8 @@ namespace TestQua_Project__APP_.Customer
    {
       public static ArrayList ProductIDs = new ArrayList();
       public static ArrayList QuantityBought = new ArrayList();
+      public static ArrayList ProductSold = new ArrayList();
+      public static ArrayList ProductQuantity = new ArrayList();
       public static double TotalPrice = 0;
       public static string Status = "";
       public static int OrderId = 0;
@@ -79,11 +82,30 @@ namespace TestQua_Project__APP_.Customer
             QuantityBought.Add(newStrQuantity[i]);
          }
 
+         setList();
          var vieworder = new ViewOrders();
          vieworder.Show();
-         ProductIDs.Clear();
-         QuantityBought.Clear();
-         Close();
+         Hide();
+      }
+
+      private void setList()
+      {
+         for (int i = 0; i < ProductIDs.Count; i++)
+         {
+            Connection.DB();
+            Function.gen = "SELECT * FROM Products WHERE ProductId = '" + CustomerOrder.ProductIDs[i] + "' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
+
+            if (Function.reader.HasRows)
+            {
+               Function.reader.Read();
+               ProductQuantity.Add(Convert.ToInt32(Function.reader["Quantity"]));
+               ProductSold.Add(Convert.ToInt32(Function.reader["Sold"]));
+            }
+         }
+
+         Connection.con.Close();
       }
    }
 }

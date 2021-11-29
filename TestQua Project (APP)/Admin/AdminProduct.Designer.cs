@@ -36,6 +36,8 @@ namespace TestQua_Project__APP_.Admin
          this.btnReports = new System.Windows.Forms.Button();
          this.btnAccounts = new System.Windows.Forms.Button();
          this.tabPage2 = new System.Windows.Forms.TabPage();
+         this.label8 = new System.Windows.Forms.Label();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.datagridViewProduct = new System.Windows.Forms.DataGridView();
          this.txtSearch = new System.Windows.Forms.TextBox();
          this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -47,6 +49,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtQuantity = new System.Windows.Forms.TextBox();
          this.btnBrowse = new System.Windows.Forms.Button();
          this.btnUpdatePic = new System.Windows.Forms.Button();
+         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
          this.label6 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
@@ -61,18 +64,15 @@ namespace TestQua_Project__APP_.Admin
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.label8 = new System.Windows.Forms.Label();
          this.tabPage2.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).BeginInit();
          this.tabPage1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.tabcontrolAdminProducts.SuspendLayout();
          this.tabPage3.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).BeginInit();
          this.panel1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
@@ -169,6 +169,26 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage2.Size = new System.Drawing.Size(891, 477);
          this.tabPage2.TabIndex = 1;
          this.tabPage2.Text = "View Products";
+         // 
+         // label8
+         // 
+         this.label8.AutoSize = true;
+         this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label8.Location = new System.Drawing.Point(92, 10);
+         this.label8.Name = "label8";
+         this.label8.Size = new System.Drawing.Size(70, 24);
+         this.label8.TabIndex = 74;
+         this.label8.Text = "Search";
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.searchicon_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(329, 7);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(50, 30);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 67;
+         this.pictureBox1.TabStop = false;
          // 
          // datagridViewProduct
          // 
@@ -304,6 +324,16 @@ namespace TestQua_Project__APP_.Admin
          this.btnUpdatePic.Text = "Update Pic";
          this.btnUpdatePic.UseVisualStyleBackColor = false;
          this.btnUpdatePic.Click += new System.EventHandler(this.btnUpdatePic_Click);
+         // 
+         // pictureboxProductPic
+         // 
+         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
+         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
+         this.pictureboxProductPic.Name = "pictureboxProductPic";
+         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
+         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pictureboxProductPic.TabIndex = 69;
+         this.pictureboxProductPic.TabStop = false;
          // 
          // label6
          // 
@@ -460,36 +490,6 @@ namespace TestQua_Project__APP_.Admin
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
-         // pictureboxProductPic
-         // 
-         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
-         this.pictureboxProductPic.Location = new System.Drawing.Point(71, 80);
-         this.pictureboxProductPic.Name = "pictureboxProductPic";
-         this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
-         this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.pictureboxProductPic.TabIndex = 69;
-         this.pictureboxProductPic.TabStop = false;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.searchicon_removebg_preview;
-         this.pictureBox1.Location = new System.Drawing.Point(329, 7);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(50, 30);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 67;
-         this.pictureBox1.TabStop = false;
-         // 
-         // label8
-         // 
-         this.label8.AutoSize = true;
-         this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label8.Location = new System.Drawing.Point(92, 10);
-         this.label8.Name = "label8";
-         this.label8.Size = new System.Drawing.Size(70, 24);
-         this.label8.TabIndex = 74;
-         this.label8.Text = "Search";
-         // 
          // AdminProduct
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,17 +510,17 @@ namespace TestQua_Project__APP_.Admin
          this.Load += new System.EventHandler(this.AdminProduct_Load);
          this.tabPage2.ResumeLayout(false);
          this.tabPage2.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).EndInit();
          this.tabPage1.ResumeLayout(false);
          this.tabPage1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.tabcontrolAdminProducts.ResumeLayout(false);
          this.tabPage3.ResumeLayout(false);
          this.tabPage3.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }

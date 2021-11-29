@@ -30,31 +30,18 @@ namespace TestQua_Project__APP_.Customer
       private void InitializeComponent()
       {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerHome));
-         this.panel4 = new System.Windows.Forms.Panel();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnLogout = new System.Windows.Forms.Button();
          this.btnOrder = new System.Windows.Forms.Button();
          this.btnProfile = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
-         this.pictureBox2 = new System.Windows.Forms.PictureBox();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+         this.label1 = new System.Windows.Forms.Label();
+         this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
-         // 
-         // panel4
-         // 
-         this.panel4.BackColor = System.Drawing.Color.White;
-         this.panel4.Location = new System.Drawing.Point(221, 278);
-         this.panel4.Name = "panel4";
-         this.panel4.Size = new System.Drawing.Size(854, 310);
-         this.panel4.TabIndex = 9;
          // 
          // btnHome
          // 
@@ -136,34 +123,6 @@ namespace TestQua_Project__APP_.Customer
          this.btnProducts.UseVisualStyleBackColor = false;
          this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
          // 
-         // pictureBox2
-         // 
-         this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(9)))), ((int)(((byte)(21)))));
-         this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-         this.pictureBox2.Location = new System.Drawing.Point(323, 95);
-         this.pictureBox2.Name = "pictureBox2";
-         this.pictureBox2.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox2.TabIndex = 7;
-         this.pictureBox2.TabStop = false;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-         this.pictureBox1.Location = new System.Drawing.Point(637, 95);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(160, 156);
-         this.pictureBox1.TabIndex = 6;
-         this.pictureBox1.TabStop = false;
-         // 
-         // pictureBox3
-         // 
-         this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-         this.pictureBox3.Location = new System.Drawing.Point(480, 95);
-         this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox3.TabIndex = 8;
-         this.pictureBox3.TabStop = false;
-         // 
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
@@ -199,33 +158,46 @@ namespace TestQua_Project__APP_.Customer
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.Location = new System.Drawing.Point(277, 139);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(439, 81);
+         this.label1.TabIndex = 29;
+         this.label1.Text = "TOP SELLER!!!!";
+         // 
+         // flowlayoutViewProducts
+         // 
+         this.flowlayoutViewProducts.Location = new System.Drawing.Point(240, 229);
+         this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
+         this.flowlayoutViewProducts.Size = new System.Drawing.Size(750, 324);
+         this.flowlayoutViewProducts.TabIndex = 30;
+         // 
          // CustomerHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.flowlayoutViewProducts);
+         this.Controls.Add(this.label1);
          this.Controls.Add(this.btnHome);
          this.Controls.Add(this.btnLogout);
          this.Controls.Add(this.btnOrder);
-         this.Controls.Add(this.pictureBox2);
          this.Controls.Add(this.btnProfile);
-         this.Controls.Add(this.panel4);
          this.Controls.Add(this.btnProducts);
-         this.Controls.Add(this.pictureBox1);
-         this.Controls.Add(this.pictureBox3);
          this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "CustomerHome";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "CustomerHome";
          this.Load += new System.EventHandler(this.CustomerHome_Load);
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.ResumeLayout(false);
+         this.PerformLayout();
 
       }
 
@@ -233,14 +205,12 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Panel panel1;
-      private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.PictureBox pictureBox3;
-      private System.Windows.Forms.PictureBox pictureBox2;
-      private System.Windows.Forms.Panel panel4;
       private System.Windows.Forms.Button btnHome;
       private System.Windows.Forms.Button btnLogout;
       private System.Windows.Forms.Button btnOrder;
       private System.Windows.Forms.Button btnProfile;
       private System.Windows.Forms.Button btnProducts;
+      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.FlowLayoutPanel flowlayoutViewProducts;
    }
 }

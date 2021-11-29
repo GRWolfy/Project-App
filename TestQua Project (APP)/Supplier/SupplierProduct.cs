@@ -27,7 +27,7 @@ namespace TestQua_Project__APP_.Supplier
             /*When Save clicked -> Transactions for confirmation of restocking
                -orderid, userid, productid, quantity, totalprice, status
             */
-            double totalprice = (Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtQuantity.Text)) + 80.00;
+            double totalprice = ((Convert.ToDouble(txtPrice.Text) * .5) * Convert.ToDouble(txtQuantity.Text)) + 80.00;
 
             Connection.DB();
             Function.gen = "INSERT INTO Transactions(userid, productid, quantity, totalprice, status) VALUES('" + Login.userid + "', '" + txtProductId.Text + "', '" + txtQuantity.Text + "', '" + totalprice + "', '" + "PENDING" + "') ";

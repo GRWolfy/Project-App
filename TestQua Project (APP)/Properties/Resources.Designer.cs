@@ -204,6 +204,16 @@ namespace TestQua_Project__APP_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap slpash_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("slpash-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled {
             get {
                 object obj = ResourceManager.GetObject("Untitled", resourceCulture);

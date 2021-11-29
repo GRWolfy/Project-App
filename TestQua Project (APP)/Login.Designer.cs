@@ -38,6 +38,8 @@ namespace TestQua_Project__APP_
          this.label3 = new System.Windows.Forms.Label();
          this.label4 = new System.Windows.Forms.Label();
          this.linklblGuest = new System.Windows.Forms.LinkLabel();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // txtPassword
@@ -148,6 +150,16 @@ namespace TestQua_Project__APP_
          this.linklblGuest.Text = "Login as a Guest";
          this.linklblGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblGuest_LinkClicked);
          // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.slpash_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(-39, -25);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(1027, 670);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 28;
+         this.pictureBox1.TabStop = false;
+         // 
          // Login
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,10 +175,12 @@ namespace TestQua_Project__APP_
          this.Controls.Add(this.txtUsername);
          this.Controls.Add(this.btnLogin);
          this.Controls.Add(this.linklblRegister);
+         this.Controls.Add(this.pictureBox1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "Login";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "Login";
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -182,5 +196,6 @@ namespace TestQua_Project__APP_
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
       private System.Windows.Forms.LinkLabel linklblGuest;
+      private System.Windows.Forms.PictureBox pictureBox1;
    }
 }

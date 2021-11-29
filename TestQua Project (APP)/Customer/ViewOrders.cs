@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -7,6 +8,11 @@ namespace TestQua_Project__APP_.Customer
    public partial class ViewOrders : Form
    {
       private string Status = CustomerOrder.Status;
+      private int MAX_COUNT = CustomerOrder.ProductIDs.Count;
+      private int newQuantity;
+      private int newSold;
+      private int productid;
+
       public ViewOrders()
       {
          InitializeComponent();
@@ -14,8 +20,9 @@ namespace TestQua_Project__APP_.Customer
 
       private void ViewOrders_Load(object sender, EventArgs e)
       {
+         //setList();
          setOrderInfo();
-         txtStatus.Text = CustomerOrder.Status;
+         txtStatus.Text = Status;
          setButtonVisibility();
       }
 
@@ -37,9 +44,8 @@ namespace TestQua_Project__APP_.Customer
       {
          try
          {
-            for (int i = 0; i < CustomerOrder.ProductIDs.Count; i++)
+            for (int i = 0; i < MAX_COUNT; i++)
             {
-               //'P' + convert(varchar, cast(productprice AS MONEY), 1) AS [productprice]
                Connection.DB();
                Function.gen = "SELECT productid, productname, productdescrip, productprice, productimage, quantity, timestored FROM Products WHERE productid = '" + CustomerOrder.ProductIDs[i] + "' ";
                Function.command = new SqlCommand(Function.gen, Connection.con);
@@ -77,7 +83,25 @@ namespace TestQua_Project__APP_.Customer
 
       private void btnReturn_Click(object sender, EventArgs e)
       {
+         returnProduct();
          updateStatus("RETURN");
+      }
+
+      private void returnProduct()
+      {
+         for (int i = 0; i < MAX_COUNT; i++)
+         {
+            newQuantity = Convert.ToInt32(CustomerOrder.QuantityBought[i]) + Convert.ToInt32(CustomerOrder.ProductQuantity[i]);
+            newSold = Convert.ToInt32(CustomerOrder.ProductSold[i]) - Convert.ToInt32(CustomerOrder.QuantityBought[i]);
+            productid = Convert.ToInt32(CustomerOrder.ProductIDs[i]);
+
+            
+            Connection.DB();
+            Function.gen = "UPDATE Products SET Quantity =  '" + newQuantity + "', Sold = '" + newSold + "' WHERE productid = '" + productid + "' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.command.ExecuteNonQuery();
+            Connection.con.Close();
+         }
       }
 
       private void updateStatus(string status)
@@ -93,11 +117,9 @@ namespace TestQua_Project__APP_.Customer
                Function.command = new SqlCommand(Function.gen, Connection.con);
                Function.command.ExecuteNonQuery();
                MessageBox.Show("Update success.", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               Connection.con.Close();
-
-               btnOrderReceived.Enabled = false;
-               btnReturn.Enabled = false;
             }
+
+            Connection.con.Close();
          }
 
          catch (Exception ex)
