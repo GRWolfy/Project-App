@@ -26,8 +26,9 @@ namespace TestQua_Project__APP_.Customer
          txtConfirmPassword.Enabled = status;
          txtPassword.Enabled = status;
          cmbGender.Enabled = status;
-         btnBrowsePicture.Enabled = status;
-         btnSave.Enabled = status;
+         btnBrowsePicture.Visible = status;
+         btnSave.Visible = status;
+         btnUpdate.Visible = status ? false : true;
       }
 
       private void getFields()

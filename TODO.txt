@@ -1,48 +1,30 @@
-ADMIN
- -Home still nothing in there
-DONE -Accounts, ViewAccounts fix the datagrid and Probably trapping of datasw (NO TRAPS)
-DONE -Products, ViewProducts fix the datagrid
-DONE -Products, AddSupply fix the datagrid
-DONE -Reports, All, fix datagrid (Need review if need to view what product(s)?
- -AddFromSupply, fix buttons, screen, and quantity
+Homepage (?)
 
-Customer 
- -Home still nothing in there
- -Profile add traps
- -Products, adjust layout a bit, txtSearch adjust size, add icon for cart
-DONE -ViewCart, fix datagrid and UX (Need review)
-DONE -Checkout, fix datagrid  and UX (Need reviw)
-DONE -Order, fix datagrid
-DONE -ViewOrder, fix datagrid and UX
+Login
+ -Font style
 
-GUEST
- -Home, I dont know what to put here
-DONE -Product, add filter for sold-out product and adjust textbox
- -Register, fix link
+Admin
+ -Home, fix UI bit 
+ -Products, View products, fix datagrid and search
+ -Products, transactions datagrid 
+ -Products, transactions, verify, fix UI
+ -Reports, fix datagrid
 
-SUPPLIER
- -Home, same issue with others
- -Profile, need review
- -Transactions, add datagrid here
- -Product, adjust/fix everything
- -All, fix link
+Customer
+ -Home, UI
+ -Profile, testing
+ -Products, search and flowlayout fix UI bit
+ -Products, viewproduct  fix UI
+ -Order, datagrid position
+ -Order, ViewOrder, UI
 
-LOGIN
-DONE -Fix username text
- -UX
+Supplier
+ -Home, UI
+ -Profile, add img for pb
+ -Product, Datagrid
+ -Transaction, datagrid
 
-REGISTER 
- -Constraints for input field
- -UI
-
-HOME
- -Review UI and UX
-
-SPLASHSCREEN
-  -Review for final design
-
-OVERALL
- -Fix UX
- -Need design
- -Adjust size
- -Trap data
+Guest
+ -Home, UI
+ -Products, flowlayout UI need some adjustment
+ -

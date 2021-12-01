@@ -34,6 +34,7 @@ namespace TestQua_Project__APP_.Customer
          this.button2 = new System.Windows.Forms.Button();
          this.btnAddtoCart = new System.Windows.Forms.Button();
          this.panel2 = new System.Windows.Forms.Panel();
+         this.txtDescription = new System.Windows.Forms.RichTextBox();
          this.btnPlus = new System.Windows.Forms.Button();
          this.label4 = new System.Windows.Forms.Label();
          this.btnMinus = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@ namespace TestQua_Project__APP_.Customer
          this.lblPrice = new System.Windows.Forms.Label();
          this.lblName = new System.Windows.Forms.Label();
          this.pictureboxProductPic = new System.Windows.Forms.PictureBox();
-         this.txtDescription = new System.Windows.Forms.RichTextBox();
          this.panel2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).BeginInit();
          this.SuspendLayout();
@@ -53,6 +53,8 @@ namespace TestQua_Project__APP_.Customer
          // btnClose
          // 
          this.btnClose.BackColor = System.Drawing.Color.Plum;
+         this.btnClose.FlatAppearance.BorderSize = 0;
+         this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
          this.btnClose.Location = new System.Drawing.Point(12, 12);
          this.btnClose.Name = "btnClose";
@@ -74,8 +76,10 @@ namespace TestQua_Project__APP_.Customer
          // btnAddtoCart
          // 
          this.btnAddtoCart.BackColor = System.Drawing.Color.Plum;
+         this.btnAddtoCart.FlatAppearance.BorderSize = 0;
+         this.btnAddtoCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAddtoCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-         this.btnAddtoCart.Location = new System.Drawing.Point(416, 492);
+         this.btnAddtoCart.Location = new System.Drawing.Point(58, 454);
          this.btnAddtoCart.Name = "btnAddtoCart";
          this.btnAddtoCart.Size = new System.Drawing.Size(170, 31);
          this.btnAddtoCart.TabIndex = 61;
@@ -85,6 +89,7 @@ namespace TestQua_Project__APP_.Customer
          // 
          // panel2
          // 
+         this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.panel2.Controls.Add(this.txtDescription);
          this.panel2.Controls.Add(this.btnPlus);
          this.panel2.Controls.Add(this.label4);
@@ -96,15 +101,27 @@ namespace TestQua_Project__APP_.Customer
          this.panel2.Controls.Add(this.lblQuantity);
          this.panel2.Controls.Add(this.lblPrice);
          this.panel2.Controls.Add(this.lblName);
-         this.panel2.Location = new System.Drawing.Point(334, 71);
+         this.panel2.Location = new System.Drawing.Point(309, 26);
          this.panel2.Name = "panel2";
-         this.panel2.Size = new System.Drawing.Size(344, 397);
+         this.panel2.Size = new System.Drawing.Size(387, 496);
          this.panel2.TabIndex = 62;
+         // 
+         // txtDescription
+         // 
+         this.txtDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+         this.txtDescription.Location = new System.Drawing.Point(31, 138);
+         this.txtDescription.Name = "txtDescription";
+         this.txtDescription.ReadOnly = true;
+         this.txtDescription.Size = new System.Drawing.Size(336, 135);
+         this.txtDescription.TabIndex = 98;
+         this.txtDescription.Text = "";
          // 
          // btnPlus
          // 
          this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnPlus.Location = new System.Drawing.Point(242, 354);
+         this.btnPlus.Location = new System.Drawing.Point(253, 432);
          this.btnPlus.Name = "btnPlus";
          this.btnPlus.Size = new System.Drawing.Size(39, 31);
          this.btnPlus.TabIndex = 97;
@@ -117,7 +134,7 @@ namespace TestQua_Project__APP_.Customer
          this.label4.AutoSize = true;
          this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label4.ForeColor = System.Drawing.Color.Black;
-         this.label4.Location = new System.Drawing.Point(21, 317);
+         this.label4.Location = new System.Drawing.Point(25, 357);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(116, 31);
          this.label4.TabIndex = 69;
@@ -126,7 +143,7 @@ namespace TestQua_Project__APP_.Customer
          // btnMinus
          // 
          this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnMinus.Location = new System.Drawing.Point(92, 354);
+         this.btnMinus.Location = new System.Drawing.Point(103, 432);
          this.btnMinus.Name = "btnMinus";
          this.btnMinus.Size = new System.Drawing.Size(39, 31);
          this.btnMinus.TabIndex = 96;
@@ -139,7 +156,7 @@ namespace TestQua_Project__APP_.Customer
          this.label3.AutoSize = true;
          this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label3.ForeColor = System.Drawing.Color.Black;
-         this.label3.Location = new System.Drawing.Point(35, 271);
+         this.label3.Location = new System.Drawing.Point(25, 297);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(84, 31);
          this.label3.TabIndex = 68;
@@ -148,7 +165,7 @@ namespace TestQua_Project__APP_.Customer
          // txtQuantity
          // 
          this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtQuantity.Location = new System.Drawing.Point(137, 354);
+         this.txtQuantity.Location = new System.Drawing.Point(148, 432);
          this.txtQuantity.Name = "txtQuantity";
          this.txtQuantity.Size = new System.Drawing.Size(100, 32);
          this.txtQuantity.TabIndex = 95;
@@ -159,7 +176,7 @@ namespace TestQua_Project__APP_.Customer
          this.label2.AutoSize = true;
          this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label2.ForeColor = System.Drawing.Color.Black;
-         this.label2.Location = new System.Drawing.Point(24, 116);
+         this.label2.Location = new System.Drawing.Point(24, 104);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(159, 31);
          this.label2.TabIndex = 67;
@@ -181,7 +198,7 @@ namespace TestQua_Project__APP_.Customer
          this.lblQuantity.AutoSize = true;
          this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
          this.lblQuantity.ForeColor = System.Drawing.Color.Black;
-         this.lblQuantity.Location = new System.Drawing.Point(143, 320);
+         this.lblQuantity.Location = new System.Drawing.Point(147, 360);
          this.lblQuantity.Name = "lblQuantity";
          this.lblQuantity.Size = new System.Drawing.Size(100, 29);
          this.lblQuantity.TabIndex = 65;
@@ -192,7 +209,7 @@ namespace TestQua_Project__APP_.Customer
          this.lblPrice.AutoSize = true;
          this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
          this.lblPrice.ForeColor = System.Drawing.Color.Black;
-         this.lblPrice.Location = new System.Drawing.Point(114, 274);
+         this.lblPrice.Location = new System.Drawing.Point(104, 300);
          this.lblPrice.Name = "lblPrice";
          this.lblPrice.Size = new System.Drawing.Size(69, 29);
          this.lblPrice.TabIndex = 64;
@@ -212,24 +229,12 @@ namespace TestQua_Project__APP_.Customer
          // pictureboxProductPic
          // 
          this.pictureboxProductPic.Image = ((System.Drawing.Image)(resources.GetObject("pictureboxProductPic.Image")));
-         this.pictureboxProductPic.Location = new System.Drawing.Point(23, 105);
+         this.pictureboxProductPic.Location = new System.Drawing.Point(25, 113);
          this.pictureboxProductPic.Name = "pictureboxProductPic";
-         this.pictureboxProductPic.Size = new System.Drawing.Size(264, 269);
+         this.pictureboxProductPic.Size = new System.Drawing.Size(264, 299);
          this.pictureboxProductPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pictureboxProductPic.TabIndex = 86;
          this.pictureboxProductPic.TabStop = false;
-         // 
-         // txtDescription
-         // 
-         this.txtDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
-         this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-         this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-         this.txtDescription.Location = new System.Drawing.Point(31, 150);
-         this.txtDescription.Name = "txtDescription";
-         this.txtDescription.ReadOnly = true;
-         this.txtDescription.Size = new System.Drawing.Size(293, 121);
-         this.txtDescription.TabIndex = 98;
-         this.txtDescription.Text = "";
          // 
          // ViewProduct
          // 

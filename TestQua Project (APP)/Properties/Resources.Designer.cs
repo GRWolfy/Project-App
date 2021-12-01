@@ -133,6 +133,26 @@ namespace TestQua_Project__APP_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("images-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lilac_flower_bouquet_design_decor_pink_wooden_background_frame_lilac_flower_bouquet_pink_wooden_background_framen_blossom_148077289___Copy {
             get {
                 object obj = ResourceManager.GetObject("lilac-flower-bouquet-design-decor-pink-wooden-background-frame-lilac-flower-bouqu" +

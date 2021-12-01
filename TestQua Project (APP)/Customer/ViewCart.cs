@@ -31,11 +31,11 @@ namespace TestQua_Project__APP_.Customer
       private void viewCart()
       {
          Connection.DB();
-         Function.gen = "SELECT Products.productid, Products.productname AS [PRODUCT NAME],Products.productprice, 'P' + convert(varchar, cast(Products.productprice AS MONEY), 1) AS [PRICE], CartDb.Quantity AS [QUANTITY], Products.Quantity, Products.productimage, 'P' + convert(varchar, cast((Products.ProductPrice * CartDb.Quantity) AS MONEY), 1) AS [SUB TOTAL] FROM CartDb INNER JOIN Products ON CartDB.productid = Products.productid  WHERE Cartdb.userid = '" + Login.userid + "' ";
+         Function.gen = "SELECT Products.productid, Products.productname AS [PRODUCT NAME],Products.productprice, 'P' + convert(varchar, cast(Products.productprice AS MONEY), 1) AS [PRICE], CartDb.Quantity AS [QUANTITY], Products.Quantity as [qty], Products.productimage, 'P' + convert(varchar, cast((Products.ProductPrice * CartDb.Quantity) AS MONEY), 1) AS [SUB TOTAL] FROM CartDb INNER JOIN Products ON CartDB.productid = Products.productid  WHERE Cartdb.userid = '" + Login.userid + "' ";
          Function.fill(Function.gen, datagridViewCart);
          datagridViewCart.Columns["productimage"].Visible = false;
          datagridViewCart.Columns["productid"].Visible = false;
-         datagridViewCart.Columns["quantity1"].Visible = false;
+         datagridViewCart.Columns["qty"].Visible = false;
          datagridViewCart.Columns["productprice"].Visible = false;
       }
 
@@ -135,26 +135,34 @@ namespace TestQua_Project__APP_.Customer
 
       private void btnUpdate_Click(object sender, EventArgs e)
       {
-         try
+         if (newQuantity < setMax + 1 && newQuantity > 0)
          {
+            try
+            {
 
-            Connection.DB();
-            Function.gen = "UPDATE CartDb SET Quantity = '" + newQuantity + "' WHERE productid = '" + productid + "' AND userid = '" + Login.userid + "' ";
-            Function.command = new SqlCommand(Function.gen, Connection.con);
-            Function.command.ExecuteNonQuery();
+               Connection.DB();
+               Function.gen = "UPDATE CartDb SET Quantity = '" + newQuantity + "' WHERE productid = '" + productid + "' AND userid = '" + Login.userid + "' ";
+               Function.command = new SqlCommand(Function.gen, Connection.con);
+               Function.command.ExecuteNonQuery();
 
-            MessageBox.Show("Cart Updated");
-            Connection.con.Close();
-            viewCart();
-            setTotalPrice();
-            clearFields();
-            fieldControl(false);
+               MessageBox.Show("Cart Updated");
+               Connection.con.Close();
+               viewCart();
+               setTotalPrice();
+               clearFields();
+               fieldControl(false);
+            }
+
+            catch (Exception ex)
+            {
+               MessageBox.Show(ex.Message);
+            }
          }
-
-         catch (Exception ex)
+         else
          {
-            MessageBox.Show(ex.Message);
+            MessageBox.Show("Quantity out of range, please redo setting quantity.");
          }
+         
       }
 
       private void datagridViewCart_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -164,9 +172,8 @@ namespace TestQua_Project__APP_.Customer
          double quantity = Convert.ToDouble(datagridViewCart.Rows[e.RowIndex].Cells["QUANTITY"].Value);
          txtTotalPrice.Text = (quantity * price).ToString();
          productid = Convert.ToInt32(datagridViewCart.Rows[e.RowIndex].Cells["productid"].Value);
-         txtQuantity.Text = quantity.ToString();
          previousQuantity = Convert.ToInt32(datagridViewCart.Rows[e.RowIndex].Cells["QUANTITY"].Value);
-         setMax = Convert.ToInt32(datagridViewCart.Rows[e.RowIndex].Cells["quantity1"].Value);
+         setMax = Convert.ToInt32(datagridViewCart.Rows[e.RowIndex].Cells["qty"].Value);
          byte[] img = (byte[])(datagridViewCart.Rows[e.RowIndex].Cells["productimage"].Value);
 
          if (img == null)
@@ -199,13 +206,15 @@ namespace TestQua_Project__APP_.Customer
       {
          try
          {
-            if (newQuantity < setMax + 1 || newQuantity > 0)
+            if (Convert.ToInt32(txtQuantity.Text) < setMax + 1 && Convert.ToInt32(txtQuantity.Text) > 0)
             {
                newQuantity = Convert.ToInt32(txtQuantity.Text);
             }
             else
             {
                MessageBox.Show("Quantity out of range, please redo setting quantity.");
+               newQuantity = 0;
+               txtQuantity.Clear();
             }
          }
 

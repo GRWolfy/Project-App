@@ -12,7 +12,7 @@ namespace TestQua_Project__APP_.Customer
       private Label price;
       private Label name;
       private Label quantity;
-      public static int productid = 0;
+      public static int prodid = 0;
 
       public CustomerHome()
       {
@@ -63,7 +63,7 @@ namespace TestQua_Project__APP_.Customer
          flowlayoutViewProducts.Controls.Clear();
 
          Connection.DB();
-         Function.gen = "SELECT * FROM Products order by sold asc ";
+         Function.gen = "SELECT * FROM Products order by sold desc  ";
          Function.command = new SqlCommand(Function.gen, Connection.con);
          Function.reader = Function.command.ExecuteReader();
          int count = 0;
@@ -132,8 +132,9 @@ namespace TestQua_Project__APP_.Customer
       {
          try
          {
-            productid = Convert.ToInt32(((PictureBox)sender).Tag);
-            var viewproduct = new CustomerHome();
+            prodid = Convert.ToInt32(((PictureBox)sender).Tag);
+            CustomerProduct.productid = prodid;
+            var viewproduct = new ViewProduct();
             viewproduct.Show();
             Close();
          }

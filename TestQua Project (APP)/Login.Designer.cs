@@ -80,11 +80,11 @@ namespace TestQua_Project__APP_
          this.linklblRegister.AutoSize = true;
          this.linklblRegister.BackColor = System.Drawing.Color.Transparent;
          this.linklblRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-         this.linklblRegister.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.linklblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
          this.linklblRegister.LinkColor = System.Drawing.Color.Black;
          this.linklblRegister.Location = new System.Drawing.Point(163, 381);
          this.linklblRegister.Name = "linklblRegister";
-         this.linklblRegister.Size = new System.Drawing.Size(275, 23);
+         this.linklblRegister.Size = new System.Drawing.Size(241, 16);
          this.linklblRegister.TabIndex = 18;
          this.linklblRegister.TabStop = true;
          this.linklblRegister.Text = "Need an account? Click here to register";

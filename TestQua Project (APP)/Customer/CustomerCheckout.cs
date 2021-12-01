@@ -49,11 +49,11 @@ namespace TestQua_Project__APP_.Customer
       private void setViewCart()
       {
          Connection.DB();
-         Function.gen = "SELECT cartdb.userid, cartdb.productid, Products.productname AS NAME, cartdb.quantity AS QUANTITY, (Products.productprice * cartdb.quantity) AS [total], 'P' + convert(varchar, cast((Products.productprice * cartdb.quantity) AS MONEY), 1) AS [TOTAL] from CartDb INNER JOIN Products ON CartDB.productid = Products.productid  WHERE userid = '" + Login.userid + "' ";
+         Function.gen = "SELECT cartdb.userid, cartdb.productid, Products.productname AS NAME, cartdb.quantity AS QUANTITY, (Products.productprice * cartdb.quantity) AS [total1], 'P' + convert(varchar, cast((Products.productprice * cartdb.quantity) AS MONEY), 1) AS [TOTAL] from CartDb INNER JOIN Products ON CartDB.productid = Products.productid  WHERE userid = '" + Login.userid + "' ";
          Function.fill(Function.gen, dataGridView);
          dataGridView.Columns["userid"].Visible = false;
          dataGridView.Columns["productid"].Visible = false;
-         dataGridView.Columns["total"].Visible = false;
+         dataGridView.Columns["total1"].Visible = false;
       }
 
       private void btnPlaceOrder_Click(object sender, EventArgs e)

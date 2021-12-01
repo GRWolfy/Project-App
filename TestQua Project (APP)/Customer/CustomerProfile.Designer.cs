@@ -37,6 +37,7 @@ namespace TestQua_Project__APP_.Customer
          this.panelProfile = new System.Windows.Forms.Panel();
          this.btnBrowsePicture = new System.Windows.Forms.Button();
          this.label13 = new System.Windows.Forms.Label();
+         this.pbProfilePicture = new System.Windows.Forms.PictureBox();
          this.btnUpdate = new System.Windows.Forms.Button();
          this.btnSave = new System.Windows.Forms.Button();
          this.txtUserid = new System.Windows.Forms.TextBox();
@@ -61,7 +62,6 @@ namespace TestQua_Project__APP_.Customer
          this.txtEmail = new System.Windows.Forms.TextBox();
          this.label1 = new System.Windows.Forms.Label();
          this.btnHome = new System.Windows.Forms.Button();
-         this.pbProfilePicture = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
@@ -169,12 +169,15 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnBrowsePicture
          // 
+         this.btnBrowsePicture.BackColor = System.Drawing.Color.Plum;
+         this.btnBrowsePicture.FlatAppearance.BorderSize = 0;
+         this.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnBrowsePicture.Location = new System.Drawing.Point(245, 191);
          this.btnBrowsePicture.Name = "btnBrowsePicture";
          this.btnBrowsePicture.Size = new System.Drawing.Size(75, 23);
          this.btnBrowsePicture.TabIndex = 90;
          this.btnBrowsePicture.Text = "Browse";
-         this.btnBrowsePicture.UseVisualStyleBackColor = true;
+         this.btnBrowsePicture.UseVisualStyleBackColor = false;
          this.btnBrowsePicture.Click += new System.EventHandler(this.btnBrowsePicture_Click_1);
          // 
          // label13
@@ -187,26 +190,42 @@ namespace TestQua_Project__APP_.Customer
          this.label13.TabIndex = 89;
          this.label13.Text = "Profile picture";
          // 
+         // pbProfilePicture
+         // 
+         this.pbProfilePicture.Image = global::TestQua_Project__APP_.Properties.Resources.defpic_removebg_preview;
+         this.pbProfilePicture.Location = new System.Drawing.Point(225, 42);
+         this.pbProfilePicture.Name = "pbProfilePicture";
+         this.pbProfilePicture.Size = new System.Drawing.Size(178, 145);
+         this.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.pbProfilePicture.TabIndex = 88;
+         this.pbProfilePicture.TabStop = false;
+         // 
          // btnUpdate
          // 
+         this.btnUpdate.BackColor = System.Drawing.Color.Plum;
+         this.btnUpdate.FlatAppearance.BorderSize = 0;
+         this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnUpdate.Location = new System.Drawing.Point(706, 446);
+         this.btnUpdate.Location = new System.Drawing.Point(655, 449);
          this.btnUpdate.Name = "btnUpdate";
          this.btnUpdate.Size = new System.Drawing.Size(88, 40);
          this.btnUpdate.TabIndex = 87;
          this.btnUpdate.Text = "Update";
-         this.btnUpdate.UseVisualStyleBackColor = true;
+         this.btnUpdate.UseVisualStyleBackColor = false;
          this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
          // 
          // btnSave
          // 
+         this.btnSave.BackColor = System.Drawing.Color.Plum;
+         this.btnSave.FlatAppearance.BorderSize = 0;
+         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnSave.Location = new System.Drawing.Point(585, 446);
+         this.btnSave.Location = new System.Drawing.Point(655, 449);
          this.btnSave.Name = "btnSave";
          this.btnSave.Size = new System.Drawing.Size(88, 40);
          this.btnSave.TabIndex = 86;
          this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = true;
+         this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // txtUserid
@@ -430,16 +449,6 @@ namespace TestQua_Project__APP_.Customer
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
          this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-         // 
-         // pbProfilePicture
-         // 
-         this.pbProfilePicture.Image = global::TestQua_Project__APP_.Properties.Resources.defpic_removebg_preview;
-         this.pbProfilePicture.Location = new System.Drawing.Point(225, 42);
-         this.pbProfilePicture.Name = "pbProfilePicture";
-         this.pbProfilePicture.Size = new System.Drawing.Size(178, 145);
-         this.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.pbProfilePicture.TabIndex = 88;
-         this.pbProfilePicture.TabStop = false;
          // 
          // panel1
          // 

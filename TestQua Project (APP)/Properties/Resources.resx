@@ -136,6 +136,9 @@
   <data name="243083014_227935809392463_6199428534275415365_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\243083014_227935809392463_6199428534275415365_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="8-83080_64-images-about-flower-png-on-we-heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8-83080_64-images-about-flower-png-on-we-heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="lilac-flower-bouquet-design-decor-pink-wooden-background-frame-lilac-flower-bouquet-pink-wooden-background-framen-blossom-148077289 - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Backgrounds\lilac-flower-bouquet-design-decor-pink-wooden-background-frame-lilac-flower-bouquet-pink-wooden-background-framen-blossom-148077289 - Copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="slpash-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\slpash-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="noimagefound-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\noimagefound-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,7 +172,7 @@
   <data name="Untitled1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="slpash-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\slpash-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -152,6 +152,8 @@ namespace TestQua_Project__APP_.Customer
             else
             {
                MessageBox.Show("Quantity out of range, please redo setting quantity.");
+               newQuantity = 0;
+               txtQuantity.Clear();
             }
          }
 

@@ -60,7 +60,6 @@ namespace TestQua_Project__APP_.Admin
          this.tabcontrolAdminProducts = new System.Windows.Forms.TabControl();
          this.tabPage3 = new System.Windows.Forms.TabPage();
          this.datagridViewTransactions = new System.Windows.Forms.DataGridView();
-         this.textBox1 = new System.Windows.Forms.TextBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
@@ -210,6 +209,7 @@ namespace TestQua_Project__APP_.Admin
          this.txtSearch.Name = "txtSearch";
          this.txtSearch.Size = new System.Drawing.Size(155, 29);
          this.txtSearch.TabIndex = 65;
+         this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
          // 
          // tabPage1
          // 
@@ -425,21 +425,21 @@ namespace TestQua_Project__APP_.Admin
          // 
          // tabPage3
          // 
+         this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage3.Controls.Add(this.datagridViewTransactions);
-         this.tabPage3.Controls.Add(this.textBox1);
          this.tabPage3.Location = new System.Drawing.Point(4, 38);
          this.tabPage3.Name = "tabPage3";
          this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
          this.tabPage3.Size = new System.Drawing.Size(891, 477);
          this.tabPage3.TabIndex = 2;
          this.tabPage3.Text = "Transaction";
-         this.tabPage3.UseVisualStyleBackColor = true;
          // 
          // datagridViewTransactions
          // 
          this.datagridViewTransactions.AllowUserToAddRows = false;
          this.datagridViewTransactions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.datagridViewTransactions.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+         this.datagridViewTransactions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.datagridViewTransactions.Location = new System.Drawing.Point(1, 47);
          this.datagridViewTransactions.Name = "datagridViewTransactions";
@@ -447,13 +447,6 @@ namespace TestQua_Project__APP_.Admin
          this.datagridViewTransactions.Size = new System.Drawing.Size(891, 434);
          this.datagridViewTransactions.TabIndex = 68;
          this.datagridViewTransactions.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewTransactions_CellClick);
-         // 
-         // textBox1
-         // 
-         this.textBox1.Location = new System.Drawing.Point(223, 5);
-         this.textBox1.Name = "textBox1";
-         this.textBox1.Size = new System.Drawing.Size(100, 35);
-         this.textBox1.TabIndex = 67;
          // 
          // panel1
          // 
@@ -517,7 +510,6 @@ namespace TestQua_Project__APP_.Admin
          ((System.ComponentModel.ISupportInitialize)(this.pictureboxProductPic)).EndInit();
          this.tabcontrolAdminProducts.ResumeLayout(false);
          this.tabPage3.ResumeLayout(false);
-         this.tabPage3.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewTransactions)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
@@ -557,7 +549,6 @@ namespace TestQua_Project__APP_.Admin
       public System.Windows.Forms.TabControl tabcontrolAdminProducts;
       private System.Windows.Forms.TabPage tabPage3;
       private System.Windows.Forms.DataGridView datagridViewTransactions;
-      private System.Windows.Forms.TextBox textBox1;
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.Label label8;
    }

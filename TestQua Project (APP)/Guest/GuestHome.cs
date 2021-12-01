@@ -51,7 +51,7 @@ namespace TestQua_Project__APP_.Guest
          flowlayoutViewProducts.Controls.Clear();
 
          Connection.DB();
-         Function.gen = "SELECT * FROM Products order by sold asc ";
+         Function.gen = "SELECT * FROM Products order by sold desc ";
          Function.command = new SqlCommand(Function.gen, Connection.con);
          Function.reader = Function.command.ExecuteReader();
          int count = 0;

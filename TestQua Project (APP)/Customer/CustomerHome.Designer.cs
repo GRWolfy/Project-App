@@ -35,11 +35,13 @@ namespace TestQua_Project__APP_.Customer
          this.btnOrder = new System.Windows.Forms.Button();
          this.btnProfile = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
+         this.label1 = new System.Windows.Forms.Label();
+         this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.label1 = new System.Windows.Forms.Label();
-         this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
          // 
@@ -123,6 +125,33 @@ namespace TestQua_Project__APP_.Customer
          this.btnProducts.UseVisualStyleBackColor = false;
          this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
          // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.Location = new System.Drawing.Point(277, 139);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(397, 81);
+         this.label1.TabIndex = 29;
+         this.label1.Text = "BUY NOW!!!!";
+         // 
+         // flowlayoutViewProducts
+         // 
+         this.flowlayoutViewProducts.Location = new System.Drawing.Point(240, 229);
+         this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
+         this.flowlayoutViewProducts.Size = new System.Drawing.Size(750, 324);
+         this.flowlayoutViewProducts.TabIndex = 30;
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.images_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(709, 118);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(163, 102);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 31;
+         this.pictureBox1.TabStop = false;
+         // 
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
@@ -158,29 +187,13 @@ namespace TestQua_Project__APP_.Customer
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
-         // label1
-         // 
-         this.label1.AutoSize = true;
-         this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.Location = new System.Drawing.Point(277, 139);
-         this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(439, 81);
-         this.label1.TabIndex = 29;
-         this.label1.Text = "TOP SELLER!!!!";
-         // 
-         // flowlayoutViewProducts
-         // 
-         this.flowlayoutViewProducts.Location = new System.Drawing.Point(240, 229);
-         this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
-         this.flowlayoutViewProducts.Size = new System.Drawing.Size(750, 324);
-         this.flowlayoutViewProducts.TabIndex = 30;
-         // 
          // CustomerHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.flowlayoutViewProducts);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.btnHome);
@@ -194,6 +207,7 @@ namespace TestQua_Project__APP_.Customer
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "CustomerHome";
          this.Load += new System.EventHandler(this.CustomerHome_Load);
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.ResumeLayout(false);
@@ -212,5 +226,6 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.Button btnProducts;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.FlowLayoutPanel flowlayoutViewProducts;
+      private System.Windows.Forms.PictureBox pictureBox1;
    }
 }

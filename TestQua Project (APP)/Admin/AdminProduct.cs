@@ -146,8 +146,10 @@ namespace TestQua_Project__APP_.Admin
             MessageBox.Show("Update success.", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Connection.con.Close();
             ViewProducts();
-            clearFields();
             setButtonVisibility(false);
+            var adminprod = new AdminProduct();
+            adminprod.Show();
+            adminprod.tabcontrolAdminProducts.SelectedIndex = 0;
             updateStatus();
          }
 
@@ -172,6 +174,9 @@ namespace TestQua_Project__APP_.Admin
                Connection.con.Close();
                clearFields();
                setButtonVisibility(false);
+               var adminprod = new AdminProduct();
+               adminprod.Show();
+               adminprod.tabcontrolAdminProducts.SelectedIndex = 0;
             }
          }
 
@@ -184,11 +189,12 @@ namespace TestQua_Project__APP_.Admin
       private void ViewProducts()
       {
          Connection.DB();
-         Function.gen = "SELECT productname as [NAME], productdescrip as [DESCRIPTION], 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], quantity as [QUANTITY], sold as [SOLD], Status as [STATUS],  productid, productimage, productprice from Products";
+         Function.gen = "SELECT productname as [NAME], productdescrip as [DESCRIPTION], 'P' + convert(varchar, cast(productprice AS MONEY), 1) as [PRICE], quantity as [QUANTITY], sold as [SOLD], Status as [STATUS],  productid, productimage, productprice from Products where productname like '" + txtSearch.Text + "%' ";
          Function.fill(Function.gen, datagridViewProduct);
          datagridViewProduct.Columns["productid"].Visible = false;
          datagridViewProduct.Columns["productimage"].Visible = false;
          datagridViewProduct.Columns["productprice"].Visible = false;
+         datagridViewProduct.Columns["DESCRIPTION"].Visible = false;
       }
 
       private void datagridViewProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -377,6 +383,11 @@ namespace TestQua_Project__APP_.Admin
          {
             isValid[2] = true;
          }
+      }
+
+      private void txtSearch_TextChanged(object sender, EventArgs e)
+      {
+         ViewProducts();
       }
    }
 }

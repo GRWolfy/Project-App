@@ -38,7 +38,7 @@ namespace TestQua_Project__APP_.Customer
          this.lblProductName = new System.Windows.Forms.Label();
          this.txtName = new System.Windows.Forms.TextBox();
          this.txtTotalPrice = new System.Windows.Forms.TextBox();
-         this.asd = new System.Windows.Forms.Label();
+         this.lblTesting = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.pictureBox = new System.Windows.Forms.PictureBox();
          this.label4 = new System.Windows.Forms.Label();
@@ -53,49 +53,62 @@ namespace TestQua_Project__APP_.Customer
          // 
          // btnBack
          // 
+         this.btnBack.BackColor = System.Drawing.Color.Plum;
+         this.btnBack.FlatAppearance.BorderSize = 0;
+         this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
          this.btnBack.ForeColor = System.Drawing.Color.Black;
          this.btnBack.Location = new System.Drawing.Point(46, 33);
          this.btnBack.Name = "btnBack";
-         this.btnBack.Size = new System.Drawing.Size(75, 23);
+         this.btnBack.Size = new System.Drawing.Size(99, 47);
          this.btnBack.TabIndex = 1;
          this.btnBack.Text = "Back";
-         this.btnBack.UseVisualStyleBackColor = true;
+         this.btnBack.UseVisualStyleBackColor = false;
          this.btnBack.Click += new System.EventHandler(this.button1_Click);
          // 
          // btnCheckout
          // 
+         this.btnCheckout.BackColor = System.Drawing.Color.Plum;
+         this.btnCheckout.FlatAppearance.BorderSize = 0;
+         this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnCheckout.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnCheckout.ForeColor = System.Drawing.Color.Black;
-         this.btnCheckout.Location = new System.Drawing.Point(390, 567);
+         this.btnCheckout.Location = new System.Drawing.Point(148, 560);
          this.btnCheckout.Name = "btnCheckout";
          this.btnCheckout.Size = new System.Drawing.Size(215, 49);
          this.btnCheckout.TabIndex = 2;
          this.btnCheckout.Text = "Checkout";
-         this.btnCheckout.UseVisualStyleBackColor = true;
+         this.btnCheckout.UseVisualStyleBackColor = false;
          this.btnCheckout.Click += new System.EventHandler(this.button2_Click);
          // 
          // btnDelete
          // 
+         this.btnDelete.BackColor = System.Drawing.Color.Plum;
+         this.btnDelete.FlatAppearance.BorderSize = 0;
+         this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnDelete.ForeColor = System.Drawing.Color.Black;
-         this.btnDelete.Location = new System.Drawing.Point(519, 481);
+         this.btnDelete.Location = new System.Drawing.Point(277, 474);
          this.btnDelete.Name = "btnDelete";
          this.btnDelete.Size = new System.Drawing.Size(136, 47);
          this.btnDelete.TabIndex = 3;
          this.btnDelete.Text = "Delete";
-         this.btnDelete.UseVisualStyleBackColor = true;
+         this.btnDelete.UseVisualStyleBackColor = false;
          this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
          // 
          // btnUpdate
          // 
+         this.btnUpdate.BackColor = System.Drawing.Color.Plum;
+         this.btnUpdate.FlatAppearance.BorderSize = 0;
+         this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-         this.btnUpdate.Location = new System.Drawing.Point(324, 481);
+         this.btnUpdate.Location = new System.Drawing.Point(82, 474);
          this.btnUpdate.Name = "btnUpdate";
          this.btnUpdate.Size = new System.Drawing.Size(136, 47);
          this.btnUpdate.TabIndex = 4;
          this.btnUpdate.Text = "Update";
-         this.btnUpdate.UseVisualStyleBackColor = true;
+         this.btnUpdate.UseVisualStyleBackColor = false;
          this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
          // 
          // lblProductName
@@ -127,16 +140,16 @@ namespace TestQua_Project__APP_.Customer
          this.txtTotalPrice.Size = new System.Drawing.Size(229, 41);
          this.txtTotalPrice.TabIndex = 8;
          // 
-         // asd
+         // lblTesting
          // 
-         this.asd.AutoSize = true;
-         this.asd.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.asd.ForeColor = System.Drawing.Color.Black;
-         this.asd.Location = new System.Drawing.Point(784, 560);
-         this.asd.Name = "asd";
-         this.asd.Size = new System.Drawing.Size(83, 36);
-         this.asd.TabIndex = 7;
-         this.asd.Text = "Price";
+         this.lblTesting.AutoSize = true;
+         this.lblTesting.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTesting.ForeColor = System.Drawing.Color.Black;
+         this.lblTesting.Location = new System.Drawing.Point(784, 560);
+         this.lblTesting.Name = "lblTesting";
+         this.lblTesting.Size = new System.Drawing.Size(83, 36);
+         this.lblTesting.TabIndex = 7;
+         this.lblTesting.Text = "Price";
          // 
          // label3
          // 
@@ -162,7 +175,7 @@ namespace TestQua_Project__APP_.Customer
          this.label4.AutoSize = true;
          this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label4.ForeColor = System.Drawing.Color.Black;
-         this.label4.Location = new System.Drawing.Point(432, 33);
+         this.label4.Location = new System.Drawing.Point(491, 454);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(89, 36);
          this.label4.TabIndex = 13;
@@ -173,7 +186,7 @@ namespace TestQua_Project__APP_.Customer
          this.lblTotal.AutoSize = true;
          this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblTotal.ForeColor = System.Drawing.Color.Black;
-         this.lblTotal.Location = new System.Drawing.Point(516, 33);
+         this.lblTotal.Location = new System.Drawing.Point(575, 454);
          this.lblTotal.Name = "lblTotal";
          this.lblTotal.Size = new System.Drawing.Size(115, 36);
          this.lblTotal.TabIndex = 14;
@@ -202,7 +215,7 @@ namespace TestQua_Project__APP_.Customer
          dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
          dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
          this.datagridViewCart.DefaultCellStyle = dataGridViewCellStyle2;
-         this.datagridViewCart.Location = new System.Drawing.Point(72, 85);
+         this.datagridViewCart.Location = new System.Drawing.Point(72, 103);
          this.datagridViewCart.Name = "datagridViewCart";
          this.datagridViewCart.RowHeadersVisible = false;
          this.datagridViewCart.RowHeadersWidth = 50;
@@ -257,7 +270,7 @@ namespace TestQua_Project__APP_.Customer
          this.Controls.Add(this.pictureBox);
          this.Controls.Add(this.label3);
          this.Controls.Add(this.txtTotalPrice);
-         this.Controls.Add(this.asd);
+         this.Controls.Add(this.lblTesting);
          this.Controls.Add(this.txtName);
          this.Controls.Add(this.lblProductName);
          this.Controls.Add(this.btnUpdate);
@@ -285,7 +298,7 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.Label lblProductName;
       private System.Windows.Forms.TextBox txtName;
       private System.Windows.Forms.TextBox txtTotalPrice;
-      private System.Windows.Forms.Label asd;
+      private System.Windows.Forms.Label lblTesting;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.PictureBox pictureBox;
       private System.Windows.Forms.Label label4;

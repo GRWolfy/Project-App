@@ -73,7 +73,7 @@ namespace TestQua_Project__APP_.Customer
          dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
          dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
          this.dataGridViewOrder.DefaultCellStyle = dataGridViewCellStyle4;
-         this.dataGridViewOrder.Location = new System.Drawing.Point(41, 49);
+         this.dataGridViewOrder.Location = new System.Drawing.Point(70, 95);
          this.dataGridViewOrder.Name = "dataGridViewOrder";
          this.dataGridViewOrder.RowHeadersVisible = false;
          this.dataGridViewOrder.RowHeadersWidth = 50;
@@ -107,34 +107,46 @@ namespace TestQua_Project__APP_.Customer
          // 
          // button1
          // 
+         this.button1.BackColor = System.Drawing.Color.Plum;
+         this.button1.FlatAppearance.BorderSize = 0;
+         this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
          this.button1.Location = new System.Drawing.Point(41, 13);
          this.button1.Name = "button1";
-         this.button1.Size = new System.Drawing.Size(75, 23);
+         this.button1.Size = new System.Drawing.Size(99, 47);
          this.button1.TabIndex = 1;
-         this.button1.Text = "button1";
-         this.button1.UseVisualStyleBackColor = true;
+         this.button1.Text = "Back";
+         this.button1.UseVisualStyleBackColor = false;
          this.button1.Click += new System.EventHandler(this.button1_Click);
          // 
          // btnReturn
          // 
-         this.btnReturn.Location = new System.Drawing.Point(475, 419);
+         this.btnReturn.BackColor = System.Drawing.Color.Plum;
+         this.btnReturn.FlatAppearance.BorderSize = 0;
+         this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+         this.btnReturn.Location = new System.Drawing.Point(429, 445);
          this.btnReturn.Name = "btnReturn";
-         this.btnReturn.Size = new System.Drawing.Size(75, 23);
+         this.btnReturn.Size = new System.Drawing.Size(99, 47);
          this.btnReturn.TabIndex = 2;
          this.btnReturn.Tag = "Return";
          this.btnReturn.Text = "Return";
-         this.btnReturn.UseVisualStyleBackColor = true;
+         this.btnReturn.UseVisualStyleBackColor = false;
          this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
          // 
          // btnOrderReceived
          // 
-         this.btnOrderReceived.Location = new System.Drawing.Point(221, 419);
+         this.btnOrderReceived.BackColor = System.Drawing.Color.Plum;
+         this.btnOrderReceived.FlatAppearance.BorderSize = 0;
+         this.btnOrderReceived.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnOrderReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+         this.btnOrderReceived.Location = new System.Drawing.Point(175, 445);
          this.btnOrderReceived.Name = "btnOrderReceived";
-         this.btnOrderReceived.Size = new System.Drawing.Size(75, 23);
+         this.btnOrderReceived.Size = new System.Drawing.Size(99, 47);
          this.btnOrderReceived.TabIndex = 3;
          this.btnOrderReceived.Tag = "Received";
          this.btnOrderReceived.Text = "Received";
-         this.btnOrderReceived.UseVisualStyleBackColor = true;
+         this.btnOrderReceived.UseVisualStyleBackColor = false;
          this.btnOrderReceived.Click += new System.EventHandler(this.btnOrderReceived_Click);
          // 
          // label1
@@ -142,7 +154,7 @@ namespace TestQua_Project__APP_.Customer
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label1.ForeColor = System.Drawing.Color.Black;
-         this.label1.Location = new System.Drawing.Point(215, 5);
+         this.label1.Location = new System.Drawing.Point(244, 51);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(183, 31);
          this.label1.TabIndex = 4;
@@ -153,7 +165,7 @@ namespace TestQua_Project__APP_.Customer
          this.txtStatus.AutoSize = true;
          this.txtStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtStatus.ForeColor = System.Drawing.Color.Black;
-         this.txtStatus.Location = new System.Drawing.Point(394, 5);
+         this.txtStatus.Location = new System.Drawing.Point(423, 51);
          this.txtStatus.Name = "txtStatus";
          this.txtStatus.Size = new System.Drawing.Size(68, 31);
          this.txtStatus.TabIndex = 5;

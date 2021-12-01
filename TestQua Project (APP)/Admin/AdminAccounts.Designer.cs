@@ -121,6 +121,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnAccounts.BackColor = System.Drawing.Color.Plum;
          this.btnAccounts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnAccounts.FlatAppearance.BorderSize = 0;
          this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnAccounts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnAccounts.ForeColor = System.Drawing.Color.Black;
@@ -136,6 +137,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnProducts.BackColor = System.Drawing.Color.Plum;
          this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnProducts.FlatAppearance.BorderSize = 0;
          this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnProducts.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnProducts.ForeColor = System.Drawing.Color.Black;
@@ -151,6 +153,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnReports.BackColor = System.Drawing.Color.Plum;
          this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnReports.FlatAppearance.BorderSize = 0;
          this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnReports.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnReports.ForeColor = System.Drawing.Color.Black;
@@ -166,6 +169,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnLogout.BackColor = System.Drawing.Color.Plum;
          this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnLogout.FlatAppearance.BorderSize = 0;
          this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnLogout.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnLogout.ForeColor = System.Drawing.Color.Black;
@@ -605,6 +609,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.btnHome.BackColor = System.Drawing.Color.Plum;
          this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
+         this.btnHome.FlatAppearance.BorderSize = 0;
          this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnHome.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
          this.btnHome.ForeColor = System.Drawing.Color.Black;

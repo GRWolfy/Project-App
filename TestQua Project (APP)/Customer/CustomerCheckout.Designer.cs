@@ -29,8 +29,8 @@ namespace TestQua_Project__APP_.Customer
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
          this.dataGridView = new System.Windows.Forms.DataGridView();
          this.button1 = new System.Windows.Forms.Button();
          this.lblTotalpayment = new System.Windows.Forms.Label();
@@ -43,6 +43,7 @@ namespace TestQua_Project__APP_.Customer
          this.lblFullName = new System.Windows.Forms.Label();
          this.lblContactnumber = new System.Windows.Forms.Label();
          this.lblAddress = new System.Windows.Forms.Label();
+         this.panel1 = new System.Windows.Forms.Panel();
          ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
          this.SuspendLayout();
          // 
@@ -52,24 +53,24 @@ namespace TestQua_Project__APP_.Customer
          this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
          this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
-         dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-         dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-         dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-         dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-         dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-         this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+         dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+         dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+         this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
          this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-         dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-         dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-         dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-         dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-         dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-         dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-         this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-         this.dataGridView.Location = new System.Drawing.Point(74, 160);
+         dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+         dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+         dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+         dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+         dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+         dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+         dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+         this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+         this.dataGridView.Location = new System.Drawing.Point(72, 97);
          this.dataGridView.Name = "dataGridView";
          this.dataGridView.RowHeadersVisible = false;
          this.dataGridView.RowHeadersWidth = 50;
@@ -80,6 +81,7 @@ namespace TestQua_Project__APP_.Customer
          // button1
          // 
          this.button1.BackColor = System.Drawing.Color.Plum;
+         this.button1.FlatAppearance.BorderSize = 0;
          this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
          this.button1.Location = new System.Drawing.Point(12, 24);
@@ -93,9 +95,10 @@ namespace TestQua_Project__APP_.Customer
          // lblTotalpayment
          // 
          this.lblTotalpayment.AutoSize = true;
+         this.lblTotalpayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblTotalpayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblTotalpayment.ForeColor = System.Drawing.Color.Black;
-         this.lblTotalpayment.Location = new System.Drawing.Point(831, 299);
+         this.lblTotalpayment.Location = new System.Drawing.Point(836, 426);
          this.lblTotalpayment.Name = "lblTotalpayment";
          this.lblTotalpayment.Size = new System.Drawing.Size(115, 36);
          this.lblTotalpayment.TabIndex = 62;
@@ -104,9 +107,10 @@ namespace TestQua_Project__APP_.Customer
          // label2
          // 
          this.label2.AutoSize = true;
+         this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label2.ForeColor = System.Drawing.Color.Black;
-         this.label2.Location = new System.Drawing.Point(588, 299);
+         this.label2.Location = new System.Drawing.Point(593, 426);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(212, 36);
          this.label2.TabIndex = 63;
@@ -115,9 +119,10 @@ namespace TestQua_Project__APP_.Customer
          // label3
          // 
          this.label3.AutoSize = true;
+         this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label3.ForeColor = System.Drawing.Color.Black;
-         this.label3.Location = new System.Drawing.Point(588, 176);
+         this.label3.Location = new System.Drawing.Point(593, 299);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(245, 36);
          this.label3.TabIndex = 65;
@@ -126,9 +131,10 @@ namespace TestQua_Project__APP_.Customer
          // lblSubtotal
          // 
          this.lblSubtotal.AutoSize = true;
+         this.lblSubtotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblSubtotal.ForeColor = System.Drawing.Color.Black;
-         this.lblSubtotal.Location = new System.Drawing.Point(831, 176);
+         this.lblSubtotal.Location = new System.Drawing.Point(836, 299);
          this.lblSubtotal.Name = "lblSubtotal";
          this.lblSubtotal.Size = new System.Drawing.Size(115, 36);
          this.lblSubtotal.TabIndex = 64;
@@ -137,9 +143,10 @@ namespace TestQua_Project__APP_.Customer
          // label5
          // 
          this.label5.AutoSize = true;
+         this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label5.ForeColor = System.Drawing.Color.Black;
-         this.label5.Location = new System.Drawing.Point(591, 233);
+         this.label5.Location = new System.Drawing.Point(596, 358);
          this.label5.Name = "label5";
          this.label5.Size = new System.Drawing.Size(188, 36);
          this.label5.TabIndex = 67;
@@ -148,9 +155,10 @@ namespace TestQua_Project__APP_.Customer
          // lblDeliveryfee
          // 
          this.lblDeliveryfee.AutoSize = true;
+         this.lblDeliveryfee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblDeliveryfee.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblDeliveryfee.ForeColor = System.Drawing.Color.Black;
-         this.lblDeliveryfee.Location = new System.Drawing.Point(831, 233);
+         this.lblDeliveryfee.Location = new System.Drawing.Point(836, 358);
          this.lblDeliveryfee.Name = "lblDeliveryfee";
          this.lblDeliveryfee.Size = new System.Drawing.Size(115, 36);
          this.lblDeliveryfee.TabIndex = 66;
@@ -159,6 +167,7 @@ namespace TestQua_Project__APP_.Customer
          // btnPlaceOrder
          // 
          this.btnPlaceOrder.BackColor = System.Drawing.Color.Plum;
+         this.btnPlaceOrder.FlatAppearance.BorderSize = 0;
          this.btnPlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnPlaceOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnPlaceOrder.Location = new System.Drawing.Point(802, 563);
@@ -172,9 +181,10 @@ namespace TestQua_Project__APP_.Customer
          // lblFullName
          // 
          this.lblFullName.AutoSize = true;
+         this.lblFullName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblFullName.ForeColor = System.Drawing.Color.Black;
-         this.lblFullName.Location = new System.Drawing.Point(183, 9);
+         this.lblFullName.Location = new System.Drawing.Point(596, 84);
          this.lblFullName.Name = "lblFullName";
          this.lblFullName.Size = new System.Drawing.Size(136, 36);
          this.lblFullName.TabIndex = 68;
@@ -183,9 +193,10 @@ namespace TestQua_Project__APP_.Customer
          // lblContactnumber
          // 
          this.lblContactnumber.AutoSize = true;
+         this.lblContactnumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblContactnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblContactnumber.ForeColor = System.Drawing.Color.Black;
-         this.lblContactnumber.Location = new System.Drawing.Point(183, 63);
+         this.lblContactnumber.Location = new System.Drawing.Point(596, 142);
          this.lblContactnumber.Name = "lblContactnumber";
          this.lblContactnumber.Size = new System.Drawing.Size(225, 36);
          this.lblContactnumber.TabIndex = 69;
@@ -194,13 +205,22 @@ namespace TestQua_Project__APP_.Customer
          // lblAddress
          // 
          this.lblAddress.AutoSize = true;
+         this.lblAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
          this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblAddress.ForeColor = System.Drawing.Color.Black;
-         this.lblAddress.Location = new System.Drawing.Point(183, 112);
+         this.lblAddress.Location = new System.Drawing.Point(596, 207);
          this.lblAddress.Name = "lblAddress";
          this.lblAddress.Size = new System.Drawing.Size(126, 36);
          this.lblAddress.TabIndex = 70;
          this.lblAddress.Text = "Address";
+         // 
+         // panel1
+         // 
+         this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.panel1.Location = new System.Drawing.Point(547, 48);
+         this.panel1.Name = "panel1";
+         this.panel1.Size = new System.Drawing.Size(455, 490);
+         this.panel1.TabIndex = 71;
          // 
          // CustomerCheckout
          // 
@@ -220,6 +240,7 @@ namespace TestQua_Project__APP_.Customer
          this.Controls.Add(this.lblTotalpayment);
          this.Controls.Add(this.button1);
          this.Controls.Add(this.dataGridView);
+         this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "CustomerCheckout";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -244,5 +265,6 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.Label lblFullName;
       private System.Windows.Forms.Label lblContactnumber;
       private System.Windows.Forms.Label lblAddress;
+      private System.Windows.Forms.Panel panel1;
    }
 }
