@@ -35,6 +35,9 @@ namespace TestQua_Project__APP_.Customer
          this.btnProfile = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
          this.panelProfile = new System.Windows.Forms.Panel();
+         this.lblContactNo = new System.Windows.Forms.Label();
+         this.lblEmail = new System.Windows.Forms.Label();
+         this.lblPassword = new System.Windows.Forms.Label();
          this.btnBrowsePicture = new System.Windows.Forms.Button();
          this.label13 = new System.Windows.Forms.Label();
          this.pbProfilePicture = new System.Windows.Forms.PictureBox();
@@ -136,6 +139,9 @@ namespace TestQua_Project__APP_.Customer
          // panelProfile
          // 
          this.panelProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.panelProfile.Controls.Add(this.lblContactNo);
+         this.panelProfile.Controls.Add(this.lblEmail);
+         this.panelProfile.Controls.Add(this.lblPassword);
          this.panelProfile.Controls.Add(this.btnBrowsePicture);
          this.panelProfile.Controls.Add(this.label13);
          this.panelProfile.Controls.Add(this.pbProfilePicture);
@@ -167,12 +173,42 @@ namespace TestQua_Project__APP_.Customer
          this.panelProfile.Size = new System.Drawing.Size(899, 519);
          this.panelProfile.TabIndex = 22;
          // 
+         // lblContactNo
+         // 
+         this.lblContactNo.AutoSize = true;
+         this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblContactNo.Location = new System.Drawing.Point(786, 138);
+         this.lblContactNo.Name = "lblContactNo";
+         this.lblContactNo.Size = new System.Drawing.Size(20, 17);
+         this.lblContactNo.TabIndex = 93;
+         this.lblContactNo.Text = "...";
+         // 
+         // lblEmail
+         // 
+         this.lblEmail.AutoSize = true;
+         this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblEmail.Location = new System.Drawing.Point(786, 185);
+         this.lblEmail.Name = "lblEmail";
+         this.lblEmail.Size = new System.Drawing.Size(20, 17);
+         this.lblEmail.TabIndex = 92;
+         this.lblEmail.Text = "...";
+         // 
+         // lblPassword
+         // 
+         this.lblPassword.AutoSize = true;
+         this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPassword.Location = new System.Drawing.Point(786, 270);
+         this.lblPassword.Name = "lblPassword";
+         this.lblPassword.Size = new System.Drawing.Size(20, 17);
+         this.lblPassword.TabIndex = 91;
+         this.lblPassword.Text = "...";
+         // 
          // btnBrowsePicture
          // 
          this.btnBrowsePicture.BackColor = System.Drawing.Color.Plum;
          this.btnBrowsePicture.FlatAppearance.BorderSize = 0;
          this.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnBrowsePicture.Location = new System.Drawing.Point(245, 191);
+         this.btnBrowsePicture.Location = new System.Drawing.Point(328, 195);
          this.btnBrowsePicture.Name = "btnBrowsePicture";
          this.btnBrowsePicture.Size = new System.Drawing.Size(75, 23);
          this.btnBrowsePicture.TabIndex = 90;
@@ -276,6 +312,8 @@ namespace TestQua_Project__APP_.Customer
          this.txtConfirmPassword.Name = "txtConfirmPassword";
          this.txtConfirmPassword.Size = new System.Drawing.Size(125, 26);
          this.txtConfirmPassword.TabIndex = 79;
+         this.txtConfirmPassword.UseSystemPasswordChar = true;
+         this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
          // 
          // txtUsername
          // 
@@ -295,6 +333,8 @@ namespace TestQua_Project__APP_.Customer
          this.txtPassword.Name = "txtPassword";
          this.txtPassword.Size = new System.Drawing.Size(125, 26);
          this.txtPassword.TabIndex = 77;
+         this.txtPassword.UseSystemPasswordChar = true;
+         this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
          // 
          // cmbGender
          // 
@@ -378,6 +418,7 @@ namespace TestQua_Project__APP_.Customer
          this.txtAge.Name = "txtAge";
          this.txtAge.Size = new System.Drawing.Size(121, 26);
          this.txtAge.TabIndex = 69;
+         this.txtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAge_KeyPress);
          // 
          // txtAddress
          // 
@@ -414,6 +455,7 @@ namespace TestQua_Project__APP_.Customer
          this.txtContacno.Name = "txtContacno";
          this.txtContacno.Size = new System.Drawing.Size(121, 26);
          this.txtContacno.TabIndex = 65;
+         this.txtContacno.TextChanged += new System.EventHandler(this.txtContacno_TextChanged);
          // 
          // txtEmail
          // 
@@ -423,6 +465,7 @@ namespace TestQua_Project__APP_.Customer
          this.txtEmail.Name = "txtEmail";
          this.txtEmail.Size = new System.Drawing.Size(125, 26);
          this.txtEmail.TabIndex = 64;
+         this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
          // 
          // label1
          // 
@@ -548,5 +591,8 @@ namespace TestQua_Project__APP_.Customer
       private System.Windows.Forms.PictureBox pbProfilePicture;
       private System.Windows.Forms.Button btnBrowsePicture;
       private System.Windows.Forms.Button btnHome;
+      private System.Windows.Forms.Label lblPassword;
+      private System.Windows.Forms.Label lblEmail;
+      private System.Windows.Forms.Label lblContactNo;
    }
 }

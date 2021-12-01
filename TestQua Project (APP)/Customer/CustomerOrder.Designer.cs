@@ -175,7 +175,7 @@ namespace TestQua_Project__APP_.Customer
          // dataGridView1
          // 
          this.dataGridView1.AllowUserToAddRows = false;
-         this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -195,10 +195,10 @@ namespace TestQua_Project__APP_.Customer
          dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
          dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
          this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-         this.dataGridView1.Location = new System.Drawing.Point(185, 133);
+         this.dataGridView1.Location = new System.Drawing.Point(205, 133);
          this.dataGridView1.Name = "dataGridView1";
          this.dataGridView1.RowHeadersVisible = false;
-         this.dataGridView1.Size = new System.Drawing.Size(890, 217);
+         this.dataGridView1.Size = new System.Drawing.Size(848, 420);
          this.dataGridView1.TabIndex = 52;
          this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
          // 

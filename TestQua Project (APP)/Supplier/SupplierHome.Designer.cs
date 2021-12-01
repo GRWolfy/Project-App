@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SupplierHome));
+         System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+         System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+         System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
          this.btnHome = new System.Windows.Forms.Button();
          this.btnLogout = new System.Windows.Forms.Button();
          this.label3 = new System.Windows.Forms.Label();
@@ -43,8 +46,10 @@
          this.lblTotalSales = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
          this.lblTotalDeliveries = new System.Windows.Forms.Label();
+         this.chartTopSeller = new System.Windows.Forms.DataVisualization.Charting.Chart();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.chartTopSeller)).BeginInit();
          this.SuspendLayout();
          // 
          // btnHome
@@ -175,6 +180,7 @@
          // panel2
          // 
          this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.panel2.Controls.Add(this.chartTopSeller);
          this.panel2.Controls.Add(this.label5);
          this.panel2.Controls.Add(this.lblTotalSales);
          this.panel2.Controls.Add(this.label1);
@@ -190,9 +196,9 @@
          this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
          this.label5.Location = new System.Drawing.Point(367, 32);
          this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(265, 44);
+         this.label5.Size = new System.Drawing.Size(210, 44);
          this.label5.TabIndex = 3;
-         this.label5.Text = "Total Earnings";
+         this.label5.Text = "Total Sales";
          // 
          // lblTotalSales
          // 
@@ -224,6 +230,23 @@
          this.lblTotalDeliveries.TabIndex = 0;
          this.lblTotalDeliveries.Text = "0";
          // 
+         // chartTopSeller
+         // 
+         chartArea1.Name = "ChartArea1";
+         this.chartTopSeller.ChartAreas.Add(chartArea1);
+         legend1.Name = "Legend1";
+         this.chartTopSeller.Legends.Add(legend1);
+         this.chartTopSeller.Location = new System.Drawing.Point(36, 161);
+         this.chartTopSeller.Name = "chartTopSeller";
+         series1.ChartArea = "ChartArea1";
+         series1.IsVisibleInLegend = false;
+         series1.Legend = "Legend1";
+         series1.Name = "Series1";
+         this.chartTopSeller.Series.Add(series1);
+         this.chartTopSeller.Size = new System.Drawing.Size(716, 315);
+         this.chartTopSeller.TabIndex = 7;
+         this.chartTopSeller.Text = "chart1";
+         // 
          // SupplierHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +270,7 @@
          this.panel1.PerformLayout();
          this.panel2.ResumeLayout(false);
          this.panel2.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.chartTopSeller)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -268,5 +292,6 @@
       private System.Windows.Forms.Label lblTotalSales;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblTotalDeliveries;
+      private System.Windows.Forms.DataVisualization.Charting.Chart chartTopSeller;
    }
 }

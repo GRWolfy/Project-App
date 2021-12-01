@@ -5,7 +5,7 @@ Login
 
 Admin
  -Home, fix UI bit 
- -Products, View products, fix datagrid and search
+ -Products, View products, fix datagrid and search (datagrid)
  -Products, transactions datagrid 
  -Products, transactions, verify, fix UI
  -Reports, fix datagrid

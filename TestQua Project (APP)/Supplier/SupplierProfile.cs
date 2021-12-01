@@ -34,8 +34,9 @@ namespace TestQua_Project__APP_.Supplier
          txtConfirmPassword.Enabled = status;
          txtPassword.Enabled = status;
          cmbGender.Enabled = status;
-         btnBrowsePicture.Enabled = status;
-         btnSave.Enabled = status;
+         btnBrowsePicture.Visible = status;
+         btnSave.Visible = status;
+         btnUpdate.Visible = status ? false : true;
       }
 
       private void getFields()
@@ -170,6 +171,142 @@ namespace TestQua_Project__APP_.Supplier
          var prod = new SupplierProduct();
          prod.Show();
          Close();
+      }
+
+      private void txtPassword_TextChanged(object sender, EventArgs e)
+      {
+         if (txtPassword.TextLength < 6)
+         {
+            lblPassword.Text = "Password must be at least 6 characters.";
+         }
+         else
+         {
+            lblPassword.Text = "";
+         }
+      }
+
+      private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+      {
+         if (txtPassword.Text.Equals(txtConfirmPassword.Text))
+         {
+            lblPassword.Text = "Matched";
+         }
+         else
+         {
+            lblPassword.Text = "Check password";
+         }
+      }
+
+      private void txtEmail_TextChanged(object sender, EventArgs e)
+      {
+         bool check = false;
+         try
+         {
+            Connection.DB();
+            Function.gen = "SELECT * FROM UserInformation WHERE email = '" + txtEmail.Text + "' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
+
+            if (Function.reader.HasRows)
+            {
+               check = false;
+            }
+            else
+            {
+               check = true;
+            }
+         }
+
+         catch (Exception ex)
+         {
+            MessageBox.Show(ex.Message);
+         }
+
+         if (IsValidEmail(txtEmail.Text) && check)
+         {
+            lblEmail.Text = "OK";
+         }
+         else
+         {
+            lblEmail.Text = "Invalid Email";
+         }
+      }
+
+      public bool IsValidEmail(string email)
+      {
+         try
+         {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+         }
+         catch
+         {
+            return false;
+         }
+      }
+
+      private void txtContacno_TextChanged(object sender, EventArgs e)
+      {
+         bool check = false;
+
+         try
+         {
+            Connection.DB();
+            Function.gen = "SELECT * FROM UserInformation WHERE username = '" + txtUsername.Text + "' ";
+            Function.command = new SqlCommand(Function.gen, Connection.con);
+            Function.reader = Function.command.ExecuteReader();
+
+            if (Function.reader.HasRows)
+            {
+               check = false;
+            }
+            else
+            {
+               check = true;
+            }
+
+            if (isPHoneNumber(txtContacno.Text))
+            {
+               lblContactNo.Text = "OK";
+            }
+            else
+            {
+               lblContactNo.Text = "Invalid number";
+            }
+         }
+
+         catch (Exception ex)
+         {
+            MessageBox.Show(ex.Message);
+         }
+      }
+
+      private bool isPHoneNumber(string number)
+      {
+         return isDigit(number) && number.Length == 11;
+      }
+
+      private bool isDigit(string number)
+      {
+         foreach (char n in number)
+         {
+            if (n < '0' || n > '9')
+            {
+               return false;
+            }
+         }
+
+         return true;
+      }
+
+      private void txtAge_KeyPress(object sender, KeyPressEventArgs e)
+      {
+         char ch = e.KeyChar;
+
+         if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+         {
+            e.Handled = true;
+         }
       }
    }
 }

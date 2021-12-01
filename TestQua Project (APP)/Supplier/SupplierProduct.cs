@@ -62,6 +62,7 @@ namespace TestQua_Project__APP_.Supplier
          datagridViewProduct.Columns["productimage"].Visible = false;
          datagridViewProduct.Columns["productid"].Visible = false;
          datagridViewProduct.Columns["productprice"].Visible = false;
+         datagridViewProduct.Columns["DESCRIPTION"].Visible = false;
       }
 
       private void txtSearch_TextChanged(object sender, EventArgs e)

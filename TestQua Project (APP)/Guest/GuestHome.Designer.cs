@@ -40,7 +40,9 @@ namespace TestQua_Project__APP_.Guest
          this.label2 = new System.Windows.Forms.Label();
          this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
          this.label5 = new System.Windows.Forms.Label();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // btnLogout
@@ -161,9 +163,19 @@ namespace TestQua_Project__APP_.Guest
          this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label5.Location = new System.Drawing.Point(270, 146);
          this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(439, 81);
+         this.label5.Size = new System.Drawing.Size(397, 81);
          this.label5.TabIndex = 52;
-         this.label5.Text = "TOP SELLER!!!!";
+         this.label5.Text = "BUY NOW!!!!";
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.images_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(697, 128);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(163, 102);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 32;
+         this.pictureBox1.TabStop = false;
          // 
          // GuestHome
          // 
@@ -171,6 +183,7 @@ namespace TestQua_Project__APP_.Guest
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.flowlayoutViewProducts);
          this.Controls.Add(this.label5);
          this.Controls.Add(this.btnLogout);
@@ -186,6 +199,7 @@ namespace TestQua_Project__APP_.Guest
          this.Load += new System.EventHandler(this.GuestHome_Load);
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -203,5 +217,6 @@ namespace TestQua_Project__APP_.Guest
       private System.Windows.Forms.Button btnHome;
       private System.Windows.Forms.FlowLayoutPanel flowlayoutViewProducts;
       private System.Windows.Forms.Label label5;
+      private System.Windows.Forms.PictureBox pictureBox1;
    }
 }

@@ -25,7 +25,7 @@ namespace TestQua_Project__APP_.Admin
          try
          {
             Connection.DB();
-            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb ";
+            Function.gen = "SELECT convert(varchar, cast(SUM(TotalPrice) AS MONEY), 1) AS [TOTAL] FROM OrdersDb where status like 'RECEIVED%'";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
@@ -46,7 +46,7 @@ namespace TestQua_Project__APP_.Admin
       private void viewOrdersDb()
       {
          Connection.DB();
-         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB";
+         Function.gen = "SELECT orderid AS [ORDER ID], userid, productid, quantitybought, 'P' + convert(varchar, cast(totalprice AS MONEY), 1) AS [TOTAL PRICE], status as [STATUS], timeoftransaction AS [TIME OF TRANSACTION] FROM OrdersDB ";
          Function.fill(Function.gen, dataGridView1);
          dataGridView1.Columns["userid"].Visible = false;
          dataGridView1.Columns["productid"].Visible = false;
@@ -102,6 +102,11 @@ namespace TestQua_Project__APP_.Admin
       }
 
       private void tabPage2_Click(object sender, EventArgs e)
+      {
+
+      }
+
+      private void tabPage1_Click(object sender, EventArgs e)
       {
 
       }

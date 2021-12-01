@@ -200,7 +200,8 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
          this.tabPage1.Size = new System.Drawing.Size(813, 452);
          this.tabPage1.TabIndex = 0;
-         this.tabPage1.Text = "View Sales";
+         this.tabPage1.Text = "View Orders";
+         this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
          // 
          // lblTotalSales
          // 
@@ -222,7 +223,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          // dataGridView1
          // 
-         this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -257,7 +258,7 @@ namespace TestQua_Project__APP_.Admin
          this.datagridViewDelivered.AllowUserToAddRows = false;
          this.datagridViewDelivered.AllowUserToDeleteRows = false;
          this.datagridViewDelivered.AllowUserToOrderColumns = true;
-         this.datagridViewDelivered.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.datagridViewDelivered.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.datagridViewDelivered.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.datagridViewDelivered.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -311,7 +312,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
          this.datagridViewReturn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-         this.datagridViewReturn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.datagridViewReturn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.datagridViewReturn.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.datagridViewReturn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewReturn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

@@ -16,6 +16,7 @@ namespace TestQua_Project__APP_.Supplier
          btnHome.FlatStyle = FlatStyle.Standard;
          setTotalDeliveries();
          setTotalSales();
+         ViewChartTopSales();
       }
 
       private void btnLogout_Click(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace TestQua_Project__APP_.Supplier
          try
          {
             Connection.DB();
-            Function.gen = "select count(*) as [TOTAL] from transactions where userid = '"+ Login.userid +"' ";
+            Function.gen = "select count(*) as [TOTAL] from transactions where userid = '"+ Login.userid +"' and status like 'RECEIVED%' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);
             Function.reader = Function.command.ExecuteReader();
 
@@ -89,6 +90,21 @@ namespace TestQua_Project__APP_.Supplier
          {
             Connection.con.Close();
             lblTotalDeliveries.Text = "0";
+         }
+      }
+
+      private void ViewChartTopSales()
+      {
+         Connection.DB();
+         Function.gen = "select Products.ProductName as [NAME], Transactions.Quantity as [QTY] from transactions inner join products on transactions.ProductId = Products.ProductId where userid = '"+ Login.userid +"' ";
+         Function.command = new SqlCommand(Function.gen, Connection.con);
+         Function.reader = Function.command.ExecuteReader();
+
+         while (Function.reader.Read())
+         {
+            chartTopSeller.Series.Add(Function.reader["NAME"].ToString());
+            chartTopSeller.Series[Function.reader["NAME"].ToString()].Points.AddXY(Function.reader["NAME"].ToString(), Function.reader["QTY"]);
+
          }
       }
    }

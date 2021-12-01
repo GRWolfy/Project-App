@@ -41,7 +41,6 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProduct = new System.Windows.Forms.Button();
          this.tabPage2 = new System.Windows.Forms.TabPage();
          this.datagridViewProduct = new System.Windows.Forms.DataGridView();
-         this.txtSearch = new System.Windows.Forms.TextBox();
          this.tabPage1 = new System.Windows.Forms.TabPage();
          this.label7 = new System.Windows.Forms.Label();
          this.txtProductId = new System.Windows.Forms.TextBox();
@@ -194,7 +193,6 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.tabPage2.Controls.Add(this.datagridViewProduct);
-         this.tabPage2.Controls.Add(this.txtSearch);
          this.tabPage2.Location = new System.Drawing.Point(4, 38);
          this.tabPage2.Name = "tabPage2";
          this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -206,7 +204,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.datagridViewProduct.AllowUserToAddRows = false;
          this.datagridViewProduct.AllowUserToDeleteRows = false;
-         this.datagridViewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+         this.datagridViewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.datagridViewProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
          this.datagridViewProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.datagridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -216,14 +214,6 @@ namespace TestQua_Project__APP_.Supplier
          this.datagridViewProduct.Size = new System.Drawing.Size(891, 440);
          this.datagridViewProduct.TabIndex = 68;
          this.datagridViewProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewProduct_CellClick);
-         // 
-         // txtSearch
-         // 
-         this.txtSearch.Location = new System.Drawing.Point(223, 2);
-         this.txtSearch.Name = "txtSearch";
-         this.txtSearch.Size = new System.Drawing.Size(100, 35);
-         this.txtSearch.TabIndex = 67;
-         this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
          // 
          // tabPage1
          // 
@@ -271,6 +261,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // pictureboxProductPic
          // 
+         this.pictureboxProductPic.Image = global::TestQua_Project__APP_.Properties.Resources.noimagefound_removebg_preview;
          this.pictureboxProductPic.Location = new System.Drawing.Point(55, 66);
          this.pictureboxProductPic.Name = "pictureboxProductPic";
          this.pictureboxProductPic.Size = new System.Drawing.Size(280, 281);
@@ -340,12 +331,15 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnSave
          // 
+         this.btnSave.BackColor = System.Drawing.Color.Plum;
+         this.btnSave.FlatAppearance.BorderSize = 0;
+         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnSave.Location = new System.Drawing.Point(602, 364);
          this.btnSave.Name = "btnSave";
-         this.btnSave.Size = new System.Drawing.Size(89, 31);
+         this.btnSave.Size = new System.Drawing.Size(92, 39);
          this.btnSave.TabIndex = 76;
          this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = true;
+         this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
          // 
          // label8
@@ -400,7 +394,6 @@ namespace TestQua_Project__APP_.Supplier
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.tabPage2.ResumeLayout(false);
-         this.tabPage2.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.datagridViewProduct)).EndInit();
          this.tabPage1.ResumeLayout(false);
          this.tabPage1.PerformLayout();
@@ -438,6 +431,5 @@ namespace TestQua_Project__APP_.Supplier
       private System.Windows.Forms.Label label8;
       private System.Windows.Forms.TextBox txtQuantity;
       private System.Windows.Forms.DataGridView datagridViewProduct;
-      private System.Windows.Forms.TextBox txtSearch;
    }
 }

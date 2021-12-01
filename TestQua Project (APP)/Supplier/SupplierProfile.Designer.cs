@@ -65,6 +65,9 @@ namespace TestQua_Project__APP_.Supplier
          this.label14 = new System.Windows.Forms.Label();
          this.btnTransactions = new System.Windows.Forms.Button();
          this.btnProduct = new System.Windows.Forms.Button();
+         this.lblContactNo = new System.Windows.Forms.Label();
+         this.lblEmail = new System.Windows.Forms.Label();
+         this.lblPassword = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          this.panelProfile.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pbProfilePicture)).BeginInit();
@@ -155,6 +158,9 @@ namespace TestQua_Project__APP_.Supplier
          // panelProfile
          // 
          this.panelProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.panelProfile.Controls.Add(this.lblContactNo);
+         this.panelProfile.Controls.Add(this.lblEmail);
+         this.panelProfile.Controls.Add(this.lblPassword);
          this.panelProfile.Controls.Add(this.btnBrowsePicture);
          this.panelProfile.Controls.Add(this.label13);
          this.panelProfile.Controls.Add(this.pbProfilePicture);
@@ -188,12 +194,15 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // btnBrowsePicture
          // 
-         this.btnBrowsePicture.Location = new System.Drawing.Point(338, 191);
+         this.btnBrowsePicture.BackColor = System.Drawing.Color.Plum;
+         this.btnBrowsePicture.FlatAppearance.BorderSize = 0;
+         this.btnBrowsePicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnBrowsePicture.Location = new System.Drawing.Point(328, 193);
          this.btnBrowsePicture.Name = "btnBrowsePicture";
          this.btnBrowsePicture.Size = new System.Drawing.Size(75, 23);
          this.btnBrowsePicture.TabIndex = 90;
          this.btnBrowsePicture.Text = "Browse";
-         this.btnBrowsePicture.UseVisualStyleBackColor = true;
+         this.btnBrowsePicture.UseVisualStyleBackColor = false;
          this.btnBrowsePicture.Click += new System.EventHandler(this.btnBrowsePicture_Click);
          // 
          // label13
@@ -208,32 +217,40 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // pbProfilePicture
          // 
+         this.pbProfilePicture.Image = global::TestQua_Project__APP_.Properties.Resources.defpic_removebg_preview;
          this.pbProfilePicture.Location = new System.Drawing.Point(225, 42);
          this.pbProfilePicture.Name = "pbProfilePicture";
          this.pbProfilePicture.Size = new System.Drawing.Size(178, 145);
+         this.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pbProfilePicture.TabIndex = 88;
          this.pbProfilePicture.TabStop = false;
          // 
          // btnUpdate
          // 
+         this.btnUpdate.BackColor = System.Drawing.Color.Plum;
+         this.btnUpdate.FlatAppearance.BorderSize = 0;
+         this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnUpdate.Location = new System.Drawing.Point(706, 446);
+         this.btnUpdate.Location = new System.Drawing.Point(611, 446);
          this.btnUpdate.Name = "btnUpdate";
-         this.btnUpdate.Size = new System.Drawing.Size(89, 29);
+         this.btnUpdate.Size = new System.Drawing.Size(89, 35);
          this.btnUpdate.TabIndex = 87;
          this.btnUpdate.Text = "Update";
-         this.btnUpdate.UseVisualStyleBackColor = true;
+         this.btnUpdate.UseVisualStyleBackColor = false;
          this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
          // 
          // btnSave
          // 
+         this.btnSave.BackColor = System.Drawing.Color.Plum;
+         this.btnSave.FlatAppearance.BorderSize = 0;
+         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnSave.Location = new System.Drawing.Point(611, 446);
          this.btnSave.Name = "btnSave";
-         this.btnSave.Size = new System.Drawing.Size(89, 29);
+         this.btnSave.Size = new System.Drawing.Size(89, 35);
          this.btnSave.TabIndex = 86;
          this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = true;
+         this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // txtUserid
@@ -250,7 +267,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.Location = new System.Drawing.Point(487, 263);
+         this.label1.Location = new System.Drawing.Point(487, 240);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(97, 24);
          this.label1.TabIndex = 82;
@@ -260,7 +277,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label11.AutoSize = true;
          this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label11.Location = new System.Drawing.Point(487, 303);
+         this.label11.Location = new System.Drawing.Point(487, 283);
          this.label11.Name = "label11";
          this.label11.Size = new System.Drawing.Size(141, 24);
          this.label11.TabIndex = 81;
@@ -270,7 +287,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label12.AutoSize = true;
          this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label12.Location = new System.Drawing.Point(487, 351);
+         this.label12.Location = new System.Drawing.Point(472, 329);
          this.label12.Name = "label12";
          this.label12.Size = new System.Drawing.Size(161, 24);
          this.label12.TabIndex = 80;
@@ -278,31 +295,35 @@ namespace TestQua_Project__APP_.Supplier
          // 
          // txtConfirmPassword
          // 
-         this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtConfirmPassword.Location = new System.Drawing.Point(656, 351);
+         this.txtConfirmPassword.Location = new System.Drawing.Point(641, 329);
          this.txtConfirmPassword.Name = "txtConfirmPassword";
-         this.txtConfirmPassword.Size = new System.Drawing.Size(125, 19);
+         this.txtConfirmPassword.Size = new System.Drawing.Size(125, 26);
          this.txtConfirmPassword.TabIndex = 79;
+         this.txtConfirmPassword.UseSystemPasswordChar = true;
+         this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
          // 
          // txtUsername
          // 
-         this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtUsername.Enabled = false;
          this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtUsername.Location = new System.Drawing.Point(641, 263);
+         this.txtUsername.Location = new System.Drawing.Point(641, 240);
          this.txtUsername.Name = "txtUsername";
-         this.txtUsername.Size = new System.Drawing.Size(125, 19);
+         this.txtUsername.Size = new System.Drawing.Size(125, 26);
          this.txtUsername.TabIndex = 78;
          // 
          // txtPassword
          // 
-         this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtPassword.Location = new System.Drawing.Point(641, 303);
+         this.txtPassword.Location = new System.Drawing.Point(641, 283);
          this.txtPassword.Name = "txtPassword";
-         this.txtPassword.Size = new System.Drawing.Size(125, 19);
+         this.txtPassword.Size = new System.Drawing.Size(125, 26);
          this.txtPassword.TabIndex = 77;
+         this.txtPassword.UseSystemPasswordChar = true;
+         this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
          // 
          // cmbGender
          // 
@@ -332,7 +353,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label9.AutoSize = true;
          this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label9.Location = new System.Drawing.Point(136, 263);
+         this.label9.Location = new System.Drawing.Point(136, 283);
          this.label9.Name = "label9";
          this.label9.Size = new System.Drawing.Size(96, 24);
          this.label9.TabIndex = 74;
@@ -352,7 +373,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label7.AutoSize = true;
          this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label7.Location = new System.Drawing.Point(136, 369);
+         this.label7.Location = new System.Drawing.Point(136, 389);
          this.label7.Name = "label7";
          this.label7.Size = new System.Drawing.Size(45, 24);
          this.label7.TabIndex = 72;
@@ -362,7 +383,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.label6.AutoSize = true;
          this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label6.Location = new System.Drawing.Point(136, 318);
+         this.label6.Location = new System.Drawing.Point(136, 338);
          this.label6.Name = "label6";
          this.label6.Size = new System.Drawing.Size(80, 24);
          this.label6.TabIndex = 71;
@@ -382,16 +403,17 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtAge.Location = new System.Drawing.Point(260, 362);
+         this.txtAge.Location = new System.Drawing.Point(260, 382);
          this.txtAge.Name = "txtAge";
          this.txtAge.Size = new System.Drawing.Size(121, 26);
          this.txtAge.TabIndex = 69;
+         this.txtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAge_KeyPress);
          // 
          // txtAddress
          // 
          this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtAddress.Location = new System.Drawing.Point(260, 318);
+         this.txtAddress.Location = new System.Drawing.Point(260, 338);
          this.txtAddress.Name = "txtAddress";
          this.txtAddress.Size = new System.Drawing.Size(121, 26);
          this.txtAddress.TabIndex = 68;
@@ -400,7 +422,7 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtLastname.Location = new System.Drawing.Point(260, 263);
+         this.txtLastname.Location = new System.Drawing.Point(260, 283);
          this.txtLastname.Name = "txtLastname";
          this.txtLastname.Size = new System.Drawing.Size(121, 26);
          this.txtLastname.TabIndex = 67;
@@ -409,34 +431,36 @@ namespace TestQua_Project__APP_.Supplier
          // 
          this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.txtFirstname.Location = new System.Drawing.Point(260, 220);
+         this.txtFirstname.Location = new System.Drawing.Point(260, 240);
          this.txtFirstname.Name = "txtFirstname";
          this.txtFirstname.Size = new System.Drawing.Size(121, 26);
          this.txtFirstname.TabIndex = 66;
          // 
          // txtContacno
          // 
-         this.txtContacno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtContacno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtContacno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtContacno.Location = new System.Drawing.Point(641, 140);
          this.txtContacno.Name = "txtContacno";
-         this.txtContacno.Size = new System.Drawing.Size(121, 19);
+         this.txtContacno.Size = new System.Drawing.Size(121, 26);
          this.txtContacno.TabIndex = 65;
+         this.txtContacno.TextChanged += new System.EventHandler(this.txtContacno_TextChanged);
          // 
          // txtEmail
          // 
-         this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+         this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
          this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.txtEmail.Location = new System.Drawing.Point(641, 192);
          this.txtEmail.Name = "txtEmail";
-         this.txtEmail.Size = new System.Drawing.Size(125, 19);
+         this.txtEmail.Size = new System.Drawing.Size(125, 26);
          this.txtEmail.TabIndex = 64;
+         this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
          // 
          // label14
          // 
          this.label14.AutoSize = true;
          this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label14.Location = new System.Drawing.Point(136, 220);
+         this.label14.Location = new System.Drawing.Point(136, 240);
          this.label14.Name = "label14";
          this.label14.Size = new System.Drawing.Size(98, 24);
          this.label14.TabIndex = 63;
@@ -473,6 +497,36 @@ namespace TestQua_Project__APP_.Supplier
          this.btnProduct.Text = "Product";
          this.btnProduct.UseVisualStyleBackColor = false;
          this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+         // 
+         // lblContactNo
+         // 
+         this.lblContactNo.AutoSize = true;
+         this.lblContactNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblContactNo.Location = new System.Drawing.Point(768, 149);
+         this.lblContactNo.Name = "lblContactNo";
+         this.lblContactNo.Size = new System.Drawing.Size(20, 17);
+         this.lblContactNo.TabIndex = 96;
+         this.lblContactNo.Text = "...";
+         // 
+         // lblEmail
+         // 
+         this.lblEmail.AutoSize = true;
+         this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblEmail.Location = new System.Drawing.Point(768, 201);
+         this.lblEmail.Name = "lblEmail";
+         this.lblEmail.Size = new System.Drawing.Size(20, 17);
+         this.lblEmail.TabIndex = 95;
+         this.lblEmail.Text = "...";
+         // 
+         // lblPassword
+         // 
+         this.lblPassword.AutoSize = true;
+         this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+         this.lblPassword.Location = new System.Drawing.Point(768, 292);
+         this.lblPassword.Name = "lblPassword";
+         this.lblPassword.Size = new System.Drawing.Size(20, 17);
+         this.lblPassword.TabIndex = 94;
+         this.lblPassword.Text = "...";
          // 
          // SupplierProfile
          // 
@@ -538,5 +592,8 @@ namespace TestQua_Project__APP_.Supplier
       private System.Windows.Forms.Label label14;
       private System.Windows.Forms.Button btnTransactions;
       private System.Windows.Forms.Button btnProduct;
+      private System.Windows.Forms.Label lblContactNo;
+      private System.Windows.Forms.Label lblEmail;
+      private System.Windows.Forms.Label lblPassword;
    }
 }

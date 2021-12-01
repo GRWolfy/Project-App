@@ -36,7 +36,6 @@ namespace TestQua_Project__APP_.Admin
             {
                Function.reader.Read();
                lblName.Text = Function.reader["productname"].ToString();
-               lblDescription.Text = Function.reader["productdescrip"].ToString();
                lblPrice.Text = Function.reader["productprice"].ToString();
                Quantity = Convert.ToInt32(Function.reader["quantity"]);
                byte[] img = (byte[])(Function.reader[4]);

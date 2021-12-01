@@ -75,11 +75,14 @@ namespace TestQua_Project__APP_.Admin
          this.txtSearch = new System.Windows.Forms.TextBox();
          this.viewAccounts = new System.Windows.Forms.DataGridView();
          this.btnHome = new System.Windows.Forms.Button();
+         this.label13 = new System.Windows.Forms.Label();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
          this.tabcontrolAdminAccounts.SuspendLayout();
          this.tabPage1.SuspendLayout();
          this.tabPage2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.viewAccounts)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // panel1
@@ -573,6 +576,8 @@ namespace TestQua_Project__APP_.Admin
          // tabPage2
          // 
          this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
+         this.tabPage2.Controls.Add(this.label13);
+         this.tabPage2.Controls.Add(this.pictureBox1);
          this.tabPage2.Controls.Add(this.txtSearch);
          this.tabPage2.Controls.Add(this.viewAccounts);
          this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -587,7 +592,7 @@ namespace TestQua_Project__APP_.Admin
          // 
          this.txtSearch.Location = new System.Drawing.Point(184, 7);
          this.txtSearch.Name = "txtSearch";
-         this.txtSearch.Size = new System.Drawing.Size(100, 29);
+         this.txtSearch.Size = new System.Drawing.Size(155, 29);
          this.txtSearch.TabIndex = 65;
          this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
          // 
@@ -622,6 +627,26 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome.UseVisualStyleBackColor = false;
          this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
          // 
+         // label13
+         // 
+         this.label13.AutoSize = true;
+         this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label13.Location = new System.Drawing.Point(108, 12);
+         this.label13.Name = "label13";
+         this.label13.Size = new System.Drawing.Size(70, 24);
+         this.label13.TabIndex = 78;
+         this.label13.Text = "Search";
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::TestQua_Project__APP_.Properties.Resources.searchicon_removebg_preview;
+         this.pictureBox1.Location = new System.Drawing.Point(345, 9);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(50, 30);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 77;
+         this.pictureBox1.TabStop = false;
+         // 
          // AdminAccounts
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -648,6 +673,7 @@ namespace TestQua_Project__APP_.Admin
          this.tabPage2.ResumeLayout(false);
          this.tabPage2.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.viewAccounts)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -698,5 +724,7 @@ namespace TestQua_Project__APP_.Admin
       private System.Windows.Forms.Label lblPassword;
       private System.Windows.Forms.Label lblEmail;
       private System.Windows.Forms.Label lblContactNo;
+      private System.Windows.Forms.Label label13;
+      private System.Windows.Forms.PictureBox pictureBox1;
    }
 }

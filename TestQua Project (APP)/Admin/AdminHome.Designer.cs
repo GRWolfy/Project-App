@@ -43,13 +43,13 @@ namespace TestQua_Project__APP_.Admin
          this.btnHome = new System.Windows.Forms.Button();
          this.btnReports = new System.Windows.Forms.Button();
          this.panel2 = new System.Windows.Forms.Panel();
+         this.chartTopSeller = new System.Windows.Forms.DataVisualization.Charting.Chart();
          this.label6 = new System.Windows.Forms.Label();
          this.lblTotalProfit = new System.Windows.Forms.Label();
          this.label5 = new System.Windows.Forms.Label();
          this.lblTotalExpenses = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.lblTotalSales = new System.Windows.Forms.Label();
-         this.chartTopSeller = new System.Windows.Forms.DataVisualization.Charting.Chart();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.chartTopSeller)).BeginInit();
@@ -192,10 +192,27 @@ namespace TestQua_Project__APP_.Admin
          this.panel2.Controls.Add(this.lblTotalExpenses);
          this.panel2.Controls.Add(this.label3);
          this.panel2.Controls.Add(this.lblTotalSales);
-         this.panel2.Location = new System.Drawing.Point(226, 139);
+         this.panel2.Location = new System.Drawing.Point(226, 92);
          this.panel2.Name = "panel2";
-         this.panel2.Size = new System.Drawing.Size(803, 490);
+         this.panel2.Size = new System.Drawing.Size(803, 537);
          this.panel2.TabIndex = 46;
+         // 
+         // chartTopSeller
+         // 
+         chartArea1.Name = "ChartArea1";
+         this.chartTopSeller.ChartAreas.Add(chartArea1);
+         legend1.Name = "Legend1";
+         this.chartTopSeller.Legends.Add(legend1);
+         this.chartTopSeller.Location = new System.Drawing.Point(41, 181);
+         this.chartTopSeller.Name = "chartTopSeller";
+         series1.ChartArea = "ChartArea1";
+         series1.IsVisibleInLegend = false;
+         series1.Legend = "Legend1";
+         series1.Name = "Series1";
+         this.chartTopSeller.Series.Add(series1);
+         this.chartTopSeller.Size = new System.Drawing.Size(716, 315);
+         this.chartTopSeller.TabIndex = 6;
+         this.chartTopSeller.Text = "chart1";
          // 
          // label6
          // 
@@ -257,23 +274,6 @@ namespace TestQua_Project__APP_.Admin
          this.lblTotalSales.Size = new System.Drawing.Size(42, 46);
          this.lblTotalSales.TabIndex = 0;
          this.lblTotalSales.Text = "0";
-         // 
-         // chartTopSeller
-         // 
-         chartArea1.Name = "ChartArea1";
-         this.chartTopSeller.ChartAreas.Add(chartArea1);
-         legend1.Name = "Legend1";
-         this.chartTopSeller.Legends.Add(legend1);
-         this.chartTopSeller.Location = new System.Drawing.Point(27, 154);
-         this.chartTopSeller.Name = "chartTopSeller";
-         series1.ChartArea = "ChartArea1";
-         series1.IsVisibleInLegend = false;
-         series1.Legend = "Legend1";
-         series1.Name = "Series1";
-         this.chartTopSeller.Series.Add(series1);
-         this.chartTopSeller.Size = new System.Drawing.Size(716, 315);
-         this.chartTopSeller.TabIndex = 6;
-         this.chartTopSeller.Text = "chart1";
          // 
          // AdminHome
          // 
