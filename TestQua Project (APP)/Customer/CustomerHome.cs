@@ -133,7 +133,7 @@ namespace TestQua_Project__APP_.Customer
          try
          {
             productid = Convert.ToInt32(((PictureBox)sender).Tag);
-            var viewproduct = new ViewProduct();
+            var viewproduct = new CustomerHome();
             viewproduct.Show();
             Close();
          }

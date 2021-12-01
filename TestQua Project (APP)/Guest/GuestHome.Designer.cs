@@ -32,21 +32,14 @@ namespace TestQua_Project__APP_.Guest
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuestHome));
          this.btnLogout = new System.Windows.Forms.Button();
          this.label3 = new System.Windows.Forms.Label();
-         this.panel4 = new System.Windows.Forms.Panel();
-         this.button2 = new System.Windows.Forms.Button();
          this.btnProducts = new System.Windows.Forms.Button();
          this.label1 = new System.Windows.Forms.Label();
          this.btnHome = new System.Windows.Forms.Button();
-         this.pictureBox2 = new System.Windows.Forms.PictureBox();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.panel1 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.panel4.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+         this.flowlayoutViewProducts = new System.Windows.Forms.FlowLayoutPanel();
+         this.label5 = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
          // 
@@ -76,30 +69,6 @@ namespace TestQua_Project__APP_.Guest
          this.label3.Size = new System.Drawing.Size(87, 18);
          this.label3.TabIndex = 41;
          this.label3.Text = "Follow Us";
-         // 
-         // panel4
-         // 
-         this.panel4.BackColor = System.Drawing.Color.White;
-         this.panel4.Controls.Add(this.button2);
-         this.panel4.Location = new System.Drawing.Point(221, 281);
-         this.panel4.Name = "panel4";
-         this.panel4.Size = new System.Drawing.Size(854, 310);
-         this.panel4.TabIndex = 46;
-         // 
-         // button2
-         // 
-         this.button2.BackColor = System.Drawing.Color.Plum;
-         this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
-         this.button2.FlatAppearance.BorderSize = 0;
-         this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.button2.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold);
-         this.button2.ForeColor = System.Drawing.Color.Black;
-         this.button2.Location = new System.Drawing.Point(582, -70);
-         this.button2.Name = "button2";
-         this.button2.Size = new System.Drawing.Size(167, 64);
-         this.button2.TabIndex = 37;
-         this.button2.Text = "Reports";
-         this.button2.UseVisualStyleBackColor = false;
          // 
          // btnProducts
          // 
@@ -144,34 +113,6 @@ namespace TestQua_Project__APP_.Guest
          this.btnHome.Text = "Home";
          this.btnHome.UseVisualStyleBackColor = false;
          // 
-         // pictureBox2
-         // 
-         this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(9)))), ((int)(((byte)(21)))));
-         this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-         this.pictureBox2.Location = new System.Drawing.Point(323, 98);
-         this.pictureBox2.Name = "pictureBox2";
-         this.pictureBox2.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox2.TabIndex = 44;
-         this.pictureBox2.TabStop = false;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-         this.pictureBox1.Location = new System.Drawing.Point(637, 98);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(160, 156);
-         this.pictureBox1.TabIndex = 42;
-         this.pictureBox1.TabStop = false;
-         // 
-         // pictureBox3
-         // 
-         this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-         this.pictureBox3.Location = new System.Drawing.Point(480, 98);
-         this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(151, 116);
-         this.pictureBox3.TabIndex = 45;
-         this.pictureBox3.TabStop = false;
-         // 
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(48)))));
@@ -207,19 +148,34 @@ namespace TestQua_Project__APP_.Guest
          this.label2.TabIndex = 0;
          this.label2.Text = "Bloom and Puff";
          // 
+         // flowlayoutViewProducts
+         // 
+         this.flowlayoutViewProducts.Location = new System.Drawing.Point(233, 236);
+         this.flowlayoutViewProducts.Name = "flowlayoutViewProducts";
+         this.flowlayoutViewProducts.Size = new System.Drawing.Size(750, 324);
+         this.flowlayoutViewProducts.TabIndex = 53;
+         // 
+         // label5
+         // 
+         this.label5.AutoSize = true;
+         this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label5.Location = new System.Drawing.Point(270, 146);
+         this.label5.Name = "label5";
+         this.label5.Size = new System.Drawing.Size(439, 81);
+         this.label5.TabIndex = 52;
+         this.label5.Text = "TOP SELLER!!!!";
+         // 
          // GuestHome
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(203)))), ((int)(((byte)(204)))));
          this.ClientSize = new System.Drawing.Size(1087, 664);
+         this.Controls.Add(this.flowlayoutViewProducts);
+         this.Controls.Add(this.label5);
          this.Controls.Add(this.btnLogout);
          this.Controls.Add(this.label3);
-         this.Controls.Add(this.pictureBox2);
-         this.Controls.Add(this.panel4);
          this.Controls.Add(this.btnProducts);
-         this.Controls.Add(this.pictureBox1);
-         this.Controls.Add(this.pictureBox3);
          this.Controls.Add(this.panel1);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.btnHome);
@@ -228,10 +184,6 @@ namespace TestQua_Project__APP_.Guest
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "GuestHome";
          this.Load += new System.EventHandler(this.GuestHome_Load);
-         this.panel4.ResumeLayout(false);
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.ResumeLayout(false);
@@ -243,16 +195,13 @@ namespace TestQua_Project__APP_.Guest
 
       private System.Windows.Forms.Button btnLogout;
       private System.Windows.Forms.Label label3;
-      private System.Windows.Forms.PictureBox pictureBox2;
-      private System.Windows.Forms.Panel panel4;
       private System.Windows.Forms.Button btnProducts;
-      private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.PictureBox pictureBox3;
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Button btnHome;
-      private System.Windows.Forms.Button button2;
+      private System.Windows.Forms.FlowLayoutPanel flowlayoutViewProducts;
+      private System.Windows.Forms.Label label5;
    }
 }
