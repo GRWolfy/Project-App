@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -65,31 +67,26 @@ namespace TestQua_Project__APP_.Admin
          try
          {
             Connection.DB();
-            Function.gen = "SELECT * FROM Products";
-            Function.command = new SqlCommand(Function.gen, Connection.con);
-            Function.reader = Function.command.ExecuteReader();
+            Function.gen = "SELECT ProductName, Sold FROM Products";
+            SqlDataAdapter data = new SqlDataAdapter(Function.gen, Connection.con);
+            DataTable dt = new DataTable();
+            data.Fill(dt);
+            List<string> x = new List<string>();
+            List<string> y = new List<string>();
 
-            while (Function.reader.Read())
+            foreach (DataRow row in dt.Rows) 
             {
-               productid = Convert.ToInt32(Function.reader["ProductId"]);
-
-               if (Convert.ToInt32(Function.reader["quantity"]) <= 20 && Function.reader["STATUS"].ToString() != "REQUESTING")
-               {
-                  Connection.DB();
-                  Function.gen = "UPDATE Products SET Status = '" + "STOCK LOW" + "' WHERE ProductId = '" + productid + "' ";
-                  Function.command = new SqlCommand(Function.gen, Connection.con);
-                  Function.command.ExecuteNonQuery();
-                  Connection.con.Close();
-               }
-               else if (Function.reader["STATUS"].ToString() != "REQUESTING")
-               {
-                  Connection.DB();
-                  Function.gen = "UPDATE Products SET Status = '" + "" + "' WHERE ProductId = '" + productid + "' ";
-                  Function.command = new SqlCommand(Function.gen, Connection.con);
-                  Function.command.ExecuteNonQuery();
-                  Connection.con.Close();
-               }
+               x.Add(row["ProductName"].ToString());
+               y.Add(row["Sold"].ToString());
             }
+
+            chartTopSeller.Series[0].IsValueShownAsLabel = true;
+            chartTopSeller.Series[0].Points.DataBindXY(x, y);
+            chartTopSeller.ChartAreas[0].AxisX.Title = "Product Name";
+            chartTopSeller.ChartAreas[0].AxisY.Title = "Sold"; 
+            chartTopSeller.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
+            chartTopSeller.ChartAreas["ChartArea1"].AxisY.MajorGrid.Enabled = false;
+            Connection.con.Close();
          }
 
          catch (Exception ex)

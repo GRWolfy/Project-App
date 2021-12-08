@@ -94,7 +94,7 @@ namespace TestQua_Project__APP_.Customer
             newQuantity = Convert.ToInt32(CustomerOrder.QuantityBought[i]) + Convert.ToInt32(CustomerOrder.ProductQuantity[i]);
             newSold = Convert.ToInt32(CustomerOrder.ProductSold[i]) - Convert.ToInt32(CustomerOrder.QuantityBought[i]);
             productid = Convert.ToInt32(CustomerOrder.ProductIDs[i]);
-            
+
             Connection.DB();
             Function.gen = "UPDATE Products SET Quantity =  '" + newQuantity + "', Sold = '" + newSold + "' WHERE productid = '" + productid + "' ";
             Function.command = new SqlCommand(Function.gen, Connection.con);

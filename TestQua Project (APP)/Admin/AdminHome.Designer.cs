@@ -203,14 +203,14 @@ namespace TestQua_Project__APP_.Admin
          this.chartTopSeller.ChartAreas.Add(chartArea1);
          legend1.Name = "Legend1";
          this.chartTopSeller.Legends.Add(legend1);
-         this.chartTopSeller.Location = new System.Drawing.Point(41, 181);
+         this.chartTopSeller.Location = new System.Drawing.Point(16, 161);
          this.chartTopSeller.Name = "chartTopSeller";
          series1.ChartArea = "ChartArea1";
          series1.IsVisibleInLegend = false;
          series1.Legend = "Legend1";
          series1.Name = "Series1";
          this.chartTopSeller.Series.Add(series1);
-         this.chartTopSeller.Size = new System.Drawing.Size(716, 315);
+         this.chartTopSeller.Size = new System.Drawing.Size(773, 361);
          this.chartTopSeller.TabIndex = 6;
          this.chartTopSeller.Text = "chart1";
          // 
